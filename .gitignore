@@ -21,3 +21,6 @@ WailaErrorOutput.txt
 whitelist.json
 .curseclient
 .cl*
+
+local/
+libraries/
