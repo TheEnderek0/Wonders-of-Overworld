@@ -411,7 +411,7 @@
 			dependencies: ["34C6245E30531DBA"]
 			id: "1B84F96E71544B5D"
 			y: -13.0d
-			x: 7.0d
+			x: 9.5d
 		}
 		{
 			tasks: [{
@@ -462,7 +462,7 @@
 			}]
 			dependencies: ["2D62B5C970A4AF84"]
 			id: "72323E791530271F"
-			y: -11.0d
+			y: -10.0d
 			x: 11.5d
 		}
 		{
@@ -565,7 +565,7 @@
 			icon: "bloodmagic:accelerationrune"
 			id: "1FB08655748B2E9A"
 			x: 11.5d
-			y: -12.5d
+			y: -11.5d
 			dependencies: ["72323E791530271F"]
 		}
 		{
@@ -630,7 +630,7 @@
 			}]
 			dependencies: ["1FB08655748B2E9A"]
 			id: "5591437964F5FC3E"
-			y: -14.0d
+			y: -14.5d
 			x: 11.5d
 		}
 		{
@@ -822,6 +822,167 @@
 			id: "778B01E795E862A9"
 			y: -24.5d
 			x: 10.0d
+		}
+		{
+			tasks: [{
+				id: "31FA5016CC98EB49"
+				type: "item"
+				item: "bloodmagic:archmagebloodorb"
+			}]
+			dependencies: ["1733308D183090A4"]
+			id: "6263242DBEA020CA"
+			y: -24.5d
+			x: 0.0d
+		}
+		{
+			tasks: [{
+				id: "34A9F88E4345E945"
+				type: "item"
+				item: "bloodmagic:reagentbinding"
+			}]
+			dependencies: ["1B84F96E71544B5D"]
+			id: "43849F6B3658554C"
+			y: -13.0d
+			x: 14.0d
+		}
+		{
+			tasks: [
+				{
+					id: "006913B21D5CE0BF"
+					type: "item"
+					item: {
+						id: "bloodmagic:livinghelmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0451FED61207AFD5"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							livingStats: {
+								maxPoints: 100
+								upgrades: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "33191554298BDE78"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingleggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C757AB2F040C0AC"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingboots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "146713E7D8324615"
+					type: "item"
+					item: "bloodmagic:upgradetrainer"
+				}
+			]
+			dependencies: ["43849F6B3658554C"]
+			id: "635EBBBAEEA622F2"
+			y: -13.0d
+			x: 16.5d
+			title: "Living Armor"
+		}
+		{
+			tasks: [{
+				id: "5EC5309F12087F9F"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			dependencies: ["316F1FC2CF161743"]
+			id: "42502C1295F17749"
+			y: 2.5d
+			x: 13.0d
+		}
+		{
+			tasks: [{
+				id: "5BD65D17F5885344"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			dependencies: ["42502C1295F17749"]
+			id: "7D8EB1C185B9BB83"
+			y: 2.5d
+			x: 16.0d
+		}
+		{
+			tasks: [{
+				id: "348299F2A6460FE1"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			dependencies: ["7D8EB1C185B9BB83"]
+			id: "208AE4F0EEB0EDA3"
+			y: 2.5d
+			x: 18.5d
+		}
+		{
+			x: 13.0d
+			y: 4.0d
+			id: "471B243AA7174BFC"
+			tasks: [{
+				id: "073FFD0B0E190C47"
+				type: "item"
+				item: "bloodmagic:demoncrucible"
+			}]
+		}
+		{
+			tasks: [{
+				id: "0EA9D23C3405E9E7"
+				type: "item"
+				item: "bloodmagic:demonpylon"
+			}]
+			dependencies: ["7D8EB1C185B9BB83"]
+			id: "56064D81D7155A98"
+			y: 4.0d
+			x: 16.0d
+		}
+		{
+			tasks: [{
+				id: "18FB1FED9F810778"
+				type: "item"
+				item: "bloodmagic:demoncrystallizer"
+			}]
+			dependencies: ["7D8EB1C185B9BB83"]
+			id: "780F910D2E6B25C4"
+			y: 1.0d
+			x: 16.0d
 		}
 	]
 }
