@@ -1,0 +1,445 @@
+{
+	id: "0E15599B7254B948"
+	group: "1A933187E17A6D42"
+	order_index: 1
+	filename: "thermal_series"
+	title: "Thermal Series"
+	icon: "thermal:machine_bottler"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "thermal:machine_bottler"
+			x: -0.5d
+			y: -0.5d
+			shape: "gear"
+			dependencies: ["70AD936E3F0A6AF4"]
+			id: "364BF73244713000"
+			tasks: [{
+				id: "3D37EE98C22348A6"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["364BF73244713000"]
+			id: "1645F72D36BB78DB"
+			tasks: [{
+				id: "3E4BCFB8315C7478"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["499D0D86070CB8F2"]
+			id: "0DA0F5E9A929CF2A"
+			tasks: [{
+				id: "1B80F59B28F9109C"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -0.5d
+			dependencies: ["0DA0F5E9A929CF2A"]
+			id: "73428366B45E9C24"
+			tasks: [{
+				id: "273735F4699D33C1"
+				type: "item"
+				item: "thermal:enderium_ingot"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			dependencies: ["0DA0F5E9A929CF2A"]
+			id: "7A5E2FBB65F3BE5B"
+			tasks: [{
+				id: "714F3A6049BCF8BA"
+				type: "item"
+				item: "thermal:signalum_ingot"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			dependencies: ["0DA0F5E9A929CF2A"]
+			id: "79EF206F78CE6744"
+			tasks: [{
+				id: "7EB2F6CEB6230604"
+				type: "item"
+				item: "thermal:lumium_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["1645F72D36BB78DB"]
+			id: "499D0D86070CB8F2"
+			tasks: [{
+				id: "7E62206701DA976A"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["1645F72D36BB78DB"]
+			id: "42B08E32EF1884EB"
+			tasks: [{
+				id: "566C618B3A907996"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["42B08E32EF1884EB"]
+			id: "50F5C53F1198CF8F"
+			tasks: [{
+				id: "6D9C04A70C366E52"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["499D0D86070CB8F2"]
+			id: "63AE79AA55211C47"
+			tasks: [{
+				id: "4077015159246941"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["50F5C53F1198CF8F"]
+			id: "454E9D9279903E3D"
+			tasks: [{
+				id: "0AECEAA1EBBB18AD"
+				type: "item"
+				item: "thermal:resin_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			dependencies: [
+				"63AE79AA55211C47"
+				"454E9D9279903E3D"
+			]
+			id: "6D064954424659DF"
+			tasks: [{
+				id: "17ED0B7A394055C5"
+				type: "item"
+				item: "thermal:rosin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["63AE79AA55211C47"]
+			id: "6303C57278FF2366"
+			tasks: [{
+				id: "0D3C7D686468FF8E"
+				type: "item"
+				item: "thermal:heavy_oil_bucket"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["6303C57278FF2366"]
+			id: "2F7D41BDF8BD83B3"
+			tasks: [{
+				id: "3EDD7BA170ADDFBD"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["364BF73244713000"]
+			id: "1AFD99D7D33983AA"
+			tasks: [{
+				id: "2CF7E4A5D049EAF1"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			dependencies: ["1645F72D36BB78DB"]
+			id: "011AE3FCA7D7F0EF"
+			tasks: [{
+				id: "4ED363509746AC68"
+				type: "item"
+				item: "thermal:energy_cell_frame"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["1645F72D36BB78DB"]
+			id: "757568B8E18097B8"
+			tasks: [{
+				id: "5F00E1DBFE6E37FF"
+				type: "item"
+				item: "thermal:fluid_cell_frame"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["011AE3FCA7D7F0EF"]
+			id: "081631CB9FE41692"
+			tasks: [{
+				id: "6EE1A62DD7A60954"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["757568B8E18097B8"]
+			id: "727DF17BE71F5019"
+			tasks: [{
+				id: "19BB09D7C3789661"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			title: "Dynamos"
+			icon: "thermal:dynamo_lapidary"
+			x: 6.0d
+			y: -2.5d
+			dependencies: ["499D0D86070CB8F2"]
+			id: "355F9E08A2FBEDF2"
+			tasks: [{
+				id: "17F00E931E0C7E0F"
+				type: "checkmark"
+				title: "Okay"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["355F9E08A2FBEDF2"]
+			id: "75C18F115EA1BC66"
+			tasks: [{
+				id: "6DC3ABC454092015"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			dependencies: ["355F9E08A2FBEDF2"]
+			id: "7F488D35D1C9AB34"
+			tasks: [{
+				id: "516614E11E5104E7"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.0d
+			dependencies: ["355F9E08A2FBEDF2"]
+			id: "3231B7FCDEDF87A2"
+			tasks: [{
+				id: "0BC47988B7D7B778"
+				type: "item"
+				item: "thermal:dynamo_magmatic"
+			}]
+		}
+		{
+			title: "Basic Dynamo Augments"
+			x: 9.0d
+			y: -2.5d
+			dependencies: ["355F9E08A2FBEDF2"]
+			id: "73959A06C1433C2B"
+			tasks: [
+				{
+					id: "2D672CCAF8487B9A"
+					type: "item"
+					item: "thermal:machine_output_augment"
+				}
+				{
+					id: "1D7C9CD87988209E"
+					type: "item"
+					item: "thermal:dynamo_fuel_augment"
+				}
+			]
+		}
+		{
+			title: "Other Machines"
+			icon: "thermal:machine_bottler"
+			x: 6.0d
+			y: 1.5d
+			description: ["Thermal features many, many various machines that can be helpful to you. You can read about them in the book, and I recommend you do so."]
+			dependencies: ["499D0D86070CB8F2"]
+			id: "3322F6FFABBA5AD6"
+			tasks: [{
+				id: "212F319C47694524"
+				type: "checkmark"
+				title: "Okay"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["42B08E32EF1884EB"]
+			id: "06D7D631488E6557"
+			tasks: [{
+				id: "33623372AEF4853B"
+				type: "item"
+				item: {
+					id: "thermal:fluid_reservoir"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			title: "Basic Machine Augments"
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["42B08E32EF1884EB"]
+			id: "142A20CD52C93EA7"
+			tasks: [
+				{
+					id: "420A7CE25153F786"
+					type: "item"
+					item: "thermal:machine_speed_augment"
+				}
+				{
+					id: "7CB4592095961AD1"
+					type: "item"
+					item: "thermal:machine_efficiency_augment"
+				}
+				{
+					id: "631DDC909D4271BF"
+					type: "item"
+					item: "thermal:rf_coil_xfer_augment"
+				}
+			]
+		}
+		{
+			icon: "mekanism:basic_purifying_factory"
+			x: 11.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: [
+				"79EF206F78CE6744"
+				"7A5E2FBB65F3BE5B"
+				"73428366B45E9C24"
+			]
+			size: 1.5d
+			id: "1D70BEE85AA491AF"
+			tasks: [{
+				id: "0A74CB0E7D8D87CD"
+				type: "checkmark"
+				title: "Mekanism"
+			}]
+		}
+		{
+			title: "Industrial Foregoing - Supreme"
+			icon: "industrialforegoing:machine_frame_supreme"
+			x: 11.5d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["79EF206F78CE6744"]
+			size: 1.5d
+			id: "04569BA049921D6F"
+			tasks: [{
+				id: "630667720EF0B6BA"
+				type: "checkmark"
+				title: "Acknowledge"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["42B08E32EF1884EB"]
+			id: "0CF78E47CBA91D39"
+			tasks: [{
+				id: "04A08FC86A7FF47F"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["0CF78E47CBA91D39"]
+			id: "33F50523E0DA2BD8"
+			tasks: [{
+				id: "048F8403C4E9E620"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["33F50523E0DA2BD8"]
+			id: "2CDA841C069CF51F"
+			tasks: [{
+				id: "0CC9761E1A49DEEC"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,12 @@
+{
+	id: "2229E6ADA58DBA65"
+	group: "05AF8D3D4322BDCB"
+	order_index: 4
+	filename: "lost_arcana"
+	title: "Lost Arcana"
+	icon: "forbidden_arcanus:pixie"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

@@ -1,0 +1,12 @@
+{
+	id: "07185687A2926AF1"
+	group: "05AF8D3D4322BDCB"
+	order_index: 0
+	filename: "natural_magic"
+	title: "Natural Magic"
+	icon: "botania:lexicon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

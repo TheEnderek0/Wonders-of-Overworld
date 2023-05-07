@@ -1,0 +1,764 @@
+{
+	id: "49B44DBE5899CB38"
+	group: "05AF8D3D4322BDCB"
+	order_index: 5
+	filename: "spirit_magic"
+	title: "Spirit Magic"
+	icon: "malum:arcane_spirit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Soulstone"
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "0BC135E0F43B63F9"
+			tasks: [
+				{
+					id: "20F761C4C23C5EE6"
+					type: "item"
+					item: "malum:raw_soulstone"
+					count: 8L
+				}
+				{
+					id: "0CF43499905DE72F"
+					type: "item"
+					item: "malum:processed_soulstone"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Spirit Altar"
+			x: -1.5d
+			y: -4.5d
+			dependencies: [
+				"0BC135E0F43B63F9"
+				"43CE02DEE8FD1EEA"
+			]
+			id: "081C8AA416DE7287"
+			tasks: [{
+				id: "3975A2370A2807BA"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			description: ["You can find all informations about Malum in here"]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "4201D855E4037A82"
+			tasks: [{
+				id: "7B9BEF4DBAD7FDEF"
+				type: "item"
+				item: "malum:encyclopedia_arcana"
+			}]
+		}
+		{
+			icon: "malum:arcane_spirit"
+			x: -1.5d
+			y: -0.5d
+			shape: "gear"
+			id: "5F83DCE6A3BF802F"
+			tasks: [{
+				id: "07E76905DD5705D1"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "086832C5864CE833"
+			tasks: [{
+				id: "0D32C3090FA4ECC8"
+				type: "item"
+				item: "malum:cthonic_gold"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "1A0549FFF6958BEF"
+			tasks: [{
+				id: "47B3347B4CD79D80"
+				type: "item"
+				item: "malum:natural_quartz"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["0BC135E0F43B63F9"]
+			id: "34A8F027632D0610"
+			tasks: [{
+				id: "132E0FED4510744D"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "2D5D9405462D43A1"
+			tasks: [{
+				id: "3FCFE45DEC14E8A5"
+				type: "item"
+				item: "malum:blazing_quartz"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "6E97D449B9A6FB3E"
+			tasks: [{
+				id: "257360603B5D3CEB"
+				type: "item"
+				item: "malum:cluster_of_brilliance"
+			}]
+		}
+		{
+			title: "Runewood"
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "43CE02DEE8FD1EEA"
+			tasks: [{
+				id: "6E13B9D2CB989A60"
+				type: "item"
+				item: "malum:runewood_log"
+				count: 16L
+			}]
+		}
+		{
+			title: "Spirit Stones"
+			x: 1.5d
+			y: -6.5d
+			dependencies: ["081C8AA416DE7287"]
+			id: "67FDFE07ACAF0303"
+			tasks: [
+				{
+					id: "7F77D785F0470AAA"
+					type: "item"
+					item: "malum:tainted_rock"
+					count: 32L
+				}
+				{
+					id: "4FC082F2CC84C901"
+					type: "item"
+					item: "malum:twisted_rock"
+					count: 32L
+				}
+			]
+		}
+		{
+			title: "Spirit Metals"
+			x: -4.5d
+			y: -6.5d
+			dependencies: ["081C8AA416DE7287"]
+			id: "3CD926295D93176A"
+			tasks: [
+				{
+					id: "5C5808E4EBF8DC81"
+					type: "item"
+					item: "malum:soul_stained_steel_ingot"
+					count: 8L
+				}
+				{
+					id: "6591933712EB312E"
+					type: "item"
+					item: "malum:hallowed_gold_ingot"
+					count: 16L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			dependencies: ["3CD926295D93176A"]
+			id: "49DEE6F8F4050E6A"
+			tasks: [{
+				id: "0D2DCA2059FD5B12"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Artifice"
+			x: -5.0d
+			y: -8.0d
+			shape: "square"
+			dependencies: ["3CD926295D93176A"]
+			size: 2.0d
+			id: "64A7E2A62E4C7B35"
+			tasks: [
+				{
+					id: "4CC0A4F74508ABFE"
+					type: "item"
+					item: "malum:gilded_ring"
+				}
+				{
+					id: "256C499D32B56CB0"
+					type: "item"
+					item: "malum:gilded_belt"
+				}
+				{
+					id: "3B4CF77F91D4961E"
+					type: "item"
+					item: "malum:ornate_necklace"
+				}
+				{
+					id: "070A9355E4F33B7A"
+					type: "item"
+					item: "malum:ornate_ring"
+				}
+				{
+					id: "2F2C8E137AD23520"
+					type: "item"
+					item: "malum:ring_of_esoteric_spoils"
+				}
+				{
+					id: "51FF7EFE76E916F6"
+					type: "item"
+					item: "malum:ring_of_curative_talent"
+				}
+				{
+					id: "51905A7BFECD736C"
+					type: "item"
+					item: "malum:ring_of_arcane_prowess"
+				}
+				{
+					id: "0F138D1E28763752"
+					type: "item"
+					item: "malum:ring_of_alchemical_mastery"
+				}
+				{
+					id: "4F6F1258717FBBF8"
+					type: "item"
+					item: "malum:ring_of_desperate_voracity"
+				}
+				{
+					id: "4C60A86D43F12ACD"
+					type: "item"
+					item: "malum:ring_of_the_hoarder"
+				}
+				{
+					id: "2FACC36C537D66A8"
+					type: "item"
+					item: "malum:ring_of_the_demolitionist"
+				}
+				{
+					id: "258425E52FCCB06B"
+					type: "item"
+					item: "malum:necklace_of_the_mystic_mirror"
+				}
+				{
+					id: "232BA3C9942ADE3B"
+					type: "item"
+					item: "malum:necklace_of_tidal_affinity"
+				}
+				{
+					id: "258D666FA0C48791"
+					type: "item"
+					item: "malum:necklace_of_the_narrow_edge"
+				}
+				{
+					id: "026C399F1DAA8F7C"
+					type: "item"
+					item: "malum:necklace_of_the_hidden_blade"
+				}
+				{
+					id: "421C61DCA9592B70"
+					type: "item"
+					item: "malum:necklace_of_blissful_harmony"
+				}
+				{
+					id: "1199989352EC1D59"
+					type: "item"
+					item: "malum:belt_of_the_starved"
+				}
+				{
+					id: "3D388A234CC3232B"
+					type: "item"
+					item: "malum:belt_of_the_prospector"
+				}
+				{
+					id: "1B75C7B9EC466551"
+					type: "item"
+					item: "malum:belt_of_the_magebane"
+				}
+			]
+			rewards: [
+				{
+					id: "2FC582FBC5E55AD9"
+					type: "item"
+					item: "malum:corrupted_resonance"
+					count: 4
+				}
+				{
+					id: "70D6798DFC24ED6E"
+					type: "item"
+					item: {
+						id: "malum:iron_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12FE7368B8F91798"
+					type: "item"
+					item: "malum:vivid_nitrate"
+					count: 8
+				}
+				{
+					id: "182D2B8398BCC01B"
+					type: "item"
+					item: "malum:block_of_soul_stained_steel"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Metallurgic Magic"
+			x: 2.0d
+			y: -8.0d
+			shape: "square"
+			dependencies: ["67FDFE07ACAF0303"]
+			size: 2.0d
+			id: "4C352AF2472CC2DA"
+			tasks: [
+				{
+					id: "3569636AA9CB35AF"
+					type: "item"
+					item: {
+						id: "malum:alchemical_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7B1AB0BCF37C264C"
+					type: "item"
+					item: {
+						id: "malum:copper_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17E2E3E7DA610367"
+					type: "item"
+					item: {
+						id: "malum:iron_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E4E3E863E96CDA1"
+					type: "item"
+					item: {
+						id: "malum:gold_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "58ED045C37D803BB"
+					type: "item"
+					item: {
+						id: "malum:lead_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "168E14F7DF11351F"
+					type: "item"
+					item: {
+						id: "malum:silver_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2E736C318E00C2FA"
+					type: "item"
+					item: {
+						id: "malum:aluminum_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CF8131D339F691B"
+					type: "item"
+					item: {
+						id: "malum:nickel_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1370BDD08F5235EA"
+					type: "item"
+					item: {
+						id: "malum:uranium_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "724E07C1C8D06A3E"
+					type: "item"
+					item: {
+						id: "malum:osmium_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "468A4F77AC24A253"
+					type: "item"
+					item: {
+						id: "malum:zinc_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2200E756914CFD76"
+					type: "item"
+					item: {
+						id: "malum:tin_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "28681568CE05EE32"
+					type: "item"
+					item: "malum:infernal_spirit"
+					count: 64
+				}
+				{
+					id: "57C4AC3DF634EED8"
+					type: "item"
+					item: "malum:infernal_spirit"
+					count: 64
+				}
+				{
+					id: "59FC65D27C3DCA70"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 64
+				}
+				{
+					id: "3A10627531854FDA"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Mystic Weaves"
+			x: 3.0d
+			y: -5.0d
+			dependencies: ["67FDFE07ACAF0303"]
+			id: "43CA1EC7ACE86220"
+			tasks: [
+				{
+					id: "5EFCDA673720F768"
+					type: "item"
+					item: "malum:spirit_fabric"
+					count: 32L
+				}
+				{
+					id: "45B5017DEABC0A77"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "65120AFCB21BAA6F"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_robe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0828DA731F0B721B"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52B9B205E119AC6F"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D19E453008D3715"
+					type: "item"
+					item: "malum:spirit_pouch"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			dependencies: ["081C8AA416DE7287"]
+			id: "698ED1AA17AB61C4"
+			tasks: [{
+				id: "6AABECFD8F9C0964"
+				type: "item"
+				item: "malum:corrupted_resonance"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -8.5d
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "02E4E9B343F028CF"
+			tasks: [{
+				id: "15B5A08E1C357E57"
+				type: "item"
+				item: "malum:necklace_of_the_hidden_blade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.5d
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "0C6C769B9CD6844A"
+			tasks: [{
+				id: "66F649BB709D7D82"
+				type: "item"
+				item: "malum:belt_of_the_magebane"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -9.5d
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "5095ED0AF14E4794"
+			tasks: [{
+				id: "07D1116252125186"
+				type: "item"
+				item: {
+					id: "malum:tyrving"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			dependencies: ["67FDFE07ACAF0303"]
+			id: "445819E21B8408AC"
+			tasks: [{
+				id: "6CC2B10FA0B3BBA2"
+				type: "item"
+				item: "malum:spirit_crucible"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			dependencies: ["445819E21B8408AC"]
+			id: "70BBDD5BF8D9C306"
+			tasks: [{
+				id: "7DDC6B0EDFE09F9D"
+				type: "item"
+				item: "malum:spirit_catalyzer"
+			}]
+		}
+		{
+			title: "Arcane Restoration"
+			x: 4.5d
+			y: -8.0d
+			dependencies: ["445819E21B8408AC"]
+			id: "68B9A7D1AF847280"
+			tasks: [{
+				id: "7FDBFACF349F4052"
+				type: "item"
+				item: "malum:twisted_tablet"
+			}]
+		}
+		{
+			title: "Esoteric Reaping"
+			x: -7.5d
+			y: -6.0d
+			description: ["Can be performed with any soul hunter weapon"]
+			dependencies: ["49DEE6F8F4050E6A"]
+			id: "338102CBAB1F6BDF"
+			tasks: [
+				{
+					id: "24695B9DDDE7D9AA"
+					type: "item"
+					item: "malum:rotting_essence"
+					count: 16L
+				}
+				{
+					id: "17952A57B862D915"
+					type: "item"
+					item: "malum:alchemical_calx"
+					count: 16L
+				}
+				{
+					id: "3B73614A6C2B086D"
+					type: "item"
+					item: "malum:grim_talc"
+					count: 16L
+				}
+				{
+					id: "694077FD8E66C5A5"
+					type: "item"
+					item: "malum:astral_weave"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -8.0d
+			dependencies: ["3CD926295D93176A"]
+			id: "71C1F1317F460136"
+			tasks: [{
+				id: "176D9226EA5344C1"
+				type: "item"
+				item: "malum:ether"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -7.0d
+			dependencies: ["71C1F1317F460136"]
+			id: "30C5A50FB53F35EE"
+			tasks: [{
+				id: "0B5F9A4A3AFDC206"
+				type: "item"
+				item: "malum:iridescent_ether"
+			}]
+		}
+		{
+			title: "Basic Rites"
+			x: -5.0d
+			y: -1.5d
+			dependencies: ["43CE02DEE8FD1EEA"]
+			id: "14B4EB67754D150C"
+			tasks: [{
+				id: "6BA5A94B8D0C4091"
+				type: "item"
+				item: "malum:runewood_totem_base"
+			}]
+		}
+		{
+			title: "Twisted Rites"
+			x: -6.5d
+			y: -2.5d
+			dependencies: ["14B4EB67754D150C"]
+			id: "021FA3386C6F741C"
+			tasks: [{
+				id: "73CE7735D884BB3B"
+				type: "item"
+				item: "malum:soulwood_totem_base"
+			}]
+		}
+		{
+			title: "Blight"
+			x: -7.5d
+			y: -1.0d
+			dependencies: ["021FA3386C6F741C"]
+			id: "72ED3DA2439F5C61"
+			tasks: [{
+				id: "7D138716F849A0C3"
+				type: "item"
+				item: "malum:blighted_gunk"
+				count: 8L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			dependencies: ["081C8AA416DE7287"]
+			id: "4BC4E7EBE9715A0C"
+			tasks: [{
+				id: "1D6BC4DA60652077"
+				type: "item"
+				item: "malum:runewood_obelisk"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

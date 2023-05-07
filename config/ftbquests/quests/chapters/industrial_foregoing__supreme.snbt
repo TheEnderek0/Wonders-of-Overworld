@@ -1,0 +1,74 @@
+{
+	id: "3032739DEA6D9E16"
+	group: "1A933187E17A6D42"
+	order_index: 2
+	filename: "industrial_foregoing__supreme"
+	title: "Industrial Foregoing - Supreme"
+	icon: "industrialforegoing:machine_frame_supreme"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "industrialforegoing:machine_frame_supreme"
+			x: -3.5d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["04569BA049921D6F"]
+			id: "5EEB1997213921A2"
+			tasks: [{
+				id: "246637F07146A2A9"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["5EEB1997213921A2"]
+			id: "143AD6A87A257D24"
+			tasks: [{
+				id: "6AAE98169EC9D3A1"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["143AD6A87A257D24"]
+			id: "10E0F204096FBCCF"
+			tasks: [{
+				id: "2E6FAF9FA62F6F2E"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["143AD6A87A257D24"]
+			id: "7F1DF35F1629B3C7"
+			tasks: [{
+				id: "123123F46D01798E"
+				type: "item"
+				item: "industrialforegoing:mycelial_reactor"
+			}]
+		}
+		{
+			title: "Draconic Evolution 1/2"
+			icon: "draconicevolution:reactor_stabilizer"
+			x: 1.5d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["143AD6A87A257D24"]
+			size: 1.5d
+			id: "747AC57C3DAEA696"
+			tasks: [{
+				id: "0B1630006489240A"
+				type: "checkmark"
+				title: "Acknowledge"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

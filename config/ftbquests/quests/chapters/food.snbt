@@ -1,0 +1,268 @@
+{
+	id: "5B80FA808986AB01"
+	group: "5F61B00653CA7C57"
+	order_index: 2
+	filename: "food"
+	title: "Food"
+	icon: "farmersdelight:tomato"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Start"
+			icon: "farmersdelight:cabbage"
+			x: -6.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["2F98C5743D038842"]
+			id: "227E706384FC441D"
+			tasks: [{
+				id: "657517E6E7F8FE5A"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			title: "Collecting water"
+			icon: "toughasnails:empty_canteen"
+			x: -4.0d
+			y: -2.0d
+			description: [
+				"In order to survive you will need to stay hydrated."
+				"First of all, you will need to craft some sort of a container for the water."
+				"I recommend crafting a canteen, for easier storage. But standard bottles will do too."
+			]
+			dependencies: ["227E706384FC441D"]
+			dependency_requirement: "one_completed"
+			id: "143F736F94411494"
+			tasks: [
+				{
+					id: "399EFCDA10628520"
+					type: "item"
+					item: "toughasnails:empty_canteen"
+					match_nbt: false
+				}
+				{
+					id: "1589A36A4FC78C04"
+					type: "item"
+					item: "minecraft:glass_bottle"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: ["Rain collector will collect purified water directly from the rain."]
+			dependencies: ["62DE6F6C8D315F67"]
+			id: "1F611CC5F8BD4ECC"
+			tasks: [{
+				id: "7E035DA5D31FA63D"
+				type: "item"
+				item: "toughasnails:rain_collector"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			description: [
+				"Water purifier does as the name suggests - purifies water."
+				"Place a water bottle or a canteen at the top slot, then power it with charcoal to start the purification process."
+			]
+			dependencies: ["62DE6F6C8D315F67"]
+			id: "5BFE2F36698A78D7"
+			tasks: [{
+				id: "45994782920B3781"
+				type: "item"
+				item: "toughasnails:water_purifier"
+			}]
+		}
+		{
+			title: "Purified Water - Explanation"
+			icon: "toughasnails:purified_water_bottle"
+			x: -1.0d
+			y: -2.0d
+			description: [
+				"Standard water when drinked can give you poison effect for a short while."
+				"So it's best if you craft purified water. You can view the recipes for it in JEI or see the quests after this one."
+			]
+			dependencies: ["143F736F94411494"]
+			id: "62DE6F6C8D315F67"
+			tasks: [{
+				id: "12D499D65EE007BB"
+				type: "checkmark"
+				title: "Acknowledge"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			description: ["You can buy different stuff here!"]
+			dependencies: ["227E706384FC441D"]
+			id: "6EFD941B26314F4A"
+			tasks: [{
+				id: "6B002042556A000A"
+				type: "item"
+				item: "farmingforblockheads:market"
+			}]
+		}
+		{
+			title: "Automation"
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["6EFD941B26314F4A"]
+			id: "070CFCFB9F9F3E1A"
+			tasks: [
+				{
+					id: "7D3BE213B0A70D80"
+					type: "item"
+					item: "farmingforblockheads:feeding_trough"
+				}
+				{
+					id: "5ED5E9EA04D1970A"
+					type: "item"
+					item: "farmingforblockheads:chicken_nest"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["5997357E1E5229EC"]
+			id: "44BF57E37A377853"
+			tasks: [
+				{
+					id: "68E33A9DF3679AE2"
+					type: "item"
+					item: "refinedcooking:kitchen_station"
+				}
+				{
+					id: "7A613FD1460C79E5"
+					type: "item"
+					item: "refinedcooking:kitchen_access_point"
+				}
+				{
+					id: "7B429CBF6510C58F"
+					type: "item"
+					item: "refinedcooking:kitchen_network_card"
+				}
+			]
+		}
+		{
+			title: "Basic Kitchen"
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["227E706384FC441D"]
+			id: "5997357E1E5229EC"
+			tasks: [
+				{
+					id: "736AADDA8485FC74"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "50A20873968E25D4"
+					type: "item"
+					item: "cookingforblockheads:sink"
+				}
+				{
+					id: "08F15EDDD5566232"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+				{
+					id: "60EFADEC941B6878"
+					type: "item"
+					item: "cookingforblockheads:counter"
+				}
+				{
+					id: "22036CA1B0D43A9C"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+			]
+		}
+		{
+			title: "Appliances"
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["5997357E1E5229EC"]
+			id: "0D52A11AF32CF459"
+			tasks: [
+				{
+					id: "575DC99039B7F268"
+					type: "item"
+					item: "cookingforblockheads:tool_rack"
+				}
+				{
+					id: "7995FA08130B25DE"
+					type: "item"
+					item: "cookingforblockheads:toaster"
+				}
+				{
+					id: "06D65C6F7A824473"
+					type: "item"
+					item: "cookingforblockheads:cow_jar"
+				}
+				{
+					id: "111F06BDFA42C9DF"
+					type: "item"
+					item: "cookingforblockheads:fruit_basket"
+				}
+			]
+		}
+		{
+			title: "Upgrades"
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["5997357E1E5229EC"]
+			id: "66B8B4AAF137AF17"
+			tasks: [
+				{
+					id: "653658528D3D4A53"
+					type: "item"
+					item: "cookingforblockheads:ice_unit"
+				}
+				{
+					id: "2C98B8BEE2361171"
+					type: "item"
+					item: "cookingforblockheads:preservation_chamber"
+				}
+				{
+					id: "7E6565DA60510D12"
+					type: "item"
+					item: "cookingforblockheads:heating_unit"
+				}
+			]
+		}
+		{
+			title: "Larger Kitchen"
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["5997357E1E5229EC"]
+			id: "535DA3B84E38D2CC"
+			tasks: [
+				{
+					id: "077CEE26CEFB7595"
+					type: "item"
+					item: "cookingforblockheads:white_kitchen_floor"
+				}
+				{
+					id: "1563FB38ECF3E0BA"
+					type: "item"
+					item: "cookingforblockheads:hanging_corner"
+				}
+				{
+					id: "4CCB04ADFCFDA5F7"
+					type: "item"
+					item: "cookingforblockheads:corner"
+				}
+				{
+					id: "1944998F6C6BBF2A"
+					type: "item"
+					item: "cookingforblockheads:cabinet"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

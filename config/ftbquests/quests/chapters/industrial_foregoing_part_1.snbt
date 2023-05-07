@@ -1,0 +1,307 @@
+{
+	id: "77BF31120C376F33"
+	group: "426B3CA4D81D54E1"
+	order_index: 1
+	filename: "industrial_foregoing_part_1"
+	title: "Industrial Foregoing - Pity"
+	icon: "industrialforegoing:machine_frame_pity"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "industrialforegoing:machine_frame_pity"
+			x: -2.5d
+			y: 0.5d
+			shape: "gear"
+			description: ["First chapter of Industrial Foregoing. As always, everything is in the book."]
+			dependencies: ["324F1F1635E5CAFD"]
+			id: "39269794127ED4FF"
+			tasks: [{
+				id: "1100A6936901D7E5"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["39269794127ED4FF"]
+			id: "74A81C3AC0D7E13E"
+			tasks: [{
+				id: "1A8682CE3C1D9A39"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "Translocators V2"
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "455F676D6F15B417"
+			tasks: [
+				{
+					id: "3561537624A316C7"
+					type: "item"
+					item: "industrialforegoing:item_transporter_type"
+				}
+				{
+					id: "643B82EB3439D7F0"
+					type: "item"
+					item: "industrialforegoing:fluid_transporter_type"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["39269794127ED4FF"]
+			id: "73D710559B5E843F"
+			tasks: [{
+				id: "17F5C7CE3D6E3104"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "5A0BB0E0E8F282F4"
+			tasks: [
+				{
+					id: "7038E6743061DA43"
+					type: "item"
+					item: "industrialforegoing:block_breaker"
+				}
+				{
+					id: "5178E149AA6EBA16"
+					type: "item"
+					item: "industrialforegoing:block_placer"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "02FC9F46874F6938"
+			tasks: [{
+				id: "3C7466E4E81459CB"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "1C6A8FD02FE16C5B"
+			tasks: [{
+				id: "09D59A0D2E932B58"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "2048F5880FC6AAC3"
+			tasks: [
+				{
+					id: "2B665910FC05F29E"
+					type: "item"
+					item: "industrialforegoing:fluid_placer"
+				}
+				{
+					id: "1800DEB9A52CF3E8"
+					type: "item"
+					item: "industrialforegoing:fluid_collector"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "48B0DD191C6802F3"
+			tasks: [{
+				id: "5EAA211C81E6E9FD"
+				type: "item"
+				item: "industrialforegoing:dye_mixer"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "5A220C972F89D7C7"
+			tasks: [{
+				id: "417FA996D44E74FA"
+				type: "item"
+				item: "industrialforegoing:resourceful_furnace"
+			}]
+		}
+		{
+			title: "Animal Farm"
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "062FD8AFED59C9D9"
+			tasks: [
+				{
+					id: "78B12D9EDEE02D8A"
+					type: "item"
+					item: "industrialforegoing:animal_rancher"
+				}
+				{
+					id: "0098C0DED597A980"
+					type: "item"
+					item: "industrialforegoing:animal_feeder"
+				}
+				{
+					id: "644D3D780407FB6A"
+					type: "item"
+					item: "industrialforegoing:sewer"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "13A9203B269312EA"
+			tasks: [{
+				id: "59706998CE4DFF8C"
+				type: "item"
+				item: "industrialforegoing:animal_baby_separator"
+			}]
+		}
+		{
+			title: "Plant Farm"
+			x: 7.0d
+			y: 3.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "417BFFDA355161AC"
+			tasks: [
+				{
+					id: "120048702B871112"
+					type: "item"
+					item: "industrialforegoing:plant_sower"
+				}
+				{
+					id: "5FB5EC8358AED91A"
+					type: "item"
+					item: "industrialforegoing:plant_gatherer"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "1A1FA621CF8DE9D6"
+			tasks: [{
+				id: "51C1D02C0C31EF00"
+				type: "item"
+				item: "industrialforegoing:spores_recreator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "4490D14EB6B72BEE"
+			tasks: [{
+				id: "136AC5832B248562"
+				type: "item"
+				item: "industrialforegoing:water_condensator"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["13A9203B269312EA"]
+			id: "07E7FD3405C9EBA9"
+			tasks: [{
+				id: "0AA536E2E11942C6"
+				type: "item"
+				item: "industrialforegoing:sludge_refiner"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			dependencies: ["13A9203B269312EA"]
+			id: "4ECA866CEBCEAE44"
+			tasks: [{
+				id: "63F4910C21647AE4"
+				type: "item"
+				item: "industrialforegoing:sewage_composter"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -0.5d
+			dependencies: ["1C6A8FD02FE16C5B"]
+			id: "07DDA26D5E9FF408"
+			tasks: [{
+				id: "6AD7C8954D5F20C0"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
+			}]
+		}
+		{
+			title: "Industrial Foregoing - Simple 1/2"
+			icon: "industrialforegoing:machine_frame_simple"
+			x: 13.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"07DDA26D5E9FF408"
+				"02FC9F46874F6938"
+			]
+			size: 1.5d
+			id: "5F81570C885DCA43"
+			tasks: [{
+				id: "357066BB9C571F44"
+				type: "checkmark"
+				title: "Acknowledge"
+			}]
+		}
+		{
+			title: "Flux/Fluid Gates"
+			x: 9.5d
+			y: 1.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "3512FF638AE12077"
+			tasks: [
+				{
+					id: "445F18B879812DC8"
+					type: "item"
+					item: "draconicevolution:flux_gate"
+				}
+				{
+					id: "5755A7359DAB8F7C"
+					type: "item"
+					item: "draconicevolution:fluid_gate"
+				}
+				{
+					id: "1FB24E0D8475E0DD"
+					type: "item"
+					item: "draconicevolution:potentiometer"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

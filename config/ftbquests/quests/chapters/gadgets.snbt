@@ -1,0 +1,311 @@
+{
+	id: "4A81D7081565A599"
+	group: "426B3CA4D81D54E1"
+	order_index: 4
+	filename: "gadgets"
+	title: "Gadgets"
+	icon: {
+		id: "buildinggadgets:gadget_destruction"
+		Count: 1b
+		tag: {
+			overlay: 1b
+			fuzzy: 1b
+			energy: 1000000.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "buildinggadgets:gadget_destruction"
+				Count: 1b
+				tag: {
+					overlay: 1b
+					fuzzy: 1b
+					energy: 1000000.0d
+				}
+			}
+			x: -5.0d
+			y: 1.5d
+			shape: "gear"
+			dependencies: ["74DDBADBB93CD4B6"]
+			id: "3025101A84FD3BA3"
+			tasks: [{
+				id: "29E07F36C3B8AB32"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: [
+				"67843FA960BEAB13"
+				"62B7602094ED41C6"
+			]
+			id: "42B19DE1856BEBF5"
+			tasks: [{
+				id: "01D2BF2D009FCE27"
+				type: "item"
+				item: {
+					id: "mininggadgets:mininggadget_simple"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: [
+				"42B19DE1856BEBF5"
+				"70DA11A3FBE5A5E1"
+			]
+			id: "0E688C422B0A1E53"
+			tasks: [{
+				id: "1A0E69D817681948"
+				type: "item"
+				item: {
+					id: "mininggadgets:mininggadget_fancy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: [
+				"0E688C422B0A1E53"
+				"1807EBFC0C4D2F00"
+				"0D32C69BB3874E92"
+				"54D4F401612CF5E0"
+			]
+			id: "745F250D28C06E26"
+			tasks: [{
+				id: "28F967FEA0646198"
+				type: "item"
+				item: {
+					id: "mininggadgets:mininggadget"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["07DDA26D5E9FF408"]
+			id: "67843FA960BEAB13"
+			tasks: [{
+				id: "566C93D8D29A0D74"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["4D4529EA8221D720"]
+			id: "70DA11A3FBE5A5E1"
+			tasks: [{
+				id: "46FA851A7E5127FB"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["5851C98B374B5182"]
+			id: "1807EBFC0C4D2F00"
+			tasks: [{
+				id: "303FE09FAC428B32"
+				type: "item"
+				item: "pneumaticcraft:drill_bit_netherite"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["7703DD2E1CD99076"]
+			id: "0D32C69BB3874E92"
+			tasks: [{
+				id: "090C3B6ECA5C2702"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["3097C105E71DF07A"]
+			id: "54D4F401612CF5E0"
+			tasks: [{
+				id: "200F07C945265DA2"
+				type: "item"
+				item: "kubejs:tungsten_ingot"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["3025101A84FD3BA3"]
+			id: "62B7602094ED41C6"
+			tasks: [{
+				id: "396E902866F34790"
+				type: "checkmark"
+				title: "Mining Gadgets"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["3025101A84FD3BA3"]
+			id: "4F994F4A1ABF5EB6"
+			tasks: [{
+				id: "5DD6B8635239ABAE"
+				type: "checkmark"
+				title: "Building Gadgets"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["62B7602094ED41C6"]
+			id: "2803819399B03F67"
+			tasks: [{
+				id: "0A0A9C5C25E6BB55"
+				type: "item"
+				item: "mininggadgets:modificationtable"
+			}]
+		}
+		{
+			icon: "mininggadgets:upgrade_three_by_three"
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["2803819399B03F67"]
+			id: "5831DD8D05065E87"
+			tasks: [{
+				id: "4C5586FA96596FCB"
+				type: "checkmark"
+				title: "Upgrades"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["4F994F4A1ABF5EB6"]
+			id: "2CBAAAB4B7FA658D"
+			tasks: [{
+				id: "5F5E9F43B01D5A66"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			dependencies: ["4F994F4A1ABF5EB6"]
+			id: "7E3DCEBD1E7BC298"
+			tasks: [{
+				id: "5199B736157C6B63"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["4F994F4A1ABF5EB6"]
+			id: "4B9C5AA8F7816746"
+			tasks: [{
+				id: "7C0D9C14572632E6"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							437548795
+							2055293591
+							-1871126374
+							519754536
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			dependencies: ["4F994F4A1ABF5EB6"]
+			id: "1DEE08FD7C10EBDF"
+			tasks: [{
+				id: "4C022E724D5AC233"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			dependencies: ["4F994F4A1ABF5EB6"]
+			id: "391FC25F11749DD0"
+			tasks: [{
+				id: "7C56C5B463BA47BD"
+				type: "item"
+				item: "buildinggadgets:template_manager"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["3025101A84FD3BA3"]
+			id: "548230EF2BBACFB1"
+			tasks: [{
+				id: "097F65473296B0D4"
+				type: "item"
+				item: {
+					id: "charginggadgets:charging_station"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

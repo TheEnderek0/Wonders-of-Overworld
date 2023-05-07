@@ -1,0 +1,11 @@
+{
+	chapter_groups: [
+		{ id: "5F61B00653CA7C57", title: "Stone Age" }
+		{ id: "57BD07362FE64FCF", title: "Basic Automation" }
+		{ id: "1CE91A4C7E9B0431", title: "Under Pressure" }
+		{ id: "426B3CA4D81D54E1", title: "Electrical Revolution" }
+		{ id: "1A933187E17A6D42", title: "Serious Tinkering" }
+		{ id: "03C48C217EE49A06", title: "Not Yet The End" }
+		{ id: "05AF8D3D4322BDCB", title: "Art Of Mysticism" }
+	]
+}

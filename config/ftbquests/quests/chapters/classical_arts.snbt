@@ -1,0 +1,12 @@
+{
+	id: "71FF044E14C04584"
+	group: "05AF8D3D4322BDCB"
+	order_index: 2
+	filename: "classical_arts"
+	title: "Classical Arts"
+	icon: "hexerei:mixing_cauldron"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

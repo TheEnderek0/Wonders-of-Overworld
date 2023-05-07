@@ -1,0 +1,553 @@
+{
+	id: "3BC7193894996033"
+	group: "05AF8D3D4322BDCB"
+	order_index: 1
+	filename: "full_devotion"
+	title: "Full Devotion"
+	icon: "bloodmagic:altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "bloodmagic:altar"
+			x: 0.5d
+			y: 3.5d
+			shape: "gear"
+			id: "3C58EC4396FFAECF"
+			tasks: [{
+				id: "1A56F8408907DB57"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["7671978CE27A03F7"]
+			id: "679302D81AC00474"
+			tasks: [{
+				id: "58CE5D4CCF0C0584"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["679302D81AC00474"]
+			id: "6327CEB5F759C9D7"
+			tasks: [{
+				id: "2F77F2877DCAA424"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.5d
+			dependencies: ["6327CEB5F759C9D7"]
+			id: "43233CB3823073A1"
+			tasks: [{
+				id: "6BEE2F862861B1A5"
+				type: "item"
+				item: "bloodmagic:basemonstersoul"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			dependencies: ["3C58EC4396FFAECF"]
+			id: "7671978CE27A03F7"
+			tasks: [{
+				id: "3D861FE3D048DED3"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: {
+						"BM:CurrentIsMaxIncense": 0b
+						sacrifice: 0b
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["679302D81AC00474"]
+			id: "1ABC8195DCBAB077"
+			tasks: [{
+				id: "0CFD6400BCA799F7"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.5d
+			dependencies: ["43233CB3823073A1"]
+			id: "316F1FC2CF161743"
+			tasks: [
+				{
+					id: "5E234DC944236092"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "530861F2643E539D"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulgempetty"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["679302D81AC00474"]
+			id: "2E16061BB53241AE"
+			tasks: [{
+				id: "6EF436DC36650412"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+		}
+		{
+			title: "Various Runes"
+			icon: "bloodmagic:altarcapacityrune"
+			x: 0.5d
+			y: -3.5d
+			description: ["Blood Magic has various types of runes, it's best if you check them out by yourself and use them to your needs."]
+			dependencies: ["6351B539089C42E6"]
+			id: "0881836F097CA84F"
+			tasks: [{
+				id: "73966F72AF7B7AA1"
+				type: "checkmark"
+				title: "Okay"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["2E16061BB53241AE"]
+			id: "45BC1960BCC58B18"
+			tasks: [{
+				id: "178417A9B718C805"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			shape: "square"
+			description: ["Required for all sigil quests"]
+			dependencies: [
+				"45BC1960BCC58B18"
+				"1ABC8195DCBAB077"
+			]
+			id: "4D01771EDCAD8E78"
+			tasks: [{
+				id: "0B5E15A79ED5EE2F"
+				type: "item"
+				item: {
+					id: "bloodmagic:arcaneashes"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: -5.0d
+			dependencies: ["4D01771EDCAD8E78"]
+			id: "4E200FFAE424B8A2"
+			tasks: [{
+				id: "32597AB94888947B"
+				type: "item"
+				item: "bloodmagic:divinationsigil"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -8.5d
+			dependencies: ["6351B539089C42E6"]
+			id: "0312E1DF53E457F2"
+			tasks: [{
+				id: "1A6B052EC878A6B4"
+				type: "item"
+				title: "Blood Altar Tier II"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "^bloodmagic:.*rune.*$"
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			dependencies: ["2E16061BB53241AE"]
+			id: "6351B539089C42E6"
+			tasks: [{
+				id: "06A6931FE6C65582"
+				type: "item"
+				item: "bloodmagic:blankrune"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -9.5d
+			dependencies: ["0312E1DF53E457F2"]
+			id: "0B1986174B83FDF2"
+			tasks: [{
+				id: "78F484465A2A32C4"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["3C58EC4396FFAECF"]
+			id: "3FA707E7BE30659A"
+			tasks: [{
+				id: "39EE2CCF7358AC81"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			dependencies: ["1ABC8195DCBAB077"]
+			id: "509702EC27E8E8E1"
+			tasks: [{
+				id: "6743873A206DA070"
+				type: "item"
+				item: "bloodmagic:incensealtar"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.5d
+			dependencies: ["4D01771EDCAD8E78"]
+			id: "0FC83D0BC173FFA2"
+			tasks: [{
+				id: "2E532006C2499E0C"
+				type: "item"
+				item: "bloodmagic:watersigil"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			dependencies: ["4D01771EDCAD8E78"]
+			id: "00CF66D591F739F5"
+			tasks: [{
+				id: "00FBE4329A56324C"
+				type: "item"
+				item: "bloodmagic:lavasigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.5d
+			dependencies: ["1453B3537AD8D275"]
+			id: "5F51DACFECF1C50D"
+			tasks: [{
+				id: "42B668165EC8C928"
+				type: "item"
+				item: "bloodmagic:seersigil"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -14.0d
+			shape: "square"
+			dependencies: ["756F9F8FC2F13803"]
+			id: "79B4D7110B0D11DC"
+			tasks: [{
+				id: "5BB89AC36399213D"
+				type: "item"
+				item: {
+					id: "bloodmagic:sigilofholding"
+					Count: 1b
+					tag: {
+						currentSigil: 5
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.5d
+			dependencies: ["1453B3537AD8D275"]
+			id: "52015BC68C73D853"
+			tasks: [{
+				id: "799637541603F3CE"
+				type: "item"
+				item: {
+					id: "bloodmagic:growthsigil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -6.5d
+			shape: "square"
+			dependencies: ["1453B3537AD8D275"]
+			id: "72BCC6649A9964CA"
+			tasks: [{
+				id: "41AE84669DA66CF0"
+				type: "item"
+				item: "bloodmagic:airsigil"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -7.5d
+			dependencies: ["1453B3537AD8D275"]
+			id: "270140E8C26ED59C"
+			tasks: [{
+				id: "0924B57D9149A769"
+				type: "item"
+				item: {
+					id: "bloodmagic:miningsigil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -8.5d
+			dependencies: ["1453B3537AD8D275"]
+			id: "6CEBFDD97781A55C"
+			tasks: [{
+				id: "17026D057413A061"
+				type: "item"
+				item: "bloodmagic:voidsigil"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -13.0d
+			dependencies: ["0312E1DF53E457F2"]
+			id: "34C6245E30531DBA"
+			tasks: [
+				{
+					id: "0B71DA91BF273259"
+					type: "item"
+					title: "Blood Altar Tier III"
+					item: {
+						id: "itemfilters:id_regex"
+						Count: 1b
+						tag: {
+							value: "^bloodmagic:.*rune.*$"
+						}
+					}
+					count: 28L
+				}
+				{
+					id: "72DCC6C5798320B4"
+					type: "item"
+					title: "Glowstone or Sea Lantern"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:glowstone"
+									Count: 1b
+								}
+								{
+									id: "minecraft:sea_lantern"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -13.0d
+			dependencies: ["34C6245E30531DBA"]
+			id: "1B84F96E71544B5D"
+			tasks: [{
+				id: "54A2766DF446E456"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.5d
+			dependencies: ["0312E1DF53E457F2"]
+			id: "1453B3537AD8D275"
+			tasks: [{
+				id: "5BE146E78AF09D36"
+				type: "item"
+				item: "bloodmagic:reinforcedslate"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -9.5d
+			dependencies: ["1453B3537AD8D275"]
+			id: "2B6D148929BA0FA0"
+			tasks: [{
+				id: "52426324E54EA8C4"
+				type: "item"
+				item: "bloodmagic:ritualstone"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -11.0d
+			dependencies: [
+				"1B84F96E71544B5D"
+				"2B6D148929BA0FA0"
+				"682C64B671E8D24C"
+			]
+			id: "2D62B5C970A4AF84"
+			tasks: [{
+				id: "289EDB5AF7E9BBEE"
+				type: "item"
+				item: "bloodmagic:masterritualstone"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -11.0d
+			dependencies: ["2D62B5C970A4AF84"]
+			id: "72323E791530271F"
+			tasks: [{
+				id: "61B4CB6A36759DEE"
+				type: "item"
+				item: {
+					id: "bloodmagic:ritualdiviner"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 13.5d
+			y: -11.0d
+			dependencies: ["72323E791530271F"]
+			id: "3F83DA423C555A3D"
+			tasks: [{
+				id: "426EB423AB4FEE8F"
+				type: "item"
+				item: {
+					id: "bloodmagic:ritualdivinerdusk"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Well Of Suffering"
+			icon: "bloodmagic:sacrificerune2"
+			x: 13.5d
+			y: -9.5d
+			shape: "square"
+			description: ["This ritual will help you to aquire blood, by damaging mobs. The best solution is to place it under your altar and setup a structure that will constantly spawn hostile mobs underneath the ritual."]
+			dependencies: ["3F83DA423C555A3D"]
+			id: "74F9AC2CC1497100"
+			tasks: [{
+				id: "60F97D31C74C7399"
+				type: "checkmark"
+				title: "Okay"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -11.0d
+			dependencies: ["34C6245E30531DBA"]
+			id: "682C64B671E8D24C"
+			tasks: [{
+				id: "1312D09C20D96E63"
+				type: "item"
+				item: "bloodmagic:activationcrystalweak"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -16.0d
+			dependencies: ["34C6245E30531DBA"]
+			id: "756F9F8FC2F13803"
+			tasks: [{
+				id: "2C242D26DAC54406"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -15.0d
+			dependencies: ["756F9F8FC2F13803"]
+			id: "0463AEEAF85B9CEA"
+			tasks: [{
+				id: "6857C4116DCAF545"
+				type: "item"
+				item: "bloodmagic:bloodlightsigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -14.0d
+			dependencies: ["756F9F8FC2F13803"]
+			id: "0C15D116C420E82E"
+			tasks: [{
+				id: "2757B984BE93A949"
+				type: "item"
+				item: {
+					id: "bloodmagic:sigilofmagnetism"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: -16.0d
+			shape: "square"
+			dependencies: ["756F9F8FC2F13803"]
+			id: "1F6594812173E4BC"
+			tasks: [{
+				id: "6CAF50453B2F3F7B"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

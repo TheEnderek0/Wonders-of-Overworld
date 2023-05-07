@@ -1,0 +1,11 @@
+blurExclusions = ["net.minecraft.client.gui.screens.ChatScreen", "com.replaymod.lib.de.johni0702.minecraft.gui.container.AbstractGuiOverlay$UserInputGuiScreen", "ai.arcblroth.projectInception.client.InceptionInterfaceScreen", "net.optifine.gui.GuiChatOF", "io.github.darkkronicle.advancedchatcore.chat.AdvancedChatScreen"]
+#Range: 0 ~ 5000
+fadeTimeMillis = 200
+#Range: 0 ~ 500
+radius = 8
+#Range: 0 ~ 99999999
+gradientStartColor = 75000000
+#Range: 0 ~ 99999999
+gradientEndColor = 75000000
+showScreenTitle = false
+

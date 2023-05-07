@@ -1,0 +1,24 @@
+
+[Compatibility]
+
+	[Compatibility.vampirism]
+		enable_compat_vampirism = true
+		disable_integrations_version_check = false
+
+	[Compatibility.waila]
+		enable_compat_waila = true
+
+	[Compatibility.bloodmagic]
+		enable_compat_bloodmagic = true
+
+	[Compatibility.tconstruct]
+		enable_compat_tconstruct = true
+
+	[Compatibility.betteranimalsplus]
+		enable_compat_betteranimalsplus = true
+
+	[Compatibility.toughasnails]
+		enable_compat_toughasnails = true
+		#Limit thirst for vampires
+		disableThirst = true
+
