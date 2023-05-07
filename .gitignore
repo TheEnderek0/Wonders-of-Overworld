@@ -24,3 +24,6 @@ whitelist.json
 
 local/
 libraries/
+config/bettervillage_1.properties
+config/jei/world/
+journeymap/journeymap.log
