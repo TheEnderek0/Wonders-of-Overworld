@@ -1,0 +1,16 @@
+{
+    "item.pneumaticcraft.capacitor": "Electrolytic Capacitor",
+    "block.pneumaticcraft.compressed_iron_block" : "Block of Dense Steel",
+    "block.pneumaticcraft.creative_compressed_iron_block" : "Creative Dense Steel Block",
+    "gui.tooltip.block.pneumaticcraft.heat_pipe" : "An insulated core of Dense Steel which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Dense Steel Blocks. This block can be camouflaged with the Camouflage Applicator tool.",
+    "gui.tooltip.block.pneumaticcraft.pressure_chamber_valve" : "This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Iron into Dense Steel. Or Coal into Diamonds.",
+    "gui.tooltip.item.pneumaticcraft.drill_bit_diamond" : "Faster than Dense Steel${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)",
+    "item.pneumaticcraft.compressed_iron_boots" : "Dense Steel Boots",
+    "item.pneumaticcraft.compressed_iron_chestplate" : "Dense Steel Chestplate",
+    "item.pneumaticcraft.compressed_iron_helmet" : "Dense Steel Helmet",
+    "item.pneumaticcraft.compressed_iron_gear" : "Dense Steel Gear",
+    "item.pneumaticcraft.compressed_iron_leggings" : "Dense Steel Leggings",
+    "item.pneumaticcraft.drill_bit_compressed_iron" : "Dense Steel Drill Bit",
+    "item.pneumaticcraft.ingot_iron_compressed" : "Dense Steel Ingot",
+    "pneumaticcraft.advancement.pneumatic_armor" : "Dense Steel Man"
+}

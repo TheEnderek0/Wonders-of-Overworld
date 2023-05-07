@@ -1,0 +1,14 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "item": "kubejs:unfin_cap"
+    }
+  ],
+  "pressure": 3.0,
+  "results": [
+    {
+      "item": "pneumaticcraft:capacitor"
+    }
+  ]
+}

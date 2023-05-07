@@ -1,0 +1,336 @@
+To refresh this file, delete it and run /reload command again! Last updated: Apr 24, 2023, 9:19:08 PM
+
+#habitat:pooka_attack_targets
+- minecraft:rabbit
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:wolf
+- minecraft:cat
+- minecraft:fox
+- minecraft:zoglin
+
+#immersiveengineering:shaderbag/blacklist
+- minecraft:wither
+- minecraft:iron_golem
+
+#tconstruct:rare_mobs
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:elder_guardian
+- minecraft:evoker
+- minecraft:player
+
+#botania:cocoon/common
+- minecraft:pig
+- minecraft:cow
+- minecraft:chicken
+- minecraft:rabbit
+- minecraft:sheep
+
+#forge:endermen
+- minecraft:enderman
+- mekanismadditions:baby_enderman
+
+#botania:cocoon/rare_aquatic
+- minecraft:dolphin
+- minecraft:glow_squid
+- minecraft:axolotl
+
+#tconstruct:melting/show_in_default
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:villager
+- minecraft:player
+
+#forge:reflecting/preserve_owner
+- minecraft:fishing_bobber
+
+#mekanism:hurtable_vehicles
+- minecraft:boat
+- minecraft:minecart
+- minecraft:chest_minecart
+- minecraft:command_block_minecart
+- minecraft:furnace_minecart
+- minecraft:hopper_minecart
+- minecraft:spawner_minecart
+- minecraft:tnt_minecart
+- biomesoplenty:boat?
+- byg:boat?
+
+#botania:cocoon/rare
+- minecraft:horse
+- minecraft:donkey
+- minecraft:wolf
+- minecraft:ocelot
+- minecraft:cat
+- minecraft:parrot
+- minecraft:llama
+- minecraft:fox
+- minecraft:panda
+- minecraft:turtle
+- minecraft:goat
+- quark:frog?
+
+#tconstruct:piggybackpack_blacklist
+
+#forge:small_armor
+- #forge:slimes
+
+#industrialforegoing:mob_duplicator_blacklist
+
+#botania:shaded_mesa_blacklist
+- minecraft:ender_dragon
+- minecraft:wither
+- minecraft:item_frame
+- minecraft:glow_item_frame
+- minecraft:end_crystal
+- minecraft:painting
+- minecraft:command_block_minecart
+- minecraft:marker
+- minecraft:area_effect_cloud
+- minecraft:evoker_fangs
+- minecraft:leash_knot
+- botania:corporea_spark
+- botania:doppleganger
+- botania:flame_ring
+- botania:magic_landmine
+- botania:magic_missile
+- botania:mana_burst
+- botania:pink_wither
+- botania:spark
+- botania:player_mover
+
+#minecraft:powder_snow_walkable_mobs
+- minecraft:rabbit
+- minecraft:endermite
+- minecraft:silverfish
+- minecraft:fox
+- habitat:passerine
+- thermal:blizz
+- mekanism:robit
+
+#industrialforegoing:mob_imprisonment_tool_blacklist
+
+#farmersdelight:dog_food_users
+- minecraft:wolf
+
+#botania:cocoon/common_aquatic
+- minecraft:cod
+- minecraft:salmon
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:squid
+- quark:crab?
+
+#per-viam-invenire:replace_vanilla_navigator
+- mekanismadditions:baby_creeper
+- mekanismadditions:baby_enderman
+- mekanismadditions:baby_skeleton
+- mekanismadditions:baby_stray
+- mekanismadditions:baby_wither_skeleton
+- mekanism:robit
+
+#industrialforegoing:mob_crusher_blacklist
+- minecraft:ender_dragon
+
+#minecraft:impact_projectiles
+- #minecraft:arrows
+- minecraft:snowball
+- minecraft:fireball
+- minecraft:small_fireball
+- minecraft:egg
+- minecraft:trident
+- minecraft:dragon_fireball
+- minecraft:wither_skull
+- habitat:kabloom_fruit
+- thermal:basalz_projectile
+- thermal:blitz_projectile
+- thermal:blizz_projectile
+- mekanism:flame
+
+#minecraft:beehive_inhabitors
+- minecraft:bee
+
+#forge:creepers
+- minecraft:creeper
+- mekanismadditions:baby_creeper
+- minecraft:creeper
+- creeperoverhaul:jungle_creeper
+- creeperoverhaul:bamboo_creeper
+- creeperoverhaul:desert_creeper
+- creeperoverhaul:badlands_creeper
+- creeperoverhaul:hills_creeper
+- creeperoverhaul:savannah_creeper
+- creeperoverhaul:mushroom_creeper
+- creeperoverhaul:swamp_creeper
+- creeperoverhaul:dripstone_creeper
+- creeperoverhaul:cave_creeper
+- creeperoverhaul:dark_oak_creeper
+- creeperoverhaul:spruce_creeper
+- creeperoverhaul:beach_creeper
+- creeperoverhaul:snowy_creeper
+
+#minecraft:skeletons
+- minecraft:skeleton
+- minecraft:stray
+- minecraft:wither_skeleton
+- mekanismadditions:baby_skeleton
+- mekanismadditions:baby_stray
+- mekanismadditions:baby_wither_skeleton
+
+#forbidden_arcanus:quantum_catcher_blacklisted
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:elder_guardian
+
+#minecraft:arrows
+- minecraft:arrow
+- minecraft:spectral_arrow
+
+#tconstruct:bacon_producer
+- minecraft:pig
+- minecraft:piglin
+- minecraft:hoglin
+
+#vampirism:hunter
+- vampirism:hunter
+- vampirism:hunter_imob
+- vampirism:advanced_hunter
+- vampirism:advanced_hunter_imob
+- vampirism:hunter_trainer
+- vampirism:hunter_trainer
+- vampirism:hunter_trainer_dummy
+- vampirism:task_master_hunter
+
+#ftbchunks:entity_interact_whitelist
+- corpse:corpse?
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned
+- minecraft:guardian
+- minecraft:elder_guardian
+
+#vampirism:vampire
+- vampirism:vampire
+- vampirism:vampire_imob
+- vampirism:advanced_vampire
+- vampirism:advanced_vampire_imob
+- vampirism:vampire_baron
+- vampirism:task_master_vampire
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray
+- minecraft:polar_bear
+- minecraft:snow_golem
+- minecraft:wither
+- mekanismadditions:baby_stray
+- betteranimalsplus:feral_wolf
+- betteranimalsplus:walrus
+- betteranimalsplus:whale
+- betteranimalsplus:reindeer
+- betteranimalsplus:boar
+- betteranimalsplus:shark
+- betteranimalsplus:moose
+- betteranimalsplus:lammergeier
+- thermal:blizz
+- mekanism:robit
+
+#vampirism:advanced_vampire
+- vampirism:advanced_vampire
+- vampirism:advanced_vampire_imob
+
+#habitat:pacified_pooka_scared_by
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:wolf
+- minecraft:cat
+- minecraft:fox
+- minecraft:zoglin
+
+#c:bosses
+- botania:doppleganger
+
+#farmersdelight:horse_feed_users
+- minecraft:horse
+- minecraft:skeleton_horse
+- minecraft:zombie_horse
+- minecraft:donkey
+- minecraft:mule
+- minecraft:llama
+
+#forbidden_arcanus:black_hole_affected
+- minecraft:item
+- minecraft:experience_orb
+- minecraft:arrow
+- minecraft:spectral_arrow
+- forbidden_arcanus:boom_arrow
+- forbidden_arcanus:draco_arcanus_arrow
+
+#minecraft:raiders
+- minecraft:evoker
+- minecraft:pillager
+- minecraft:ravager
+- minecraft:vindicator
+- minecraft:illusioner
+- minecraft:witch
+
+#forge:villagers
+- minecraft:villager
+- minecraft:wandering_trader
+- minecraft:zombie_villager
+
+#pneumaticcraft:vacuum_trap_blacklisted
+
+#tconstruct:melting/hide_in_default
+- minecraft:giant
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:salmon
+- minecraft:cod
+- minecraft:squid
+- minecraft:glow_squid
+
+#forge:illagers
+- minecraft:evoker
+- minecraft:illusioner
+- minecraft:pillager
+- minecraft:vindicator
+- minecraft:witch
+
+#forge:slimes
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
+
+#tconstruct:killagers
+- #forge:villagers
+- #forge:illagers
+- minecraft:iron_golem
+- minecraft:ravager
+
+#forge:reflecting/blacklist
+
+#ftbquests:no_loot_crates
+
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider
+- minecraft:blaze
+- minecraft:magma_cube
+
+#pneumaticcraft:omnihopper_blacklisted
+- minecraft:villager
+
+#vampirism:zombies
+- minecraft:zombie
+- minecraft:husk
+- minecraft:drowned
+- minecraft:zombie_villager
+- minecraft:zombie_horse
+
+#vampirism:advanced_hunter
+- vampirism:advanced_hunter
+- vampirism:advanced_hunter_imob
