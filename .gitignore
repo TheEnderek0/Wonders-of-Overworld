@@ -19,3 +19,5 @@ usercache.json
 usernamecache.json 
 WailaErrorOutput.txt 
 whitelist.json
+.curseclient
+.cl*
