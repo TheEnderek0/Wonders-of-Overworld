@@ -5,7 +5,7 @@ mods/
 modernfix/
 essential/
 downloads/
-journeymap/
+journeymap/data/
 logs/
 resourcepacks/
 saves/
@@ -38,3 +38,10 @@ config/jecalculation/record.json
 
 last_world.fmdata
 config/oculus.properties
+journeymap/config/5.9/journeymap.core.config
+journeymap/config/5.9/journeymap.fullmap.config
+journeymap/config/5.9/journeymap.minimap.config
+journeymap/config/5.9/journeymap.minimap2.config
+journeymap/config/5.9/journeymap.topo.config
+journeymap/config/5.9/journeymap.waypoint.config
+journeymap/config/5.9/journeymap.webmap.config
