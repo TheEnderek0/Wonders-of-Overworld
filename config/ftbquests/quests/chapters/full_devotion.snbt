@@ -953,14 +953,15 @@
 			x: 18.5d
 		}
 		{
-			x: 13.0d
-			y: 4.0d
-			id: "471B243AA7174BFC"
 			tasks: [{
 				id: "073FFD0B0E190C47"
 				type: "item"
 				item: "bloodmagic:demoncrucible"
 			}]
+			dependencies: ["7D8EB1C185B9BB83"]
+			id: "471B243AA7174BFC"
+			y: 4.0d
+			x: 14.5d
 		}
 		{
 			tasks: [{

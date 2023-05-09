@@ -616,13 +616,13 @@
 					tag: {
 						jecalculation: {
 							craft: {
-								inventory: 0b
 								overlayPositionX: 0
+								inventory: 0b
 								amount: ""
 								mode: "input"
-								recents: [ ]
-								overlayOpen: 0b
 								overlayDepth: 0
+								overlayOpen: 0b
+								recents: [ ]
 								overlayPositionY: 0
 							}
 						}
@@ -645,6 +645,31 @@
 			description: ["A book that can store all books!"]
 			id: "1E70D9A92805DEBD"
 			x: 7.5d
+			y: 6.0d
+			dependencies: ["3E1DE478873C849F"]
+			hide_dependency_lines: true
+		}
+		{
+			tasks: [
+				{
+					id: "2DBF607AE05F77BC"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "5CF7D81CD8868735"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+				{
+					id: "3203052E08999A22"
+					type: "item"
+					item: "enderstorage:ender_pouch"
+				}
+			]
+			description: ["Ender Storage is a very useful mod when it comes to transporting stuff between dimensions. Simply place two chests in the same or not in the same dimension, and use dyes to color code them (3 white bars on the top). If you're playing on a server I recommend clicking on the \"nose\" of the chest or the valve the tank with a diamond. That way no one except you can connect to these by using the same color code."]
+			id: "0732D642F96313C6"
+			x: 9.5d
 			y: 6.0d
 			dependencies: ["3E1DE478873C849F"]
 			hide_dependency_lines: true
