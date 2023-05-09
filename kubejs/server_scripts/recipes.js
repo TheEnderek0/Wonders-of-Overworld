@@ -108,8 +108,8 @@ onEvent('recipes', event => {
 	
 	let fine_mesh_t = 'kubejs:incomplete_fine_mesh'
 	event.recipes.create.sequencedAssembly([
-		Item.of('kubejs:fine_mesh').withChance(130.0),
-		Item.of('2x minecraft:iron_nugget').withChance(30.0),
+		Item.of('kubejs:fine_mesh').withChance(80.0),
+		Item.of('2x minecraft:iron_nugget').withChance(20.0),
 	], 'minecraft:iron_bars', [
 		event.recipes.createPressing(fine_mesh_t, [fine_mesh_t]),
 		event.recipes.createCutting(fine_mesh_t, [fine_mesh_t])
@@ -189,10 +189,10 @@ onEvent('recipes', event => {
 	})
 
 	event.recipes.create.sequencedAssembly([
-		Item.of('create:precision_mechanism').withChance(130.0),
-		Item.of('kubejs:servo_mechanism_ch').withChance(30.0),
-		Item.of('create:electron_tube').withChance(8.0),
-		Item.of('createaddition:capacitor').withChance(4.0)
+		Item.of('create:precision_mechanism').withChance(80.0),
+		Item.of('kubejs:servo_mechanism_ch').withChance(10.0),
+		Item.of('create:electron_tube').withChance(5.0),
+		Item.of('createaddition:capacitor').withChance(5.0)
 	], "kubejs:servo_mechanism_ch", [
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:electron_tube']),
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'createaddition:capacitor']),
