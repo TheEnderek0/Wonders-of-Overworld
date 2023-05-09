@@ -15,7 +15,10 @@ customization {
 
 customization {
   identifier = %id=4976%
-  action = hidebutton
+  orientation = bottom-left
+  x = 33
+  action = movebutton
+  y = -26
 }
 
 customization {
