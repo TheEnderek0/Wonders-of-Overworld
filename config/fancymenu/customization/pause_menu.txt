@@ -9,6 +9,17 @@ customization-meta {
 }
 
 customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  baseheight = 1080
+  action = autoscale
+  basewidth = 1920
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
@@ -47,7 +58,7 @@ customization {
   width = 98
   action = addbutton
   actionid = 3b27ad2d-8cf5-48d7-9282-d3568238a7381683544791563
-  y = -29
+  y = -34
   label = Give Feedback
   backgroundnormal = config/fancymenu/customization/custom images/buttons.png
   height = 20
@@ -62,7 +73,7 @@ customization {
   width = 98
   action = addbutton
   actionid = dd9f3c08-a8ca-4bc3-b167-1d051ac560471683544935653
-  y = -29
+  y = -34
   label = Report Bugs!
   backgroundnormal = config/fancymenu/customization/custom images/buttons.png
   height = 20
@@ -98,12 +109,12 @@ customization {
 
 customization {
   path = config/fancymenu/customization/custom images/doge.gif
-  orientation = top-left
-  x = 527
+  orientation = bottom-right
+  x = -113
   width = 113
   action = addtexture
   actionid = d9de4cf2-2b3e-4df2-917c-fd8fa2865e4d1683545358127
-  y = 283
+  y = -56
   height = 56
 }
 
