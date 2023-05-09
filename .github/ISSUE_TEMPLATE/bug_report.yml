@@ -3,44 +3,41 @@ description: Use this if something is happening that is unexpected, or something
 title: "[Bug Report]: <Title>"
 labels: ["bug"]
 body:
-  - type: markdown
-    atrributes:
-      value: Thanks for submitting a bug report, please fill these fields carefully.
+- type: markdown
+  atrributes:
+    value: Thanks for submitting a bug report, please fill these fields carefully.
+    
+- type: textarea
+  id: description
+  attributes:
+    label: "Description of the bug:"
+    description: "Please describe the bug in the most technical way possible."
+    placeholder: "In my world, placing this block simply crashes the game with error..."
+  validations:
+    required: true
 
-  - type: textarea
-    id: description
-    attributes:
-      label: "Description of the bug:"
-      description: "Please describe the bug in the most technical way possible."
-      placeholder: "In my world, placing this block simply crashes the game with error..."
-    validations:
-      required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: "Steps to reproduce this bug:"
+    description: "If possible, specify what steps to take for this bug to appear."
+    placeholder: "1. Open world\n2. Place a block..."
 
-  - type: textarea
-    id: steps
-    attributes:
-      label: "Steps to reproduce this bug:"
-      description: "If possible, specify what steps to take for this bug to appear."
-      placeholder: "1. Open world\n2. Place a block..."
-  
-  - type: input
-    id: pack_version
-    attributes:
-      label: "Version of the modpack:"
-      description: "You can find it in the main menu, at the :something:"
-      placeholder: "1.0.0"
-    validations:
-      required: true
+- type: input
+  id: pack_version
+  attributes:
+    label: "Version of the modpack:"
+    description: "You can find it in the main menu, at the :something:"
+    placeholder: "1.0.0"
+  validations:
+    required: true
 
-  - type: input
-    id: log
-    attributes:
-      label: "Log"
-      description: "Send us the file (Not paste) the log in which the bug had occured.\nYou can find the logs in the modpack folder, then go into `logs/`.\nIf the bug happened just before you are reporting this issue, it will be the latest.log"
-    validations:
-      required: true
+- type: input
+  id: log
+  attributes:
+    label: "Log"
+    description: "Send us the file (Not paste) the log in which the bug had occured.\nYou can find the logs in the modpack folder, then go into `logs/`.\nIf the bug happened just before you are reporting this issue, it will be the latest.log"
+  validations:
+    required: true
 
 
-  
-  
-  
