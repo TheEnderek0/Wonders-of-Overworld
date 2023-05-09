@@ -4,9 +4,9 @@ title: "[Bug Report]: <Title>"
 labels: ["bug"]
 body:
 - type: markdown
-  atrributes:
+  attributes:
     value: Thanks for submitting a bug report, please fill these fields carefully.
-    
+
 - type: textarea
   id: description
   attributes:
