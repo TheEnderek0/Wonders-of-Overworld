@@ -164,7 +164,7 @@ onEvent('recipes', event => {
 		D: '#forge:rods/aluminum'
 	})
 
-	event.recipes.createMechanicalCrafting("kubejs:servo_mechanism_ch", [
+	event.recipes.createMechanicalCrafting("kubejs:precision_mechanism_ch", [
 		"  A  ",
 		" BCB ",
 		"ACDCA",
@@ -190,10 +190,10 @@ onEvent('recipes', event => {
 
 	event.recipes.create.sequencedAssembly([
 		Item.of('create:precision_mechanism').withChance(80.0),
-		Item.of('kubejs:servo_mechanism_ch').withChance(10.0),
+		Item.of('kubejs:precision_mechanism_ch').withChance(10.0),
 		Item.of('create:electron_tube').withChance(5.0),
 		Item.of('createaddition:capacitor').withChance(5.0)
-	], "kubejs:servo_mechanism_ch", [
+	], "kubejs:precision_mechanism_ch", [
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:electron_tube']),
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'createaddition:capacitor']),
 		event.recipes.createPressing('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism']),

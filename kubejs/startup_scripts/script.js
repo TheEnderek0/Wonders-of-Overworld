@@ -12,8 +12,8 @@ onEvent('item.registry', event => {
 	event.create('tiny_rub')
 		.displayName('Tiny Wet Rubber')
 	
-	event.create('servo_mechanism_ch')
-		.displayName('Servo Mechanism Chassis')
+	event.create('precision_mechanism_ch')
+		.displayName('Precision Mechanism Chassis')
 
 	event.create('insulator')
 		.displayName('Insulator')

@@ -290,7 +290,7 @@
 			tasks: [{
 				id: "3E3F760AA40DF287"
 				type: "item"
-				item: "kubejs:servo_mechanism_ch"
+				item: "kubejs:precision_mechanism_ch"
 			}]
 		}
 		{
