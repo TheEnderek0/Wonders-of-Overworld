@@ -1,0 +1,51 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.LevelLoadingScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = config/fancymenu/customization/custom images/krowa.gif
+  orientation = bottom-right
+  x = -89
+  width = 89
+  action = addtexture
+  actionid = 64a20fb0-7d31-4a88-b9c9-790e1b92ccd61683530595905
+  y = -47
+  height = 47
+}
+
+customization {
+  path = config/fancymenu/customization/custom images/doge.gif
+  orientation = top-left
+  x = 0
+  width = 113
+  action = addtexture
+  actionid = f55ad125-9ebd-4f39-891d-21d5dbf7c97c1683530668857
+  y = 0
+  height = 64
+}
+
+customization {
+  orientation = top-left
+  loop = false
+  channel = master
+  x = 43
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = 7e54669b-6675-4b1f-9c1a-52c7506d2ade1685634954772
+  y = 109
+  audio_source:5af911fe-e1d5-47ce-bbc2-4121891c7e7d1685636792935 = config/fancymenu/customization/custom sounds/dorime.ogg;EXTERNAL_LOCAL;100;0
+  once_per_session = false
+  height = 50
+}
+
