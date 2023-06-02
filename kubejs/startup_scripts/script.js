@@ -50,6 +50,7 @@ onEvent('item.registry', event => {
 	
 	event.create('incomplete_drill_m', 'create:sequenced_assembly')
 		.displayName('Incomplete Drill Program')
+		.texture('kubejs:item/incomplete_laser_m')
 	
 	event.create('incomplete_vac_tube', 'create:sequenced_assembly')
 		.displayName('Incomplete Vacuum Tube')
