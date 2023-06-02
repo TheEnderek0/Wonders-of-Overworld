@@ -12,5 +12,6 @@
     "item.pneumaticcraft.compressed_iron_leggings" : "Dense Steel Leggings",
     "item.pneumaticcraft.drill_bit_compressed_iron" : "Dense Steel Drill Bit",
     "item.pneumaticcraft.ingot_iron_compressed" : "Dense Steel Ingot",
-    "pneumaticcraft.advancement.pneumatic_armor" : "Dense Steel Man"
+    "pneumaticcraft.advancement.pneumatic_armor" : "Dense Steel Man",
+    "entity.minecraft.villager.pneumaticcraft:mechanic": "Mechanic"
 }
