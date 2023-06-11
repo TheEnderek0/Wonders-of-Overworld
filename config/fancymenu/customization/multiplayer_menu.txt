@@ -1,0 +1,132 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/customization/custom images/piestapeta.jpg
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=346948%
+  orientation = bottom-centered
+  x = -154
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=346948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=450948%
+  orientation = bottom-centered
+  x = -50
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=450948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=580972%
+  orientation = bottom-centered
+  x = 80
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=580972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=504972%
+  orientation = bottom-centered
+  x = 4
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=554948%
+  orientation = bottom-centered
+  x = 55
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=554948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=346972%
+  orientation = bottom-centered
+  x = -154
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=426972%
+  orientation = bottom-centered
+  x = -74
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=426972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
