@@ -19,33 +19,98 @@ customization {
 }
 
 customization {
-  path = config/fancymenu/customization/custom images/krowa.gif
-  orientation = bottom-right
-  x = -94
-  width = 94
-  action = addtexture
-  actionid = ad6ed1f1-e010-4908-8a91-237f79fcddce1683489809356
+  identifier = %id=346948%
+  orientation = bottom-centered
+  x = -154
+  action = movebutton
   y = -52
-  height = 52
-}
-
-customization {
-  audio_source:600d5b03-e130-4753-bf8b-0b29d3c0a5831685634894314 = config/fancymenu/customization/custom sounds/Bede Gral W Gre.ogg;EXTERNAL_LOCAL;100;0
-  orientation = top-left
-  loop = false
-  channel = master
-  x = 33
-  width = 50
-  action = custom_layout_element:fancymenu_extension:audio_item
-  actionid = 0f6211a0-1ffd-4f54-864a-0cba357c25d01685634876526
-  y = 130
-  once_per_session = true
-  height = 50
 }
 
 customization {
   identifier = %id=346948%
-  path = config/fancymenu/customization/custom sounds/dorime.wav
-  action = setbuttonclicksound
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=424972%
+  orientation = bottom-centered
+  x = -76
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=424972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=504972%
+  orientation = bottom-centered
+  x = 4
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=504948%
+  orientation = bottom-centered
+  x = 4
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=504948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=582972%
+  orientation = bottom-centered
+  x = 82
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=582972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=346972%
+  orientation = bottom-centered
+  x = -154
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
 }
 

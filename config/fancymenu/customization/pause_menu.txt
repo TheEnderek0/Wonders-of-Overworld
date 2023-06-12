@@ -24,13 +24,121 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -53
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  orientation = mid-centered
+  x = 4
+  action = movebutton
+  y = -5
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
   identifier = %id=606330%
   action = hidebutton
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -77
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  path = config/fancymenu/customization/custom sounds/dorime.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = 19
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  path = config/fancymenu/customization/custom sounds/never.wav
+  action = setbuttonclicksound
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_report_bugs_button%
   action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -5
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  orientation = mid-centered
+  x = 4
+  action = movebutton
+  y = -53
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
 }
 
 customization {
@@ -96,121 +204,3 @@ customization {
   parrot = false
 }
 
-customization {
-  path = config/fancymenu/customization/custom images/doge.gif
-  orientation = bottom-right
-  x = -113
-  width = 113
-  action = addtexture
-  actionid = d9de4cf2-2b3e-4df2-917c-fd8fa2865e4d1683545358127
-  y = -56
-  height = 56
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = -53
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
-  orientation = mid-centered
-  x = 4
-  action = movebutton
-  y = -53
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  orientation = mid-centered
-  x = 4
-  action = movebutton
-  y = -5
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = -77
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  path = config/fancymenu/customization/custom sounds/dorime.wav
-  action = setbuttonclicksound
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = -5
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = 19
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
-  path = config/fancymenu/customization/custom sounds/never.wav
-  action = setbuttonclicksound
-}

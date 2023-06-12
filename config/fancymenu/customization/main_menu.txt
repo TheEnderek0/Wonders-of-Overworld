@@ -135,12 +135,6 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  path = config/fancymenu/customization/custom sounds/never.wav
-  action = addhoversound
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   seconds = 5.0
   onlyfirsttime = true
   action = hidebuttonfor
@@ -167,12 +161,6 @@ customization {
   restartbackgroundanimations = true
   action = setbuttontexture
   backgroundnormal = config/fancymenu/customization/custom images/buttons.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  path = config/fancymenu/customization/custom sounds/aw man.wav
-  action = setbuttonclicksound
 }
 
 customization {
