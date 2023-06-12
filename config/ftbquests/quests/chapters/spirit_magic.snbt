@@ -1,19 +1,15 @@
 {
-	id: "49B44DBE5899CB38"
-	group: "05AF8D3D4322BDCB"
-	order_index: 5
-	filename: "spirit_magic"
-	title: "Spirit Magic"
-	icon: "malum:arcane_spirit"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: "05AF8D3D4322BDCB"
+	id: "49B44DBE5899CB38"
+	filename: "spirit_magic"
+	default_quest_shape: ""
+	icon: "malum:arcane_spirit"
+	title: "Spirit Magic"
+	order_index: 5
 	quests: [
 		{
-			title: "Soulstone"
-			x: 0.5d
-			y: -2.5d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "0BC135E0F43B63F9"
 			tasks: [
 				{
 					id: "20F761C4C23C5EE6"
@@ -28,73 +24,74 @@
 					count: 8L
 				}
 			]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "0BC135E0F43B63F9"
+			y: -2.5d
+			x: 0.5d
+			title: "Soulstone"
 		}
 		{
-			title: "Spirit Altar"
-			x: -1.5d
-			y: -4.5d
-			dependencies: [
-				"0BC135E0F43B63F9"
-				"43CE02DEE8FD1EEA"
-			]
-			id: "081C8AA416DE7287"
 			tasks: [{
 				id: "3975A2370A2807BA"
 				type: "item"
 				item: "malum:spirit_altar"
 			}]
+			dependencies: [
+				"0BC135E0F43B63F9"
+				"43CE02DEE8FD1EEA"
+			]
+			id: "081C8AA416DE7287"
+			y: -4.5d
+			x: -1.5d
+			title: "Spirit Altar"
 		}
 		{
-			x: -1.5d
-			y: 1.0d
-			description: ["You can find all informations about Malum in here"]
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "4201D855E4037A82"
 			tasks: [{
 				id: "7B9BEF4DBAD7FDEF"
 				type: "item"
 				item: "malum:encyclopedia_arcana"
 			}]
+			description: ["You can find all informations about Malum in here"]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "4201D855E4037A82"
+			y: 1.0d
+			x: -1.5d
 		}
 		{
-			icon: "malum:arcane_spirit"
-			x: -1.5d
-			y: -0.5d
-			shape: "gear"
-			id: "5F83DCE6A3BF802F"
 			tasks: [{
 				id: "07E76905DD5705D1"
 				type: "checkmark"
 				title: "Start"
 			}]
+			id: "5F83DCE6A3BF802F"
+			shape: "gear"
+			y: -0.5d
+			x: -1.5d
+			icon: "malum:arcane_spirit"
 		}
 		{
-			x: -3.0d
-			y: 2.0d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "086832C5864CE833"
 			tasks: [{
 				id: "0D32C3090FA4ECC8"
 				type: "item"
 				item: "malum:cthonic_gold"
 			}]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "086832C5864CE833"
+			y: 2.0d
+			x: -3.0d
 		}
 		{
-			x: 0.0d
-			y: 2.0d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "1A0549FFF6958BEF"
 			tasks: [{
 				id: "47B3347B4CD79D80"
 				type: "item"
 				item: "malum:natural_quartz"
 			}]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "1A0549FFF6958BEF"
+			y: 2.0d
+			x: 0.0d
 		}
 		{
-			x: -1.5d
-			y: -2.5d
-			dependencies: ["0BC135E0F43B63F9"]
-			id: "34A8F027632D0610"
 			tasks: [{
 				id: "132E0FED4510744D"
 				type: "item"
@@ -106,48 +103,47 @@
 					}
 				}
 			}]
+			dependencies: ["0BC135E0F43B63F9"]
+			id: "34A8F027632D0610"
+			y: -2.5d
+			x: -1.5d
 		}
 		{
-			x: 1.5d
-			y: 1.0d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "2D5D9405462D43A1"
 			tasks: [{
 				id: "3FCFE45DEC14E8A5"
 				type: "item"
 				item: "malum:blazing_quartz"
 			}]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "2D5D9405462D43A1"
+			y: 1.0d
+			x: 1.5d
 		}
 		{
-			x: -4.5d
-			y: 1.0d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "6E97D449B9A6FB3E"
 			tasks: [{
 				id: "257360603B5D3CEB"
 				type: "item"
 				item: "malum:cluster_of_brilliance"
 			}]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "6E97D449B9A6FB3E"
+			y: 1.0d
+			x: -4.5d
 		}
 		{
-			title: "Runewood"
-			x: -3.5d
-			y: -2.5d
-			dependencies: ["5F83DCE6A3BF802F"]
-			id: "43CE02DEE8FD1EEA"
 			tasks: [{
 				id: "6E13B9D2CB989A60"
 				type: "item"
 				item: "malum:runewood_log"
 				count: 16L
 			}]
+			dependencies: ["5F83DCE6A3BF802F"]
+			id: "43CE02DEE8FD1EEA"
+			y: -2.5d
+			x: -3.5d
+			title: "Runewood"
 		}
 		{
-			title: "Spirit Stones"
-			x: 1.5d
-			y: -6.5d
-			dependencies: ["081C8AA416DE7287"]
-			id: "67FDFE07ACAF0303"
 			tasks: [
 				{
 					id: "7F77D785F0470AAA"
@@ -162,13 +158,13 @@
 					count: 32L
 				}
 			]
+			dependencies: ["081C8AA416DE7287"]
+			id: "67FDFE07ACAF0303"
+			y: -6.5d
+			x: 1.5d
+			title: "Spirit Stones"
 		}
 		{
-			title: "Spirit Metals"
-			x: -4.5d
-			y: -6.5d
-			dependencies: ["081C8AA416DE7287"]
-			id: "3CD926295D93176A"
 			tasks: [
 				{
 					id: "5C5808E4EBF8DC81"
@@ -183,12 +179,13 @@
 					count: 16L
 				}
 			]
+			dependencies: ["081C8AA416DE7287"]
+			id: "3CD926295D93176A"
+			y: -6.5d
+			x: -4.5d
+			title: "Spirit Metals"
 		}
 		{
-			x: -6.0d
-			y: -5.0d
-			dependencies: ["3CD926295D93176A"]
-			id: "49DEE6F8F4050E6A"
 			tasks: [{
 				id: "0D2DCA2059FD5B12"
 				type: "item"
@@ -200,15 +197,50 @@
 					}
 				}
 			}]
+			dependencies: ["3CD926295D93176A"]
+			id: "49DEE6F8F4050E6A"
+			y: -5.0d
+			x: -6.0d
 		}
 		{
-			title: "Artifice"
+			size: 2.0d
 			x: -5.0d
+			id: "64A7E2A62E4C7B35"
 			y: -8.0d
 			shape: "square"
+			title: "Artifice"
+			rewards: [
+				{
+					id: "2FC582FBC5E55AD9"
+					type: "item"
+					item: "malum:corrupted_resonance"
+					count: 4
+				}
+				{
+					id: "70D6798DFC24ED6E"
+					type: "item"
+					item: {
+						id: "malum:iron_impetus"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12FE7368B8F91798"
+					type: "item"
+					item: "malum:vivid_nitrate"
+					count: 8
+				}
+				{
+					id: "182D2B8398BCC01B"
+					type: "item"
+					item: "malum:block_of_soul_stained_steel"
+					count: 8
+				}
+			]
 			dependencies: ["3CD926295D93176A"]
-			size: 2.0d
-			id: "64A7E2A62E4C7B35"
 			tasks: [
 				{
 					id: "4CC0A4F74508ABFE"
@@ -306,46 +338,41 @@
 					item: "malum:belt_of_the_magebane"
 				}
 			]
-			rewards: [
-				{
-					id: "2FC582FBC5E55AD9"
-					type: "item"
-					item: "malum:corrupted_resonance"
-					count: 4
-				}
-				{
-					id: "70D6798DFC24ED6E"
-					type: "item"
-					item: {
-						id: "malum:iron_impetus"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "12FE7368B8F91798"
-					type: "item"
-					item: "malum:vivid_nitrate"
-					count: 8
-				}
-				{
-					id: "182D2B8398BCC01B"
-					type: "item"
-					item: "malum:block_of_soul_stained_steel"
-					count: 8
-				}
-			]
 		}
 		{
-			title: "Metallurgic Magic"
+			size: 2.0d
 			x: 2.0d
+			id: "4C352AF2472CC2DA"
 			y: -8.0d
 			shape: "square"
+			title: "Metallurgic Magic"
+			rewards: [
+				{
+					id: "28681568CE05EE32"
+					type: "item"
+					item: "malum:infernal_spirit"
+					count: 64
+				}
+				{
+					id: "57C4AC3DF634EED8"
+					type: "item"
+					item: "malum:infernal_spirit"
+					count: 64
+				}
+				{
+					id: "59FC65D27C3DCA70"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 64
+				}
+				{
+					id: "3A10627531854FDA"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 64
+				}
+			]
 			dependencies: ["67FDFE07ACAF0303"]
-			size: 2.0d
-			id: "4C352AF2472CC2DA"
 			tasks: [
 				{
 					id: "3569636AA9CB35AF"
@@ -480,39 +507,8 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "28681568CE05EE32"
-					type: "item"
-					item: "malum:infernal_spirit"
-					count: 64
-				}
-				{
-					id: "57C4AC3DF634EED8"
-					type: "item"
-					item: "malum:infernal_spirit"
-					count: 64
-				}
-				{
-					id: "59FC65D27C3DCA70"
-					type: "item"
-					item: "malum:earthen_spirit"
-					count: 64
-				}
-				{
-					id: "3A10627531854FDA"
-					type: "item"
-					item: "malum:earthen_spirit"
-					count: 64
-				}
-			]
 		}
 		{
-			title: "Mystic Weaves"
-			x: 3.0d
-			y: -5.0d
-			dependencies: ["67FDFE07ACAF0303"]
-			id: "43CA1EC7ACE86220"
 			tasks: [
 				{
 					id: "5EFCDA673720F768"
@@ -570,45 +566,46 @@
 					item: "malum:spirit_pouch"
 				}
 			]
+			dependencies: ["67FDFE07ACAF0303"]
+			id: "43CA1EC7ACE86220"
+			y: -5.0d
+			x: 3.0d
+			title: "Mystic Weaves"
 		}
 		{
-			x: -1.5d
-			y: -7.5d
-			dependencies: ["081C8AA416DE7287"]
-			id: "698ED1AA17AB61C4"
 			tasks: [{
 				id: "6AABECFD8F9C0964"
 				type: "item"
 				item: "malum:corrupted_resonance"
 			}]
+			dependencies: ["081C8AA416DE7287"]
+			id: "698ED1AA17AB61C4"
+			y: -7.5d
+			x: -1.5d
 		}
 		{
-			x: -3.0d
-			y: -8.5d
-			dependencies: ["698ED1AA17AB61C4"]
-			id: "02E4E9B343F028CF"
 			tasks: [{
 				id: "15B5A08E1C357E57"
 				type: "item"
 				item: "malum:necklace_of_the_hidden_blade"
 			}]
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "02E4E9B343F028CF"
+			y: -8.5d
+			x: -3.0d
 		}
 		{
-			x: 0.0d
-			y: -8.5d
-			dependencies: ["698ED1AA17AB61C4"]
-			id: "0C6C769B9CD6844A"
 			tasks: [{
 				id: "66F649BB709D7D82"
 				type: "item"
 				item: "malum:belt_of_the_magebane"
 			}]
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "0C6C769B9CD6844A"
+			y: -8.5d
+			x: 0.0d
 		}
 		{
-			x: -1.5d
-			y: -9.5d
-			dependencies: ["698ED1AA17AB61C4"]
-			id: "5095ED0AF14E4794"
 			tasks: [{
 				id: "07D1116252125186"
 				type: "item"
@@ -620,48 +617,46 @@
 					}
 				}
 			}]
+			dependencies: ["698ED1AA17AB61C4"]
+			id: "5095ED0AF14E4794"
+			y: -9.5d
+			x: -1.5d
 		}
 		{
-			x: 4.5d
-			y: -6.0d
-			dependencies: ["67FDFE07ACAF0303"]
-			id: "445819E21B8408AC"
 			tasks: [{
 				id: "6CC2B10FA0B3BBA2"
 				type: "item"
 				item: "malum:spirit_crucible"
 			}]
+			dependencies: ["67FDFE07ACAF0303"]
+			id: "445819E21B8408AC"
+			y: -6.0d
+			x: 4.5d
 		}
 		{
-			x: 6.0d
-			y: -7.0d
-			dependencies: ["445819E21B8408AC"]
-			id: "70BBDD5BF8D9C306"
 			tasks: [{
 				id: "7DDC6B0EDFE09F9D"
 				type: "item"
 				item: "malum:spirit_catalyzer"
 			}]
+			dependencies: ["445819E21B8408AC"]
+			id: "70BBDD5BF8D9C306"
+			y: -7.0d
+			x: 6.0d
 		}
 		{
-			title: "Arcane Restoration"
-			x: 4.5d
-			y: -8.0d
-			dependencies: ["445819E21B8408AC"]
-			id: "68B9A7D1AF847280"
 			tasks: [{
 				id: "7FDBFACF349F4052"
 				type: "item"
 				item: "malum:twisted_tablet"
 			}]
+			dependencies: ["445819E21B8408AC"]
+			id: "68B9A7D1AF847280"
+			y: -8.0d
+			x: 4.5d
+			title: "Arcane Restoration"
 		}
 		{
-			title: "Esoteric Reaping"
-			x: -7.5d
-			y: -6.0d
-			description: ["Can be performed with any soul hunter weapon"]
-			dependencies: ["49DEE6F8F4050E6A"]
-			id: "338102CBAB1F6BDF"
 			tasks: [
 				{
 					id: "24695B9DDDE7D9AA"
@@ -688,77 +683,82 @@
 					count: 8L
 				}
 			]
+			description: ["Can be performed with any soul hunter weapon"]
+			id: "338102CBAB1F6BDF"
+			x: -7.5d
+			y: -6.0d
+			title: "Esoteric Reaping"
+			dependencies: ["49DEE6F8F4050E6A"]
 		}
 		{
-			x: -7.5d
-			y: -8.0d
-			dependencies: ["3CD926295D93176A"]
-			id: "71C1F1317F460136"
 			tasks: [{
 				id: "176D9226EA5344C1"
 				type: "item"
 				item: "malum:ether"
 			}]
+			dependencies: ["3CD926295D93176A"]
+			id: "71C1F1317F460136"
+			y: -8.0d
+			x: -7.5d
 		}
 		{
-			x: -9.0d
-			y: -7.0d
-			dependencies: ["71C1F1317F460136"]
-			id: "30C5A50FB53F35EE"
 			tasks: [{
 				id: "0B5F9A4A3AFDC206"
 				type: "item"
 				item: "malum:iridescent_ether"
 			}]
+			dependencies: ["71C1F1317F460136"]
+			id: "30C5A50FB53F35EE"
+			y: -7.0d
+			x: -9.0d
 		}
 		{
-			title: "Basic Rites"
-			x: -5.0d
-			y: -1.5d
-			dependencies: ["43CE02DEE8FD1EEA"]
-			id: "14B4EB67754D150C"
 			tasks: [{
 				id: "6BA5A94B8D0C4091"
 				type: "item"
 				item: "malum:runewood_totem_base"
 			}]
+			dependencies: ["43CE02DEE8FD1EEA"]
+			id: "14B4EB67754D150C"
+			y: -1.5d
+			x: -5.0d
+			title: "Basic Rites"
 		}
 		{
-			title: "Twisted Rites"
-			x: -6.5d
-			y: -2.5d
-			dependencies: ["14B4EB67754D150C"]
-			id: "021FA3386C6F741C"
 			tasks: [{
 				id: "73CE7735D884BB3B"
 				type: "item"
 				item: "malum:soulwood_totem_base"
 			}]
+			dependencies: ["14B4EB67754D150C"]
+			id: "021FA3386C6F741C"
+			y: -2.5d
+			x: -6.5d
+			title: "Twisted Rites"
 		}
 		{
-			title: "Blight"
-			x: -7.5d
-			y: -1.0d
-			dependencies: ["021FA3386C6F741C"]
-			id: "72ED3DA2439F5C61"
 			tasks: [{
 				id: "7D138716F849A0C3"
 				type: "item"
 				item: "malum:blighted_gunk"
 				count: 8L
 			}]
+			dependencies: ["021FA3386C6F741C"]
+			id: "72ED3DA2439F5C61"
+			y: -1.0d
+			x: -7.5d
+			title: "Blight"
 		}
 		{
-			x: 0.5d
-			y: -4.5d
-			dependencies: ["081C8AA416DE7287"]
-			id: "4BC4E7EBE9715A0C"
 			tasks: [{
 				id: "1D6BC4DA60652077"
 				type: "item"
 				item: "malum:runewood_obelisk"
 			}]
+			dependencies: ["081C8AA416DE7287"]
+			id: "4BC4E7EBE9715A0C"
+			y: -4.5d
+			x: 0.5d
 		}
 	]
-	quest_links: [ ]
 }

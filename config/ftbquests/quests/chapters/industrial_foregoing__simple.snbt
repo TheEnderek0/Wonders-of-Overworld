@@ -1,197 +1,198 @@
 {
-	id: "1A1C2D4B5FAB7DD4"
-	group: "426B3CA4D81D54E1"
-	order_index: 2
-	filename: "industrial_foregoing__simple"
-	title: "Industrial Foregoing - Simple"
-	icon: "industrialforegoing:machine_frame_simple"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: "426B3CA4D81D54E1"
+	id: "1A1C2D4B5FAB7DD4"
+	filename: "industrial_foregoing__simple"
+	default_quest_shape: ""
+	icon: "industrialforegoing:machine_frame_simple"
+	title: "Industrial Foregoing - Simple"
+	order_index: 2
 	quests: [
 		{
+			tasks: [{
+				id: "1A4B836AEA64EAB0"
+				type: "checkmark"
+				title: "Start"
+			}]
 			icon: "industrialforegoing:machine_frame_simple"
 			x: -2.5d
+			id: "55CF88A7A48A25C7"
 			y: 0.0d
 			shape: "gear"
 			dependencies: [
 				"5F81570C885DCA43"
 				"0ADAC517670D6409"
 			]
-			id: "55CF88A7A48A25C7"
-			tasks: [{
-				id: "1A4B836AEA64EAB0"
-				type: "checkmark"
-				title: "Start"
-			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			dependencies: ["55CF88A7A48A25C7"]
-			id: "68D8DCB52F9CF701"
 			tasks: [{
 				id: "04ACEC3E0770E747"
 				type: "item"
 				item: "industrialforegoing:machine_frame_simple"
 			}]
+			dependencies: ["55CF88A7A48A25C7"]
+			id: "68D8DCB52F9CF701"
+			y: 0.0d
+			x: 1.5d
 		}
 		{
-			title: "Generators"
-			icon: "industrialforegoing:biofuel_generator"
-			x: 1.5d
-			y: -3.5d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "40D46423C936BED6"
 			tasks: [{
 				id: "1FAD04E96CA511ED"
 				type: "checkmark"
 				title: "Okay"
 			}]
+			icon: "industrialforegoing:biofuel_generator"
+			id: "40D46423C936BED6"
+			x: 1.5d
+			y: -3.5d
+			title: "Generators"
+			dependencies: ["68D8DCB52F9CF701"]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "4187B664C24F9602"
 			tasks: [{
 				id: "7894B880B4F16B93"
 				type: "item"
 				item: "industrialforegoing:mechanical_dirt"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "4187B664C24F9602"
+			y: 0.0d
+			x: 4.5d
 		}
 		{
-			x: 7.5d
-			y: 0.0d
-			dependencies: ["4187B664C24F9602"]
-			id: "4D4A496226D1E06F"
 			tasks: [{
 				id: "6DE874B905047A8D"
 				type: "item"
 				item: "industrialforegoing:mob_slaughter_factory"
 			}]
+			dependencies: ["4187B664C24F9602"]
+			id: "4D4A496226D1E06F"
+			y: 0.0d
+			x: 7.5d
 		}
 		{
-			x: 1.5d
-			y: 4.0d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "3E116B4893CC2BAA"
 			tasks: [{
 				id: "144018F5EE31BAA1"
 				type: "item"
 				item: "industrialforegoing:latex_processing_unit"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "3E116B4893CC2BAA"
+			y: 4.0d
+			x: 1.5d
 		}
 		{
-			x: 4.5d
-			y: -1.0d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "794A2319EE94E7B2"
 			tasks: [{
 				id: "2BB46544F6314EF1"
 				type: "item"
 				item: "industrialforegoing:marine_fisher"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "794A2319EE94E7B2"
+			y: -1.0d
+			x: 4.5d
 		}
 		{
-			x: 0.0d
-			y: -1.5d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "3B19D9CC929C4B20"
 			tasks: [{
 				id: "131583DFBBEBEDA1"
 				type: "item"
 				item: "industrialforegoing:fermentation_station"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "3B19D9CC929C4B20"
+			y: -1.5d
+			x: 0.0d
 		}
 		{
-			x: 3.0d
-			y: 1.5d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "0D5B0662200E081A"
 			tasks: [{
 				id: "67B235AD83AEFA5E"
 				type: "item"
 				item: "industrialforegoing:plant_fertilizer"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "0D5B0662200E081A"
+			y: 1.5d
+			x: 3.0d
 		}
 		{
-			x: 0.0d
-			y: 1.5d
-			dependencies: ["68D8DCB52F9CF701"]
-			id: "34546C54265AA7C9"
 			tasks: [{
 				id: "1B9B528A8716E0A8"
 				type: "item"
 				item: "industrialforegoing:hydroponic_bed"
 			}]
+			dependencies: ["68D8DCB52F9CF701"]
+			id: "34546C54265AA7C9"
+			y: 1.5d
+			x: 0.0d
 		}
 		{
-			x: 3.5d
-			y: 4.0d
-			dependencies: ["3E116B4893CC2BAA"]
-			id: "2C87D1DCAB198695"
 			tasks: [{
 				id: "13957DD4AC371984"
 				type: "item"
 				item: "industrialforegoing:tinydryrubber"
 			}]
+			dependencies: ["3E116B4893CC2BAA"]
+			id: "2C87D1DCAB198695"
+			y: 4.0d
+			x: 3.5d
 		}
 		{
-			x: 5.5d
-			y: 4.0d
-			dependencies: ["2C87D1DCAB198695"]
-			id: "2D0CDDABBE3DC7A0"
 			tasks: [{
 				id: "44EA1DA5FC0D833F"
 				type: "item"
 				item: "industrialforegoing:dryrubber"
 			}]
+			dependencies: ["2C87D1DCAB198695"]
+			id: "2D0CDDABBE3DC7A0"
+			y: 4.0d
+			x: 5.5d
 		}
 		{
-			x: 7.5d
-			y: 4.0d
-			dependencies: ["2D0CDDABBE3DC7A0"]
-			id: "4D4529EA8221D720"
 			tasks: [{
 				id: "112B0F0BCB278CA1"
 				type: "item"
 				item: "industrialforegoing:plastic"
 			}]
+			dependencies: ["2D0CDDABBE3DC7A0"]
+			id: "4D4529EA8221D720"
+			y: 4.0d
+			x: 7.5d
 		}
 		{
-			x: 5.5d
-			y: 2.0d
-			dependencies: ["2D0CDDABBE3DC7A0"]
-			id: "45C21C3A757679D2"
 			tasks: [{
 				id: "19B09495C4FB84B5"
 				type: "item"
 				item: "thermal:rubber"
 			}]
+			dependencies: ["2D0CDDABBE3DC7A0"]
+			id: "45C21C3A757679D2"
+			y: 2.0d
+			x: 5.5d
 		}
 		{
-			x: 7.5d
-			y: 2.0d
-			dependencies: ["4D4529EA8221D720"]
-			id: "321B52467241DFF3"
 			tasks: [{
 				id: "2378730396824BB9"
 				type: "item"
 				item: "pneumaticcraft:plastic"
 			}]
+			dependencies: ["4D4529EA8221D720"]
+			id: "321B52467241DFF3"
+			y: 2.0d
+			x: 7.5d
 		}
 		{
-			title: "Industrial Foregoing - Advanced 1/3"
+			size: 1.5d
+			id: "68637EC1A97C248D"
 			icon: "industrialforegoing:machine_frame_advanced"
 			x: 10.5d
 			y: 0.0d
 			shape: "rsquare"
+			title: "Industrial Foregoing - Advanced 1/3"
 			dependencies: [
 				"4D4A496226D1E06F"
 				"4D4529EA8221D720"
 			]
-			size: 1.5d
-			id: "68637EC1A97C248D"
 			tasks: [{
 				id: "405B249310901D25"
 				type: "checkmark"
@@ -199,14 +200,14 @@
 			}]
 		}
 		{
-			title: "Refined Storage 1/3"
+			size: 1.5d
+			id: "65B44036D79D2FCE"
 			icon: "refinedstorage:creative_controller"
 			x: 3.0d
 			y: -2.25d
 			shape: "rsquare"
+			title: "Refined Storage 1/3"
 			dependencies: ["68D8DCB52F9CF701"]
-			size: 1.5d
-			id: "65B44036D79D2FCE"
 			tasks: [{
 				id: "59B21F7908DC8C7F"
 				type: "checkmark"
@@ -214,5 +215,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

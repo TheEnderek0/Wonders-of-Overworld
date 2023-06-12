@@ -1,40 +1,29 @@
 {
-	id: "5B80FA808986AB01"
-	group: "5F61B00653CA7C57"
-	order_index: 2
-	filename: "food"
-	title: "Food"
-	icon: "farmersdelight:tomato"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: "5F61B00653CA7C57"
+	id: "5B80FA808986AB01"
+	filename: "food"
+	default_quest_shape: ""
+	icon: "farmersdelight:tomato"
+	title: "Food"
+	order_index: 2
 	quests: [
 		{
-			title: "Start"
-			icon: "farmersdelight:cabbage"
-			x: -6.0d
-			y: 0.0d
-			shape: "gear"
-			dependencies: ["2F98C5743D038842"]
-			id: "227E706384FC441D"
 			tasks: [{
 				id: "657517E6E7F8FE5A"
 				type: "checkmark"
 				title: "Start"
 			}]
+			icon: "farmersdelight:cabbage"
+			x: -6.0d
+			id: "227E706384FC441D"
+			y: 0.0d
+			shape: "gear"
+			title: "Start"
+			dependencies: ["2F98C5743D038842"]
 		}
 		{
-			title: "Collecting water"
-			icon: "toughasnails:empty_canteen"
-			x: -4.0d
-			y: -2.0d
-			description: [
-				"In order to survive you will need to stay hydrated."
-				"First of all, you will need to craft some sort of a container for the water."
-				"I recommend crafting a canteen, for easier storage. But standard bottles will do too."
-			]
-			dependencies: ["227E706384FC441D"]
-			dependency_requirement: "one_completed"
-			id: "143F736F94411494"
 			tasks: [
 				{
 					id: "399EFCDA10628520"
@@ -48,69 +37,76 @@
 					item: "minecraft:glass_bottle"
 				}
 			]
+			description: [
+				"In order to survive you will need to stay hydrated."
+				"First of all, you will need to craft some sort of a container for the water."
+				"I recommend crafting a canteen, for easier storage. But standard bottles will do too."
+			]
+			id: "143F736F94411494"
+			icon: "toughasnails:empty_canteen"
+			x: -4.0d
+			y: -2.0d
+			title: "Collecting water"
+			dependencies: ["227E706384FC441D"]
+			dependency_requirement: "one_completed"
 		}
 		{
-			x: 2.0d
-			y: -2.0d
-			description: ["Rain collector will collect purified water directly from the rain."]
-			dependencies: ["62DE6F6C8D315F67"]
-			id: "1F611CC5F8BD4ECC"
 			tasks: [{
 				id: "7E035DA5D31FA63D"
 				type: "item"
 				item: "toughasnails:rain_collector"
 			}]
+			description: ["Rain collector will collect purified water directly from the rain."]
+			dependencies: ["62DE6F6C8D315F67"]
+			id: "1F611CC5F8BD4ECC"
+			y: -2.0d
+			x: 2.0d
 		}
 		{
-			x: 2.0d
-			y: -3.5d
+			tasks: [{
+				id: "45994782920B3781"
+				type: "item"
+				item: "toughasnails:water_purifier"
+			}]
 			description: [
 				"Water purifier does as the name suggests - purifies water."
 				"Place a water bottle or a canteen at the top slot, then power it with charcoal to start the purification process."
 			]
 			dependencies: ["62DE6F6C8D315F67"]
 			id: "5BFE2F36698A78D7"
-			tasks: [{
-				id: "45994782920B3781"
-				type: "item"
-				item: "toughasnails:water_purifier"
-			}]
+			y: -3.5d
+			x: 2.0d
 		}
 		{
-			title: "Purified Water - Explanation"
-			icon: "toughasnails:purified_water_bottle"
-			x: -1.0d
-			y: -2.0d
-			description: [
-				"Standard water when drinked can give you poison effect for a short while."
-				"So it's best if you craft purified water. You can view the recipes for it in JEI or see the quests after this one."
-			]
-			dependencies: ["143F736F94411494"]
-			id: "62DE6F6C8D315F67"
 			tasks: [{
 				id: "12D499D65EE007BB"
 				type: "checkmark"
 				title: "Acknowledge"
 			}]
+			description: [
+				"Standard water when drinked can give you poison effect for a short while."
+				"So it's best if you craft purified water. You can view the recipes for it in JEI or see the quests after this one."
+			]
+			icon: "toughasnails:purified_water_bottle"
+			id: "62DE6F6C8D315F67"
+			x: -1.0d
+			y: -2.0d
+			title: "Purified Water - Explanation"
+			dependencies: ["143F736F94411494"]
 		}
 		{
-			x: -4.0d
-			y: 2.5d
-			description: ["You can buy different stuff here!"]
-			dependencies: ["227E706384FC441D"]
-			id: "6EFD941B26314F4A"
 			tasks: [{
 				id: "6B002042556A000A"
 				type: "item"
 				item: "farmingforblockheads:market"
 			}]
+			description: ["You can buy different stuff here!"]
+			dependencies: ["227E706384FC441D"]
+			id: "6EFD941B26314F4A"
+			y: 2.5d
+			x: -4.0d
 		}
 		{
-			title: "Automation"
-			x: -1.0d
-			y: 2.5d
-			dependencies: ["6EFD941B26314F4A"]
-			id: "070CFCFB9F9F3E1A"
 			tasks: [
 				{
 					id: "7D3BE213B0A70D80"
@@ -123,12 +119,13 @@
 					item: "farmingforblockheads:chicken_nest"
 				}
 			]
+			dependencies: ["6EFD941B26314F4A"]
+			id: "070CFCFB9F9F3E1A"
+			y: 2.5d
+			x: -1.0d
+			title: "Automation"
 		}
 		{
-			x: -2.5d
-			y: 1.0d
-			dependencies: ["5997357E1E5229EC"]
-			id: "44BF57E37A377853"
 			tasks: [
 				{
 					id: "68E33A9DF3679AE2"
@@ -146,13 +143,12 @@
 					item: "refinedcooking:kitchen_network_card"
 				}
 			]
+			dependencies: ["5997357E1E5229EC"]
+			id: "44BF57E37A377853"
+			y: 1.0d
+			x: -2.5d
 		}
 		{
-			title: "Basic Kitchen"
-			x: -4.0d
-			y: 0.0d
-			dependencies: ["227E706384FC441D"]
-			id: "5997357E1E5229EC"
 			tasks: [
 				{
 					id: "736AADDA8485FC74"
@@ -180,13 +176,13 @@
 					item: "cookingforblockheads:fridge"
 				}
 			]
+			dependencies: ["227E706384FC441D"]
+			id: "5997357E1E5229EC"
+			y: 0.0d
+			x: -4.0d
+			title: "Basic Kitchen"
 		}
 		{
-			title: "Appliances"
-			x: -1.0d
-			y: 0.0d
-			dependencies: ["5997357E1E5229EC"]
-			id: "0D52A11AF32CF459"
 			tasks: [
 				{
 					id: "575DC99039B7F268"
@@ -209,13 +205,13 @@
 					item: "cookingforblockheads:fruit_basket"
 				}
 			]
+			dependencies: ["5997357E1E5229EC"]
+			id: "0D52A11AF32CF459"
+			y: 0.0d
+			x: -1.0d
+			title: "Appliances"
 		}
 		{
-			title: "Upgrades"
-			x: -4.0d
-			y: 1.0d
-			dependencies: ["5997357E1E5229EC"]
-			id: "66B8B4AAF137AF17"
 			tasks: [
 				{
 					id: "653658528D3D4A53"
@@ -233,13 +229,13 @@
 					item: "cookingforblockheads:heating_unit"
 				}
 			]
+			dependencies: ["5997357E1E5229EC"]
+			id: "66B8B4AAF137AF17"
+			y: 1.0d
+			x: -4.0d
+			title: "Upgrades"
 		}
 		{
-			title: "Larger Kitchen"
-			x: -1.0d
-			y: 1.0d
-			dependencies: ["5997357E1E5229EC"]
-			id: "535DA3B84E38D2CC"
 			tasks: [
 				{
 					id: "077CEE26CEFB7595"
@@ -262,7 +258,23 @@
 					item: "cookingforblockheads:cabinet"
 				}
 			]
+			dependencies: ["5997357E1E5229EC"]
+			id: "535DA3B84E38D2CC"
+			y: 1.0d
+			x: -1.0d
+			title: "Larger Kitchen"
+		}
+		{
+			tasks: [{
+				id: "1B2C2CD0872DCA0E"
+				type: "item"
+				item: "bonsaitrees3:bonsaipot"
+			}]
+			description: ["A very quick and nice way to farm."]
+			dependencies: ["227E706384FC441D"]
+			id: "08CA0C13871C79F7"
+			y: 2.5d
+			x: -6.0d
 		}
 	]
-	quest_links: [ ]
 }
