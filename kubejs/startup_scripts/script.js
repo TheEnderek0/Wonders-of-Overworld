@@ -78,12 +78,16 @@ onEvent('item.registry', event => {
 
 	event.create('incomplete_bp', 'create:sequenced_assembly')
 		.displayName('Incomplete Basic Processor')
+		.texture('refinedstorage:item/basic_processor')
 	event.create('incomplete_ip', 'create:sequenced_assembly')
 		.displayName('Incomplete Improved Processor')
+		.texture('refinedstorage:item/improved_processor')
 	event.create('incomplete_ap', 'create:sequenced_assembly')
 		.displayName('Incomplete Advanced Processor')
+		.texture('refinedstorage:item/advanced_processor')
 	event.create('incomplete_np', 'create:sequenced_assembly')
 		.displayName('Incomplete Neural Processor')
+		.texture('extrastorage:item/neural_processor')
 
 	event.create('incomplete_cb', 'create:sequenced_assembly')
 		.displayName('Incomplete Ultimate Circuit Board')
