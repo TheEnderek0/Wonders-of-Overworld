@@ -32,7 +32,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = '';
+S:customwindowtitle = 'Wonders of Overworld! Minecraft 1.18.2 ModPack dev version';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'false';
 
