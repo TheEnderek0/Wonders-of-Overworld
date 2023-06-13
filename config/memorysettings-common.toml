@@ -14,6 +14,6 @@
 	maximumServer = 8500
 	#Disable the memory warnings, default = false
 	disableWarnings = true
-	#Set the help message for changing ram allocation, you can use html here e.g. for setting a link to a wiki page
-	helpfullinkmessage = "See <a href='https://minecrafthelp.co.uk/how-to-add-more-ram-to-minecraft/'>https://minecrafthelp.co.uk/how-to-add-more-ram-to-minecraft/</a> on how to change your memory settings."
+	#Set the link used to guide players to a website with instructions to change memory allocation
+	howtolink = "https://apexminecrafthosting.com/how-to-allocate-more-ram/"
 
