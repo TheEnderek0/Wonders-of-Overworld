@@ -20,8 +20,6 @@
 		}
 		{ item: "immersiveengineering:component_electronic" }
 		{ item: "bhc:red_heart", count: 4 }
-		{ item: "ironfurnaces:upgrade_diamond" }
-		{ item: "ironfurnaces:diamond_furnace" }
 		{ item: "darkutils:charm_portal" }
 		{
 			item: {

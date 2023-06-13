@@ -43,8 +43,6 @@
 		{ item: "farmersrespite:yellow_tea", count: 4 }
 		{ item: "darkutils:vector_plate_fast", count: 4 }
 		{ item: "darkutils:charm_sleep" }
-		{ item: "ironfurnaces:gold_furnace" }
-		{ item: "thermal:wrench" }
 		{ item: "brewinandchewin:scarlet_cheese_wedge" }
 		{ item: "brewinandchewin:ham_and_cheese_sandwich" }
 		{ item: "farmersrespite:rose_hip_tea", count: 2 }
