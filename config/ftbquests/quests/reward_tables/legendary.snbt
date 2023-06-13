@@ -1,0 +1,47 @@
+{
+	id: "138580BB7AF6DA9D"
+	order_index: 4
+	title: "Legendary"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "bloodmagic:soulgemgreater"
+				Count: 1b
+				tag: {
+					souls: 4096.0d
+				}
+			}
+			weight: 10
+		}
+		{ item: "bloodmagic:strong_tau", count: 32, weight: 10 }
+		{ item: "mekanism:ultimate_control_circuit", count: 4, weight: 10 }
+		{ item: "draconicevolution:wyvern_relay_crystal", count: 2, weight: 10 }
+		{ item: "draconicevolution:basic_relay_crystal", count: 4, weight: 10 }
+		{ item: "mekanism:teleportation_core", weight: 10 }
+		{ item: "bhc:blue_heart", count: 2, weight: 10 }
+		{ item: "bhc:green_heart", count: 2, weight: 10 }
+		{ item: "draconicevolution:awakened_core", weight: 2 }
+		{
+			item: {
+				id: "draconicevolution:advanced_dislocator"
+				Count: 1b
+				tag: { }
+			}
+			weight: 10
+		}
+		{ item: "botania:life_essence", count: 4, weight: 10 }
+		{ item: "draconicevolution:draconium_core", count: 2, weight: 10 }
+		{ item: "draconicevolution:wyvern_core", weight: 6 }
+	]
+	loot_crate: {
+		string_id: "legendary"
+		color: 16761159
+		glow: 1b
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 1
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+	id: "3367A9EA1E67CD74"
+	order_index: 1
+	title: "Uncommon"
+	loot_size: 1
+	rewards: [
+		{ item: "farmersdelight:smoked_ham", count: 3 }
+		{ item: "create:gearshift" }
+		{ item: "create:brass_casing", count: 2 }
+		{ item: "storagenetwork:kabel", count: 8 }
+		{ item: "cookingforblockheads:cow_jar" }
+		{ item: "tombstone:essence_of_undeath" }
+		{ item: "elevatorid:elevator_white", count: 2 }
+		{ item: "storagedrawers:gold_storage_upgrade", count: 4 }
+		{ item: "storagedrawers:oak_full_drawers_1", count: 12 }
+		{ item: "minecraft:redstone", count: 32 }
+		{ item: "minecraft:copper_ingot", count: 18 }
+		{ item: "minecraft:gold_ingot", count: 8 }
+		{ item: "minecraft:diamond", count: 3 }
+		{
+			item: {
+				id: "waterstrainer:strainer_survivalist_reinforced"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "torchmaster:feral_flare_lantern" }
+		{ item: "immersiveengineering:ingot_steel", count: 4 }
+		{ item: "clickmachine:auto_clicker" }
+		{
+			item: {
+				id: "tconstruct:pick_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:nahuatl"
+				}
+			}
+		}
+		{ item: "create:clutch" }
+		{ item: "farmersdelight:stuffed_pumpkin_block" }
+		{ item: "farmersrespite:yellow_tea", count: 4 }
+		{ item: "darkutils:vector_plate_fast", count: 4 }
+		{ item: "darkutils:charm_sleep" }
+		{ item: "ironfurnaces:gold_furnace" }
+		{ item: "thermal:wrench" }
+		{ item: "brewinandchewin:scarlet_cheese_wedge" }
+		{ item: "brewinandchewin:ham_and_cheese_sandwich" }
+		{ item: "farmersrespite:rose_hip_tea", count: 2 }
+		{ item: "create:gearbox", count: 2 }
+		{ item: "create:large_cogwheel", count: 16 }
+		{ item: "create:cogwheel", count: 16 }
+		{ item: "create:shaft", count: 8 }
+		{ item: "immersiveengineering:coil_lv" }
+		{ item: "mob_grinding_utils:fan" }
+		{ item: "mob_grinding_utils:spikes" }
+	]
+	loot_crate: {
+		string_id: "uncommon"
+		color: 3648105
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
+}

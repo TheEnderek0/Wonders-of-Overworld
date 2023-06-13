@@ -1,0 +1,76 @@
+{
+	id: "3B631B443335DD24"
+	order_index: 2
+	title: "Rare"
+	loot_size: 1
+	rewards: [
+		{ item: "botania:mana_diamond", count: 2 }
+		{ item: "botania:mana_pearl", count: 3 }
+		{ item: "botania:manasteel_ingot", count: 8 }
+		{ item: "botania:black_lotus" }
+		{ item: "tombstone:tablet_of_home" }
+		{ item: "tombstone:tablet_of_recall" }
+		{ item: "storagedrawers:diamond_storage_upgrade", count: 6 }
+		{ item: "bloodmagic:soulsnare", count: 4 }
+		{
+			item: {
+				id: "bloodmagic:soulgemlesser"
+				Count: 1b
+				tag: {
+					souls: 256.0d
+				}
+			}
+		}
+		{ item: "immersiveengineering:component_electronic" }
+		{ item: "bhc:red_heart", count: 4 }
+		{ item: "ironfurnaces:upgrade_diamond" }
+		{ item: "ironfurnaces:diamond_furnace" }
+		{ item: "darkutils:charm_portal" }
+		{
+			item: {
+				id: "quark:pickarang"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "darkutils:vector_plate_extreme", count: 4 }
+		{
+			item: {
+				id: "tconstruct:pick_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:tungsten"
+				}
+			}
+		}
+		{ item: "torchmaster:megatorch" }
+		{ item: "immersiveengineering:electron_tube", count: 2 }
+		{ item: "immersiveengineering:plate_duroplast", count: 4 }
+		{ item: "immersiveengineering:steel_scaffolding_standard", count: 4 }
+		{ item: "farmersdelight:roast_chicken", count: 3 }
+		{ item: "mob_grinding_utils:saw" }
+		{ item: "immersiveengineering:coil_mv" }
+		{ item: "create:precision_mechanism" }
+		{
+			item: {
+				id: "immersiveengineering:blueprint"
+				Count: 1b
+				tag: {
+					blueprint: "electrode"
+				}
+			}
+			weight: 3
+		}
+	]
+	loot_crate: {
+		string_id: "rare"
+		color: 38143
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
+}

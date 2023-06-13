@@ -1,0 +1,71 @@
+{
+	id: "59378076176081C3"
+	order_index: 0
+	title: "Common"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:diamond" }
+		{ item: "storagedrawers:iron_storage_upgrade", count: 2 }
+		{
+			item: {
+				id: "mekanismtools:bronze_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "bonsaitrees3:bonsaipot", count: 2 }
+		{ item: "toughasnails:purified_water_bottle" }
+		{ item: "farmersdelight:apple_cider", count: 5 }
+		{ item: "create:zinc_ingot", count: 4 }
+		{ item: "waterstrainer:worm", count: 4 }
+		{ item: "create:shaft", count: 4 }
+		{ item: "minecraft:quartz", count: 2 }
+		{ item: "minecraft:gold_ingot", count: 2 }
+		{
+			item: {
+				id: "waterstrainer:strainer_survivalist"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "ironfurnaces:upgrade_iron" }
+		{ item: "create:andesite_casing", count: 2 }
+		{ item: "brewinandchewin:beer" }
+		{
+			item: {
+				id: "tconstruct:pick_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+		}
+		{ item: "darkutils:vector_plate", count: 8 }
+		{ item: "create:cogwheel", count: 8 }
+		{ item: "minecraft:copper_ingot", count: 12 }
+		{ item: "minecraft:redstone", count: 16 }
+		{ item: "thermal:apatite", count: 32 }
+	]
+	loot_crate: {
+		string_id: "common"
+		color: 9607578
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
+}
