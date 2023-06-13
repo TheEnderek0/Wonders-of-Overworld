@@ -70,7 +70,8 @@ onEvent('recipes', event => {
     })
 
     event.replaceInput({output: ['buildinggadgets:gadget_building', 'buildinggadgets:gadget_exchanging', 'buildinggadgets:gadget_copy_paste', 'buildinggadgets:gadget_destruction']}, 'minecraft:lapis_lazuli', 'immersiveengineering:component_electronic')
-
+    event.replaceInput({output: 'draconicevolution:potentiometer'}, 'draconicevolution:draconium_dust', 'minecraft:lever')
+    
     event.shaped('6x tconstruct:rod_sand_cast',[
         "A A",
         "A A",
