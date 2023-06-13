@@ -1,12 +1,12 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "05AF8D3D4322BDCB"
 	id: "1C12C9EB73CEB365"
-	filename: "spellcasting__artifice"
-	default_quest_shape: ""
-	icon: "ars_nouveau:archmage_spell_book"
-	title: "Spellcasting \\& Artifice"
+	group: "05AF8D3D4322BDCB"
 	order_index: 3
+	filename: "spellcasting__artifice"
+	title: "Spellcasting \\& Artifice"
+	icon: "ars_nouveau:archmage_spell_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [ ]
+	quest_links: [ ]
 }

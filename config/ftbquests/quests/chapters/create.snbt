@@ -1,165 +1,278 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "57BD07362FE64FCF"
 	id: "3522D0332249C952"
-	filename: "create"
-	default_quest_shape: ""
-	icon: "create:encased_fan"
-	title: "Create"
+	group: "57BD07362FE64FCF"
 	order_index: 0
+	filename: "create"
+	title: "Create"
+	icon: "create:encased_fan"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Start"
+			icon: "create:encased_fan"
+			x: -2.0d
+			y: -2.0d
+			shape: "gear"
+			description: ["In this chapter you will learn about Create. To see exactly how blocks interact with eachother or the usage, hover on a block and hold \"w\", to Ponder."]
+			dependencies: ["21968D785E952710"]
+			id: "265884067CED153F"
 			tasks: [{
 				id: "3D8CC9B5578DAA20"
 				type: "checkmark"
 				title: "Start"
 			}]
-			description: ["In this chapter you will learn about Create. To see exactly how blocks interact with eachother or the usage, hover on a block and hold \"w\", to Ponder."]
-			id: "265884067CED153F"
-			icon: "create:encased_fan"
-			x: -2.0d
-			y: -2.0d
-			shape: "gear"
-			title: "Start"
-			dependencies: ["21968D785E952710"]
 		}
 		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["265884067CED153F"]
+			id: "514CD94B295415C4"
 			tasks: [{
 				id: "630D6E17BB8BB903"
 				type: "item"
 				item: "create:cogwheel"
 			}]
-			dependencies: ["265884067CED153F"]
-			id: "514CD94B295415C4"
-			y: -2.0d
-			x: 0.0d
+			rewards: [{
+				id: "655A529089FA0790"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["265884067CED153F"]
+			id: "6D8A739C217FDEAF"
 			tasks: [{
 				id: "4BDF8D10BF3318AB"
 				type: "item"
 				item: "create:shaft"
 			}]
-			dependencies: ["265884067CED153F"]
-			id: "6D8A739C217FDEAF"
-			y: 0.0d
-			x: -2.0d
+			rewards: [{
+				id: "0EDCC49A3D1C337A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["265884067CED153F"]
+			id: "7F1018A6C6464867"
 			tasks: [{
 				id: "4F71C3539EAA2488"
 				type: "item"
 				item: "kubejs:casing_frame"
 			}]
-			dependencies: ["265884067CED153F"]
-			id: "7F1018A6C6464867"
-			y: -4.0d
-			x: -2.0d
+			rewards: [{
+				id: "52A6A003C0E2C67E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["7F1018A6C6464867"]
+			id: "21D8B05A34F6B050"
 			tasks: [{
 				id: "67B21AD711849D6A"
 				type: "item"
 				item: "create:andesite_casing"
 			}]
-			dependencies: ["7F1018A6C6464867"]
-			id: "21D8B05A34F6B050"
-			y: -4.0d
-			x: 0.0d
+			rewards: [{
+				id: "7702F224F5D27075"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["21D8B05A34F6B050"]
+			id: "613C541F0EBC3B2A"
 			tasks: [{
 				id: "3BD6B734F47E9698"
 				type: "item"
 				item: "create:mechanical_press"
 			}]
-			dependencies: ["21D8B05A34F6B050"]
-			id: "613C541F0EBC3B2A"
-			y: -4.0d
-			x: 2.0d
+			rewards: [{
+				id: "4EF15A68FDC99C4C"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "386CD64F8549056E"
-				type: "item"
-				item: "create:gearbox"
-			}]
+			x: 2.0d
+			y: -2.0d
 			dependencies: [
 				"514CD94B295415C4"
 				"21D8B05A34F6B050"
 			]
 			id: "63BDCA345209F34B"
-			y: -2.0d
-			x: 2.0d
+			tasks: [{
+				id: "386CD64F8549056E"
+				type: "item"
+				item: "create:gearbox"
+			}]
+			rewards: [{
+				id: "2551F742EAF67575"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["514CD94B295415C4"]
+			id: "2529301FC4CF74E0"
 			tasks: [{
 				id: "547CD22E1C0273EC"
 				type: "item"
 				item: "create:large_cogwheel"
 			}]
-			dependencies: ["514CD94B295415C4"]
-			id: "2529301FC4CF74E0"
-			y: 0.0d
-			x: 0.0d
+			rewards: [{
+				id: "1360151889BD45B6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: -7.0d
+			dependencies: ["21D8B05A34F6B050"]
+			id: "1958DA38D00F8E3C"
 			tasks: [{
 				id: "3953F066F885A11E"
 				type: "item"
 				item: "create:encased_fan"
 			}]
-			dependencies: ["21D8B05A34F6B050"]
-			id: "1958DA38D00F8E3C"
-			y: -7.0d
-			x: 2.0d
+			rewards: [{
+				id: "045688A1985CC8EE"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: -7.0d
+			dependencies: ["1958DA38D00F8E3C"]
+			id: "3F0FA2F3B1F8B9ED"
 			tasks: [{
 				id: "080C5B961D7FF969"
 				type: "item"
 				item: "kubejs:tiny_rub"
 			}]
-			dependencies: ["1958DA38D00F8E3C"]
-			id: "3F0FA2F3B1F8B9ED"
-			y: -7.0d
-			x: 4.0d
 		}
 		{
+			x: 6.0d
+			y: -7.0d
+			dependencies: ["3F0FA2F3B1F8B9ED"]
+			id: "0ED815D273C96A4F"
 			tasks: [{
 				id: "249A10697D7F9EE8"
 				type: "item"
 				item: "thermal:cured_rubber"
 			}]
-			dependencies: ["3F0FA2F3B1F8B9ED"]
-			id: "0ED815D273C96A4F"
-			y: -7.0d
-			x: 6.0d
+			rewards: [{
+				id: "483EA79466B3ACE8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: ["21D8B05A34F6B050"]
+			id: "79E9A8F0EBD1242A"
 			tasks: [{
 				id: "7315CCD404C3FBCA"
 				type: "item"
 				item: "createaddition:rolling_mill"
 			}]
-			dependencies: ["21D8B05A34F6B050"]
-			id: "79E9A8F0EBD1242A"
-			y: -5.5d
-			x: 2.0d
+			rewards: [{
+				id: "0CCF2B8A86F1B9D9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 8.0d
+			y: -7.0d
+			dependencies: ["0ED815D273C96A4F"]
+			id: "1419B57ACFF433E8"
 			tasks: [{
 				id: "26FC83CE3E2EE99A"
 				type: "item"
 				item: "create:belt_connector"
 			}]
-			dependencies: ["0ED815D273C96A4F"]
-			id: "1419B57ACFF433E8"
-			y: -7.0d
-			x: 8.0d
 		}
 		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["613C541F0EBC3B2A"]
+			id: "39DC8E5F38BF854E"
 			tasks: [
 				{
 					id: "27CC01AB95145A1B"
@@ -172,180 +285,299 @@
 					item: "create:basin"
 				}
 			]
-			dependencies: ["613C541F0EBC3B2A"]
-			id: "39DC8E5F38BF854E"
-			y: -4.0d
-			x: 4.0d
+			rewards: [{
+				id: "27CC8E29E57EC75D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["39DC8E5F38BF854E"]
+			id: "2DD5F67FF6AA13D2"
 			tasks: [{
 				id: "386AE68008789607"
 				type: "item"
 				item: "create:blaze_burner"
 			}]
-			dependencies: ["39DC8E5F38BF854E"]
-			id: "2DD5F67FF6AA13D2"
-			y: -4.0d
-			x: 6.0d
+			rewards: [{
+				id: "2B880F5B57983A0E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["2DD5F67FF6AA13D2"]
+			id: "1DFA5045523B6655"
 			tasks: [{
 				id: "4E64F6AE614D488B"
 				type: "item"
 				item: "create:blaze_cake"
 			}]
-			dependencies: ["2DD5F67FF6AA13D2"]
-			id: "1DFA5045523B6655"
-			y: -4.0d
-			x: 8.0d
+			rewards: [{
+				id: "568E388CDD9290C4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 10.0d
+			y: -4.0d
+			description: ["Tip: You can craft molten steel in a mixer."]
+			dependencies: ["1DFA5045523B6655"]
+			size: 1.25d
+			id: "545D35281F68A601"
 			tasks: [{
 				id: "7A5CF9F44197791D"
 				type: "item"
 				item: "immersiveengineering:ingot_steel"
 			}]
-			dependencies: ["1DFA5045523B6655"]
-			id: "545D35281F68A601"
-			y: -4.0d
-			x: 10.0d
+			rewards: [{
+				id: "33E1516560851979"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["2DD5F67FF6AA13D2"]
+			id: "26490B8D08B926F7"
 			tasks: [{
 				id: "7AAB4C4BF7864682"
 				type: "item"
 				item: "create:brass_ingot"
 			}]
-			dependencies: ["2DD5F67FF6AA13D2"]
-			id: "26490B8D08B926F7"
-			y: -2.0d
-			x: 6.0d
+			rewards: [{
+				id: "015A18736CB66402"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["613C541F0EBC3B2A"]
+			id: "34320685C4F5527E"
 			tasks: [{
 				id: "04CB00984F110ADA"
 				type: "item"
 				item: "kubejs:fine_mesh"
 			}]
-			dependencies: ["613C541F0EBC3B2A"]
-			id: "34320685C4F5527E"
-			y: -2.0d
-			x: 4.0d
+			rewards: [{
+				id: "74E8119D304D6B68"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["34320685C4F5527E"]
+			id: "4EDDFA329E1E1F83"
 			tasks: [{
 				id: "688E8791B7734DB7"
 				type: "item"
 				item: "create:electron_tube"
 			}]
-			dependencies: ["34320685C4F5527E"]
-			id: "4EDDFA329E1E1F83"
-			y: 1.5d
-			x: 4.0d
+			rewards: [{
+				id: "1D0E717E7A2409CC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["26490B8D08B926F7"]
+			id: "352423E4CF0F09EF"
 			tasks: [{
 				id: "217B88BBEAE85970"
 				type: "item"
 				item: "create:brass_casing"
 			}]
-			dependencies: ["26490B8D08B926F7"]
-			id: "352423E4CF0F09EF"
-			y: -2.0d
-			x: 8.0d
 		}
 		{
-			tasks: [{
-				id: "7F9ED887024897EA"
-				type: "item"
-				item: "create:mechanical_crafter"
-			}]
+			x: 8.0d
+			y: 1.5d
 			dependencies: [
 				"352423E4CF0F09EF"
 				"4EDDFA329E1E1F83"
 			]
 			id: "601FB224A851B1F8"
-			y: 1.5d
-			x: 8.0d
+			tasks: [{
+				id: "7F9ED887024897EA"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
 		}
 		{
-			tasks: [{
-				id: "22D3400BBDA846C1"
-				type: "item"
-				item: "create:crushing_wheel"
-			}]
+			x: 10.0d
+			y: -1.0d
+			shape: "square"
 			dependencies: [
 				"601FB224A851B1F8"
 				"545D35281F68A601"
 			]
 			id: "2FE85E6F5039110F"
-			shape: "square"
-			y: -1.0d
-			x: 10.0d
+			tasks: [{
+				id: "22D3400BBDA846C1"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "777E8A6074A99E97"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 14.5d
+			y: 1.5d
+			dependencies: ["601FB224A851B1F8"]
+			id: "39F09BB02B75A7C8"
 			tasks: [{
 				id: "3E3F760AA40DF287"
 				type: "item"
 				item: "kubejs:precision_mechanism_ch"
 			}]
-			dependencies: ["601FB224A851B1F8"]
-			id: "39F09BB02B75A7C8"
-			y: 1.5d
-			x: 14.5d
+			rewards: [{
+				id: "232F2F37358D63F2"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "0C0850DEEBA1318B"
-				type: "item"
-				item: "kubejs:insulator"
-			}]
+			x: 6.0d
+			y: -5.5d
 			dependencies: [
 				"0ED815D273C96A4F"
 				"79E9A8F0EBD1242A"
 			]
 			id: "464D381CE9702646"
-			y: -5.5d
-			x: 6.0d
+			tasks: [{
+				id: "0C0850DEEBA1318B"
+				type: "item"
+				item: "kubejs:insulator"
+			}]
 		}
 		{
+			x: 10.0d
+			y: -5.5d
+			dependencies: ["464D381CE9702646"]
+			id: "283848DD12544BBB"
 			tasks: [{
 				id: "38E9E2A23D5AF7D8"
 				type: "item"
 				item: "createaddition:capacitor"
 			}]
-			dependencies: ["464D381CE9702646"]
-			id: "283848DD12544BBB"
-			y: -5.5d
-			x: 10.0d
+			rewards: [{
+				id: "4B9523AB41462FC3"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "5221B0F9281DC6AD"
-				type: "item"
-				item: "create:precision_mechanism"
-			}]
+			x: 14.5d
+			y: -5.5d
 			dependencies: [
 				"39F09BB02B75A7C8"
 				"283848DD12544BBB"
 			]
 			id: "1A089FFC7A46B68B"
-			y: -3.0d
-			x: 14.5d
+			tasks: [{
+				id: "5221B0F9281DC6AD"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [{
+				id: "1DE413FB821C21E1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["Unlocking this is not necessary, but will come in handy in further progression. It's like a stripped down version of Applied Energistics / Refined Storage."]
-			id: "374A0714FB6E850B"
-			icon: "storagenetwork:request"
-			x: 14.5d
-			y: -5.25d
-			shape: "rsquare"
 			title: "Simple Storage Network"
+			icon: "storagenetwork:request"
+			x: 12.75d
+			y: -3.75d
+			shape: "rsquare"
+			description: ["Unlocking this is not necessary, but will come in handy in further progression. It's like a stripped down version of Applied Energistics / Refined Storage."]
 			dependencies: [
 				"1A089FFC7A46B68B"
 				"545D35281F68A601"
 			]
+			size: 1.5d
+			id: "374A0714FB6E850B"
 			tasks: [{
 				id: "4A1B0197B4BF5A0F"
 				type: "checkmark"
@@ -353,6 +585,10 @@
 			}]
 		}
 		{
+			x: 16.0d
+			y: -5.5d
+			dependencies: ["1A089FFC7A46B68B"]
+			id: "54E6DDC71A15C9D3"
 			tasks: [{
 				id: "50DC20CCCBBF84AF"
 				type: "item"
@@ -364,54 +600,72 @@
 					}
 				}
 			}]
-			dependencies: ["1A089FFC7A46B68B"]
-			id: "54E6DDC71A15C9D3"
-			y: -3.0d
-			x: 16.0d
 		}
 		{
+			x: 16.0d
+			y: -4.0d
+			dependencies: ["1A089FFC7A46B68B"]
+			id: "6C1A9EF46455626A"
 			tasks: [{
 				id: "6D18D4CEF2F61651"
 				type: "item"
 				item: "create:mechanical_arm"
 			}]
-			dependencies: ["1A089FFC7A46B68B"]
-			id: "6C1A9EF46455626A"
-			y: -1.5d
-			x: 16.0d
 		}
 		{
+			x: 9.0d
+			y: -3.0d
+			dependencies: ["352423E4CF0F09EF"]
+			id: "094E9E4E2DDDAC86"
 			tasks: [{
 				id: "51BEA9809CFF9B8D"
 				type: "item"
 				item: "create:windmill_bearing"
 			}]
-			dependencies: ["352423E4CF0F09EF"]
-			id: "094E9E4E2DDDAC86"
-			y: -3.0d
-			x: 9.0d
+			rewards: [{
+				id: "76423CE54CC1A02F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["2529301FC4CF74E0"]
+			id: "7B10A904C0D97F90"
 			tasks: [{
 				id: "5B9F477928949223"
 				type: "item"
 				item: "create:water_wheel"
 			}]
-			dependencies: ["7F1018A6C6464867"]
-			id: "7B10A904C0D97F90"
-			y: -6.0d
-			x: -2.0d
+			rewards: [{
+				id: "53BC278CBBD22C2E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["This chapter will lead you to PneumaticCraft, which will show you the power of air pressure."]
-			id: "2EC5075985FFC3EB"
+			title: "Basic Pressure"
 			icon: "compressedcreativity:rotational_compressor"
-			x: 12.75d
+			x: 11.25d
 			y: -0.75d
 			shape: "rsquare"
-			title: "Basic Pressure"
+			description: ["This chapter will lead you to PneumaticCraft, which will show you the power of air pressure."]
 			dependencies: ["545D35281F68A601"]
+			size: 1.5d
+			id: "2EC5075985FFC3EB"
 			tasks: [{
 				id: "4FF07333B243E96D"
 				type: "checkmark"
@@ -419,39 +673,61 @@
 			}]
 		}
 		{
+			x: 11.0d
+			y: -7.0d
+			dependencies: ["283848DD12544BBB"]
+			id: "1FBCF72AB84C183E"
 			tasks: [{
 				id: "6AA9ED0E93B30452"
 				type: "item"
 				item: "createaddition:alternator"
 			}]
-			dependencies: ["283848DD12544BBB"]
-			id: "1FBCF72AB84C183E"
-			y: -7.0d
-			x: 11.0d
+			rewards: [{
+				id: "675CF386B6A284AD"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 11.0d
+			y: -8.5d
+			dependencies: ["1FBCF72AB84C183E"]
+			id: "740EDAFE361BC739"
 			tasks: [{
 				id: "5746E424E5F6A2EB"
 				type: "item"
 				item: "createaddition:modular_accumulator"
 			}]
-			dependencies: ["1FBCF72AB84C183E"]
-			id: "740EDAFE361BC739"
-			y: -8.5d
-			x: 11.0d
+			rewards: [{
+				id: "6D988644EA3FADE1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			size: 1.5d
-			id: "324F1F1635E5CAFD"
-			icon: "industrialforegoing:machine_frame_pity"
-			x: 14.5d
-			y: -7.0d
-			shape: "rsquare"
 			title: "Industrial Foregoing - Pity"
+			icon: "industrialforegoing:machine_frame_pity"
+			x: 14.25d
+			y: -6.75d
+			shape: "rsquare"
 			dependencies: [
 				"1FBCF72AB84C183E"
 				"545D35281F68A601"
 			]
+			size: 1.5d
+			id: "324F1F1635E5CAFD"
 			tasks: [{
 				id: "5CC819389B05F8E3"
 				type: "checkmark"
@@ -459,26 +735,40 @@
 			}]
 		}
 		{
+			x: 9.5d
+			y: -7.0d
+			dependencies: ["283848DD12544BBB"]
+			id: "7768844C6B63E66E"
 			tasks: [{
 				id: "790CC4D9C1225459"
 				type: "item"
 				item: "createaddition:electric_motor"
 			}]
-			dependencies: ["283848DD12544BBB"]
-			id: "7768844C6B63E66E"
-			y: -7.0d
-			x: 9.5d
+			rewards: [{
+				id: "6B62F7C631406F22"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["Immersive Engineering will bring you into the world of energy, and heavy machinery."]
-			id: "6DA55408E953DFFC"
+			title: "Immersive Engineering"
 			icon: "immersiveengineering:crusher"
-			x: 12.75d
+			x: 12.0d
 			y: -2.25d
 			shape: "rsquare"
-			title: "Immersive Engineering"
-			dependencies: ["545D35281F68A601"]
+			description: ["Immersive Engineering will bring you into the world of energy, and heavy machinery."]
+			dependencies: [
+				"545D35281F68A601"
+				"1FBCF72AB84C183E"
+			]
+			size: 1.5d
+			id: "6DA55408E953DFFC"
 			tasks: [{
 				id: "040EB627D5396E7D"
 				type: "checkmark"
@@ -486,39 +776,63 @@
 			}]
 		}
 		{
+			x: 10.0d
+			y: 0.5d
+			description: ["Using this you can automate your mining experience, and be more efficient. I recommend making a mining contraption using this as the game gets very resource heavy, fast."]
+			dependencies: ["545D35281F68A601"]
+			id: "0A397DAC443B99B0"
 			tasks: [{
 				id: "06879F3EBC994587"
 				type: "item"
 				item: "create:mechanical_drill"
 			}]
-			description: ["Using this you can automate your mining experience, and be more efficient. I recommend making a mining contraption using this as the game gets very resource heavy, fast."]
-			dependencies: ["545D35281F68A601"]
-			id: "0A397DAC443B99B0"
-			y: 0.5d
-			x: 10.0d
+			rewards: [{
+				id: "3C81CF809AEE29A6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 7.0d
+			y: -3.0d
+			description: ["Using this item on the blaze burner will make it able to use liquids such as biodiesel for example, instead of solid fuel."]
+			dependencies: ["2DD5F67FF6AA13D2"]
+			id: "4924DE9CC487DFE9"
 			tasks: [{
 				id: "7D691A39E589B0B9"
 				type: "item"
 				item: "createaddition:straw"
 			}]
-			dependencies: ["2DD5F67FF6AA13D2"]
-			id: "4924DE9CC487DFE9"
-			y: -3.0d
-			x: 7.0d
+			rewards: [{
+				id: "04CA57FC21919349"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 8.0d
+			y: -8.5d
+			description: ["These pipes can serve as an alternative to belts. They are slow but very flexible."]
+			dependencies: ["1419B57ACFF433E8"]
+			id: "698799F99D38C2AC"
 			tasks: [{
 				id: "07F85FABD4368F0C"
 				type: "item"
 				item: "quark:pipe"
 			}]
-			description: ["These pipes can serve as an alternative to belts. They are slow but very flexible."]
-			dependencies: ["1419B57ACFF433E8"]
-			id: "698799F99D38C2AC"
-			y: -8.5d
-			x: 8.0d
 		}
 	]
+	quest_links: [ ]
 }

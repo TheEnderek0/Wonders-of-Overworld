@@ -1,40 +1,55 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "426B3CA4D81D54E1"
 	id: "77BF31120C376F33"
-	filename: "industrial_foregoing_part_1"
-	default_quest_shape: ""
-	icon: "industrialforegoing:machine_frame_pity"
-	title: "Industrial Foregoing - Pity"
+	group: "426B3CA4D81D54E1"
 	order_index: 1
+	filename: "industrial_foregoing_part_1"
+	title: "Industrial Foregoing - Pity"
+	icon: "industrialforegoing:machine_frame_pity"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "industrialforegoing:machine_frame_pity"
+			x: -2.5d
+			y: 0.5d
+			shape: "gear"
+			description: ["First chapter of Industrial Foregoing. As always, everything is in the book."]
+			dependencies: ["324F1F1635E5CAFD"]
+			id: "39269794127ED4FF"
 			tasks: [{
 				id: "1100A6936901D7E5"
 				type: "checkmark"
 				title: "Start"
 			}]
-			description: ["First chapter of Industrial Foregoing. As always, everything is in the book."]
-			icon: "industrialforegoing:machine_frame_pity"
-			x: -2.5d
-			id: "39269794127ED4FF"
-			y: 0.5d
-			shape: "gear"
-			dependencies: ["324F1F1635E5CAFD"]
 		}
 		{
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["39269794127ED4FF"]
+			id: "74A81C3AC0D7E13E"
 			tasks: [{
 				id: "1A8682CE3C1D9A39"
 				type: "item"
 				item: "industrialforegoing:machine_frame_pity"
 			}]
-			dependencies: ["39269794127ED4FF"]
-			id: "74A81C3AC0D7E13E"
-			y: 0.5d
-			x: 5.0d
+			rewards: [{
+				id: "72940FAF3C7C944A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			title: "Translocators V2"
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "455F676D6F15B417"
 			tasks: [
 				{
 					id: "3561537624A316C7"
@@ -47,13 +62,23 @@
 					item: "industrialforegoing:fluid_transporter_type"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "455F676D6F15B417"
-			y: -1.0d
-			x: 2.0d
-			title: "Translocators V2"
+			rewards: [{
+				id: "0A993C6C47C84061"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["39269794127ED4FF"]
+			id: "73D710559B5E843F"
 			tasks: [{
 				id: "17F5C7CE3D6E3104"
 				type: "item"
@@ -66,12 +91,12 @@
 				}
 				match_nbt: false
 			}]
-			dependencies: ["39269794127ED4FF"]
-			id: "73D710559B5E843F"
-			y: -1.5d
-			x: -2.5d
 		}
 		{
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "5A0BB0E0E8F282F4"
 			tasks: [
 				{
 					id: "7038E6743061DA43"
@@ -84,35 +109,46 @@
 					item: "industrialforegoing:block_placer"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "5A0BB0E0E8F282F4"
-			y: -2.5d
-			x: 3.0d
 		}
 		{
+			x: 9.5d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "02FC9F46874F6938"
 			tasks: [{
 				id: "3C7466E4E81459CB"
 				type: "item"
 				item: "industrialforegoing:dissolution_chamber"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "02FC9F46874F6938"
-			shape: "square"
-			y: 0.5d
-			x: 9.5d
+			rewards: [{
+				id: "14B15CEC4EF2CC1D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 9.5d
+			y: -0.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "1C6A8FD02FE16C5B"
 			tasks: [{
 				id: "09D59A0D2E932B58"
 				type: "item"
 				item: "industrialforegoing:fluid_extractor"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "1C6A8FD02FE16C5B"
-			y: -0.5d
-			x: 9.5d
 		}
 		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "2048F5880FC6AAC3"
 			tasks: [
 				{
 					id: "2B665910FC05F29E"
@@ -125,34 +161,35 @@
 					item: "industrialforegoing:fluid_collector"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "2048F5880FC6AAC3"
-			y: -3.0d
-			x: 5.0d
 		}
 		{
+			x: 7.0d
+			y: -2.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "48B0DD191C6802F3"
 			tasks: [{
 				id: "5EAA211C81E6E9FD"
 				type: "item"
 				item: "industrialforegoing:dye_mixer"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "48B0DD191C6802F3"
-			y: -2.5d
-			x: 7.0d
 		}
 		{
+			x: 8.0d
+			y: -1.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "5A220C972F89D7C7"
 			tasks: [{
 				id: "417FA996D44E74FA"
 				type: "item"
 				item: "industrialforegoing:resourceful_furnace"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "5A220C972F89D7C7"
-			y: -1.0d
-			x: 8.0d
 		}
 		{
+			title: "Animal Farm"
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "062FD8AFED59C9D9"
 			tasks: [
 				{
 					id: "78B12D9EDEE02D8A"
@@ -170,24 +207,24 @@
 					item: "industrialforegoing:sewer"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "062FD8AFED59C9D9"
-			y: 2.0d
-			x: 2.0d
-			title: "Animal Farm"
 		}
 		{
+			x: 3.0d
+			y: 3.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "13A9203B269312EA"
 			tasks: [{
 				id: "59706998CE4DFF8C"
 				type: "item"
 				item: "industrialforegoing:animal_baby_separator"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "13A9203B269312EA"
-			y: 3.5d
-			x: 3.0d
 		}
 		{
+			title: "Plant Farm"
+			x: 7.0d
+			y: 3.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "417BFFDA355161AC"
 			tasks: [
 				{
 					id: "120048702B871112"
@@ -200,79 +237,74 @@
 					item: "industrialforegoing:plant_gatherer"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "417BFFDA355161AC"
-			y: 3.5d
-			x: 7.0d
-			title: "Plant Farm"
 		}
 		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "1A1FA621CF8DE9D6"
 			tasks: [{
 				id: "51C1D02C0C31EF00"
 				type: "item"
 				item: "industrialforegoing:spores_recreator"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "1A1FA621CF8DE9D6"
-			y: 2.0d
-			x: 8.0d
 		}
 		{
+			x: 5.0d
+			y: 4.0d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "4490D14EB6B72BEE"
 			tasks: [{
 				id: "136AC5832B248562"
 				type: "item"
 				item: "industrialforegoing:water_condensator"
 			}]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "4490D14EB6B72BEE"
-			y: 4.0d
-			x: 5.0d
 		}
 		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["13A9203B269312EA"]
+			id: "07E7FD3405C9EBA9"
 			tasks: [{
 				id: "0AA536E2E11942C6"
 				type: "item"
 				item: "industrialforegoing:sludge_refiner"
 			}]
-			dependencies: ["13A9203B269312EA"]
-			id: "07E7FD3405C9EBA9"
-			y: 5.0d
-			x: 3.0d
 		}
 		{
+			x: 1.5d
+			y: 5.0d
+			dependencies: ["13A9203B269312EA"]
+			id: "4ECA866CEBCEAE44"
 			tasks: [{
 				id: "63F4910C21647AE4"
 				type: "item"
 				item: "industrialforegoing:sewage_composter"
 			}]
-			dependencies: ["13A9203B269312EA"]
-			id: "4ECA866CEBCEAE44"
-			y: 5.0d
-			x: 1.5d
 		}
 		{
+			x: 11.5d
+			y: -0.5d
+			dependencies: ["1C6A8FD02FE16C5B"]
+			id: "07DDA26D5E9FF408"
 			tasks: [{
 				id: "6AD7C8954D5F20C0"
 				type: "item"
 				item: "industrialforegoing:latex_bucket"
 			}]
-			dependencies: ["1C6A8FD02FE16C5B"]
-			id: "07DDA26D5E9FF408"
-			y: -0.5d
-			x: 11.5d
 		}
 		{
-			size: 1.5d
-			id: "5F81570C885DCA43"
+			title: "Industrial Foregoing - Simple 1/2"
 			icon: "industrialforegoing:machine_frame_simple"
 			x: 13.5d
 			y: 0.5d
 			shape: "rsquare"
-			title: "Industrial Foregoing - Simple 1/2"
 			dependencies: [
 				"07DDA26D5E9FF408"
 				"02FC9F46874F6938"
 			]
+			size: 1.5d
+			id: "5F81570C885DCA43"
 			tasks: [{
 				id: "357066BB9C571F44"
 				type: "checkmark"
@@ -280,6 +312,11 @@
 			}]
 		}
 		{
+			title: "Flux/Fluid Gates"
+			x: 9.5d
+			y: 1.5d
+			dependencies: ["74A81C3AC0D7E13E"]
+			id: "3512FF638AE12077"
 			tasks: [
 				{
 					id: "445F18B879812DC8"
@@ -297,11 +334,7 @@
 					item: "draconicevolution:potentiometer"
 				}
 			]
-			dependencies: ["74A81C3AC0D7E13E"]
-			id: "3512FF638AE12077"
-			y: 1.5d
-			x: 9.5d
-			title: "Flux/Fluid Gates"
 		}
 	]
+	quest_links: [ ]
 }

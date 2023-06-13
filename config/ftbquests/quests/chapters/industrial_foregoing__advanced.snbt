@@ -1,23 +1,16 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "426B3CA4D81D54E1"
 	id: "453C9A26A0C0F584"
-	filename: "industrial_foregoing__advanced"
-	default_quest_shape: ""
-	icon: "industrialforegoing:machine_frame_advanced"
-	title: "Industrial Foregoing - Advanced"
+	group: "426B3CA4D81D54E1"
 	order_index: 3
+	filename: "industrial_foregoing__advanced"
+	title: "Industrial Foregoing - Advanced"
+	icon: "industrialforegoing:machine_frame_advanced"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			tasks: [{
-				id: "63A495469015612B"
-				type: "checkmark"
-				title: "Start"
-			}]
 			icon: "industrialforegoing:machine_frame_advanced"
 			x: -0.5d
-			id: "64E7FA14A19713F2"
 			y: 0.5d
 			shape: "gear"
 			dependencies: [
@@ -25,19 +18,41 @@
 				"6B2675BBC0C12E25"
 				"68637EC1A97C248D"
 			]
+			id: "64E7FA14A19713F2"
+			tasks: [{
+				id: "63A495469015612B"
+				type: "checkmark"
+				title: "Start"
+			}]
 		}
 		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["64E7FA14A19713F2"]
+			id: "60D7E96FE4E6FB5D"
 			tasks: [{
 				id: "69AC04B640A1F14D"
 				type: "item"
 				item: "industrialforegoing:machine_frame_advanced"
 			}]
-			dependencies: ["64E7FA14A19713F2"]
-			id: "60D7E96FE4E6FB5D"
-			y: 0.5d
-			x: 3.5d
+			rewards: [{
+				id: "6400576C8D5C3306"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			title: "Advanced Enchantments"
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "75191E88FA16C8CC"
 			tasks: [
 				{
 					id: "5D54BE4CE0D31740"
@@ -60,13 +75,13 @@
 					item: "industrialforegoing:enchantment_sorter"
 				}
 			]
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "75191E88FA16C8CC"
-			y: -1.0d
-			x: 3.5d
-			title: "Advanced Enchantments"
 		}
 		{
+			title: "Ore Processing"
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "4E857BD30DB0B07D"
 			tasks: [
 				{
 					id: "03BF44D68B24E86E"
@@ -79,67 +94,73 @@
 					item: "industrialforegoing:fluid_sieving_machine"
 				}
 			]
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "4E857BD30DB0B07D"
-			y: 2.0d
-			x: 3.5d
-			title: "Ore Processing"
 		}
 		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "545E547CA9B18AA0"
 			tasks: [{
 				id: "3E371C3D9D82EAAE"
 				type: "item"
 				item: "industrialforegoing:mob_crusher"
 			}]
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "545E547CA9B18AA0"
-			y: -1.0d
-			x: 2.0d
 		}
 		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "3C768BE2FAB13C8B"
 			tasks: [{
 				id: "78ECA8CEB6284113"
 				type: "item"
 				item: "industrialforegoing:mob_duplicator"
 			}]
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "3C768BE2FAB13C8B"
-			y: 2.0d
-			x: 2.0d
 		}
 		{
+			x: 5.0d
+			y: -1.0d
+			shape: "square"
+			description: ["This machine will make your life way easier, as it allows you to produce various resources very quickly, such as granite, diorite and silicon."]
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "0EC0CF48EFC43675"
 			tasks: [{
 				id: "578E140C6FCAFFAE"
 				type: "item"
 				item: "industrialforegoing:material_stonework_factory"
 			}]
-			description: ["This machine will make your life way easier, as it allows you to produce various resources very quickly, such as granite, diorite and silicon."]
-			x: 5.0d
-			id: "0EC0CF48EFC43675"
-			y: -1.0d
-			shape: "square"
-			dependencies: ["60D7E96FE4E6FB5D"]
+			rewards: [{
+				id: "2BDF6D46A685F2B0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "24FE0DC7025A418D"
 			tasks: [{
 				id: "3E0B9DEE7BC0D22F"
 				type: "item"
 				item: "industrialforegoing:potion_brewer"
 			}]
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "24FE0DC7025A418D"
-			y: 2.0d
-			x: 5.0d
 		}
 		{
-			size: 1.5d
-			id: "70AD936E3F0A6AF4"
+			title: "Thermal Series"
 			icon: "thermal:machine_bottler"
 			x: 6.75d
 			y: 0.5d
 			shape: "rsquare"
-			title: "Thermal Series"
 			dependencies: ["60D7E96FE4E6FB5D"]
+			size: 1.5d
+			id: "70AD936E3F0A6AF4"
 			tasks: [{
 				id: "56091661543E29E0"
 				type: "checkmark"
@@ -147,4 +168,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

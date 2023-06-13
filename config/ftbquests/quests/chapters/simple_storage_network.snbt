@@ -1,58 +1,76 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "57BD07362FE64FCF"
 	id: "54D5A7BD272308D3"
-	filename: "simple_storage_network"
-	default_quest_shape: ""
-	icon: "storagenetwork:request"
-	title: "Simple Storage Network"
+	group: "57BD07362FE64FCF"
 	order_index: 1
+	filename: "simple_storage_network"
+	title: "Simple Storage Network"
+	icon: "storagenetwork:request"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Start"
+			icon: "storagenetwork:request"
+			x: 0.5d
+			y: -2.0d
+			shape: "gear"
+			dependencies: ["374A0714FB6E850B"]
+			id: "541A8B8E93C7441B"
 			tasks: [{
 				id: "13CDF4E02A30D3A2"
 				type: "checkmark"
 				title: "Start"
 			}]
-			icon: "storagenetwork:request"
-			x: 0.5d
-			id: "541A8B8E93C7441B"
-			y: -2.0d
-			shape: "gear"
-			title: "Start"
-			dependencies: ["374A0714FB6E850B"]
 		}
 		{
+			x: 2.5d
+			y: -2.0d
+			description: ["This is the heart of a network."]
+			dependencies: ["541A8B8E93C7441B"]
+			id: "5198E81E2A3B11B3"
 			tasks: [{
 				id: "18037F6A052035A9"
 				type: "item"
 				item: "storagenetwork:master"
 			}]
-			description: ["This is the heart of a network."]
-			dependencies: ["541A8B8E93C7441B"]
-			id: "5198E81E2A3B11B3"
-			y: -2.0d
-			x: 2.5d
+			rewards: [{
+				id: "1FDE31D85F0A5DCF"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.5d
+			y: -4.0d
+			description: ["Just a simple cable for connecting different blocks."]
+			dependencies: ["541A8B8E93C7441B"]
+			id: "7E58F2AFF730DAC5"
 			tasks: [{
 				id: "59B57E3BAF83F65B"
 				type: "item"
 				item: "storagenetwork:kabel"
 			}]
-			description: ["Just a simple cable for connecting different blocks."]
-			dependencies: ["541A8B8E93C7441B"]
-			id: "7E58F2AFF730DAC5"
-			y: -4.0d
-			x: 2.5d
+			rewards: [{
+				id: "616F1DF76CE01312"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "7059B1064248B3F6"
-				type: "item"
-				item: "storagenetwork:inventory"
-			}]
+			x: 4.5d
+			y: -2.0d
 			description: [
 				"Simple terminal used to access the network."
 				"WARNING: Do not enable JEI synchronization as it will make your game crash when you try to interact with this block. If you do this by mistake, break this block and place it again."
@@ -62,22 +80,51 @@
 				"7E58F2AFF730DAC5"
 			]
 			id: "0167CD54806A3CAC"
-			y: -2.0d
-			x: 4.5d
+			tasks: [{
+				id: "7059B1064248B3F6"
+				type: "item"
+				item: "storagenetwork:inventory"
+			}]
+			rewards: [{
+				id: "526769F2AAE15B4C"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.5d
+			y: 0.0d
+			description: ["Adds crafting grid."]
+			dependencies: ["0167CD54806A3CAC"]
+			id: "1C1FB3799698CDF7"
 			tasks: [{
 				id: "65C35C12BF6F9C17"
 				type: "item"
 				item: "storagenetwork:request"
 			}]
-			description: ["Adds crafting grid."]
-			dependencies: ["0167CD54806A3CAC"]
-			id: "1C1FB3799698CDF7"
-			y: 0.0d
-			x: 4.5d
+			rewards: [{
+				id: "3DC99A19C1F14075"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["541A8B8E93C7441B"]
+			id: "07440004D6B80826"
 			tasks: [{
 				id: "62742D9B35FE9DC3"
 				type: "item"
@@ -89,79 +136,76 @@
 					}
 				}
 			}]
-			dependencies: ["541A8B8E93C7441B"]
-			id: "07440004D6B80826"
-			y: -0.5d
-			x: 0.5d
 		}
 		{
+			x: 4.5d
+			y: -4.0d
+			description: ["When connected to an inventory, makes that inventory available space for the network to put items in."]
+			dependencies: ["7E58F2AFF730DAC5"]
+			id: "78AFB7576160B876"
 			tasks: [{
 				id: "4A182811367ED98D"
 				type: "item"
 				item: "storagenetwork:storage_kabel"
 			}]
-			description: ["When connected to an inventory, makes that inventory available space for the network to put items in."]
-			dependencies: ["7E58F2AFF730DAC5"]
-			id: "78AFB7576160B876"
-			y: -4.0d
-			x: 4.5d
 		}
 		{
+			x: 2.5d
+			y: -5.5d
+			description: ["When connected to an inventory, it will pull every item to the network from it."]
+			dependencies: ["7E58F2AFF730DAC5"]
+			id: "652E6BEECEC260F6"
 			tasks: [{
 				id: "45761593963D3D5D"
 				type: "item"
 				item: "storagenetwork:import_kabel"
 			}]
-			description: ["When connected to an inventory, it will pull every item to the network from it."]
-			dependencies: ["7E58F2AFF730DAC5"]
-			id: "652E6BEECEC260F6"
-			y: -5.5d
-			x: 2.5d
 		}
 		{
+			x: 4.5d
+			y: -5.5d
+			description: ["When connected to an inventory it will push specific items from the network to that inventory."]
+			dependencies: ["7E58F2AFF730DAC5"]
+			id: "73C582DE3C2DACC0"
 			tasks: [{
 				id: "767E66E26FD163FA"
 				type: "item"
 				item: "storagenetwork:export_kabel"
 			}]
-			description: ["When connected to an inventory it will push specific items from the network to that inventory."]
-			dependencies: ["7E58F2AFF730DAC5"]
-			id: "73C582DE3C2DACC0"
-			y: -5.5d
-			x: 4.5d
 		}
 		{
+			x: 6.5d
+			y: -4.0d
+			dependencies: ["0167CD54806A3CAC"]
+			id: "708FD484A80E37BC"
 			tasks: [{
 				id: "281AAC7C21094D34"
 				type: "item"
 				item: "storagenetwork:stack_upgrade"
 			}]
-			dependencies: ["0167CD54806A3CAC"]
-			id: "708FD484A80E37BC"
-			y: -4.0d
-			x: 6.5d
 		}
 		{
+			x: 6.5d
+			y: -2.0d
+			dependencies: ["0167CD54806A3CAC"]
+			id: "6A918BFC2FB0487B"
 			tasks: [{
 				id: "154D48910C147C65"
 				type: "item"
 				item: "storagenetwork:speed_upgrade"
 			}]
-			dependencies: ["0167CD54806A3CAC"]
-			id: "6A918BFC2FB0487B"
-			y: -2.0d
-			x: 6.5d
 		}
 		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["0167CD54806A3CAC"]
+			id: "4C6DB63E3486A6E4"
 			tasks: [{
 				id: "55C53BF9A612675D"
 				type: "item"
 				item: "storagenetwork:stock_upgrade"
 			}]
-			dependencies: ["0167CD54806A3CAC"]
-			id: "4C6DB63E3486A6E4"
-			y: 0.0d
-			x: 6.5d
 		}
 	]
+	quest_links: [ ]
 }

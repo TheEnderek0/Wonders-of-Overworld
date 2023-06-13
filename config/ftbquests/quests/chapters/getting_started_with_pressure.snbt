@@ -1,162 +1,245 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "1CE91A4C7E9B0431"
 	id: "7E6022851C3D70F1"
-	filename: "getting_started_with_pressure"
-	default_quest_shape: ""
-	icon: "compressedcreativity:rotational_compressor"
-	title: "Basic Pressure"
+	group: "1CE91A4C7E9B0431"
 	order_index: 0
+	filename: "getting_started_with_pressure"
+	title: "Basic Pressure"
+	icon: "compressedcreativity:rotational_compressor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "compressedcreativity:rotational_compressor"
+			x: -2.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["2EC5075985FFC3EB"]
+			id: "1E13DA24936B93EC"
 			tasks: [{
 				id: "6DD3DA4D65D2C1E0"
 				type: "checkmark"
 				title: "Start"
 			}]
-			icon: "compressedcreativity:rotational_compressor"
-			x: -2.0d
-			id: "1E13DA24936B93EC"
-			y: 0.0d
-			shape: "gear"
-			dependencies: ["2EC5075985FFC3EB"]
 		}
 		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["1E13DA24936B93EC"]
+			id: "1AD2CEA534E217D4"
 			tasks: [{
 				id: "78D1E51C189E1E8D"
 				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
 			}]
-			dependencies: ["1E13DA24936B93EC"]
-			id: "1AD2CEA534E217D4"
-			y: 0.0d
-			x: 0.0d
+			rewards: [{
+				id: "695146CB21CA8BF6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["1AD2CEA534E217D4"]
+			id: "7E1ECFF9E2F0A313"
 			tasks: [{
 				id: "50994C78A587A3C3"
 				type: "item"
 				item: "kubejs:compressed_iron_plate"
 			}]
-			dependencies: ["1AD2CEA534E217D4"]
-			id: "7E1ECFF9E2F0A313"
-			y: 2.0d
-			x: 2.0d
 		}
 		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["1AD2CEA534E217D4"]
+			id: "170E3091830B14BE"
 			tasks: [{
 				id: "599968160E68C4D2"
 				type: "item"
 				item: "pneumaticcraft:pressure_tube"
 			}]
-			dependencies: ["1AD2CEA534E217D4"]
-			id: "170E3091830B14BE"
-			y: -2.0d
-			x: 2.0d
 		}
 		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["1AD2CEA534E217D4"]
+			id: "21EFBDA94FC62872"
 			tasks: [{
 				id: "17F54ABCD29D148A"
 				type: "item"
 				item: "pneumaticcraft:compressed_iron_gear"
 			}]
-			dependencies: ["1AD2CEA534E217D4"]
-			id: "21EFBDA94FC62872"
-			y: 0.0d
-			x: 2.0d
 		}
 		{
-			tasks: [{
-				id: "39E1AF068201BF99"
-				type: "item"
-				item: "compressedcreativity:rotational_compressor"
-			}]
+			x: 4.0d
+			y: 0.0d
 			dependencies: [
 				"21EFBDA94FC62872"
 				"7E1ECFF9E2F0A313"
 				"170E3091830B14BE"
 			]
 			id: "063D84F84A586C39"
-			y: 0.0d
-			x: 4.0d
+			tasks: [{
+				id: "39E1AF068201BF99"
+				type: "item"
+				item: "compressedcreativity:rotational_compressor"
+			}]
+			rewards: [{
+				id: "3B6CC59C042B2858"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: -2.0d
+			description: ["These behave like normal fans from Create, but are more flexible, and also they can be upgraded with meshes."]
+			dependencies: ["063D84F84A586C39"]
+			id: "17B53E7B6EE2D07A"
 			tasks: [{
 				id: "2DE6A3CE228F9586"
 				type: "item"
 				item: "compressedcreativity:air_blower"
 			}]
-			description: ["These behave like normal fans from Create, but are more flexible, and also they can be upgraded with meshes."]
-			dependencies: ["063D84F84A586C39"]
-			id: "17B53E7B6EE2D07A"
-			y: -2.0d
-			x: 4.0d
+			rewards: [{
+				id: "052968C5200FF1A9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["17B53E7B6EE2D07A"]
+			id: "095F4D2B1AE5AB88"
 			tasks: [{
 				id: "4CDD4FFEA2E52061"
 				type: "item"
 				item: "compressedcreativity:industrial_air_blower"
 			}]
-			dependencies: ["17B53E7B6EE2D07A"]
-			id: "095F4D2B1AE5AB88"
-			y: -4.0d
-			x: 4.0d
+			rewards: [{
+				id: "1DB6DD969C2A4310"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "71DE13CE29D3BF8A"
-				type: "item"
-				item: "compressedcreativity:compressed_air_engine"
-			}]
+			x: 4.0d
+			y: 3.5d
 			dependencies: [
 				"063D84F84A586C39"
 				"16A86A8B99AFE3D2"
 			]
 			id: "612346B425C52509"
-			y: 3.5d
-			x: 4.0d
+			tasks: [{
+				id: "71DE13CE29D3BF8A"
+				type: "item"
+				item: "compressedcreativity:compressed_air_engine"
+			}]
+			rewards: [{
+				id: "61459DC744972712"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["17B53E7B6EE2D07A"]
+			id: "07863473609B8FBF"
 			tasks: [{
 				id: "1F618DE32A0C2596"
 				type: "item"
 				item: "compressedcreativity:mesh_empty"
 			}]
-			dependencies: ["17B53E7B6EE2D07A"]
-			id: "07863473609B8FBF"
-			y: -2.0d
-			x: 6.0d
 		}
 		{
+			x: 2.0d
+			y: 3.5d
+			dependencies: ["7E1ECFF9E2F0A313"]
+			id: "16A86A8B99AFE3D2"
 			tasks: [{
 				id: "7CF27FB1BFB307D8"
 				type: "item"
 				item: "compressedcreativity:engine_rotor"
 			}]
-			dependencies: ["7E1ECFF9E2F0A313"]
-			id: "16A86A8B99AFE3D2"
-			y: 3.5d
-			x: 2.0d
+			rewards: [{
+				id: "3B1B98694D704DC5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 2.0d
+			y: 5.0d
+			dependencies: ["16A86A8B99AFE3D2"]
+			id: "47568AE0C9DC2F3A"
 			tasks: [{
 				id: "1D1100AC7CE1E84B"
 				type: "item"
 				item: "create:steam_engine"
 			}]
-			dependencies: ["16A86A8B99AFE3D2"]
-			id: "47568AE0C9DC2F3A"
-			y: 5.0d
-			x: 2.0d
+			rewards: [{
+				id: "0535FB7DBE477305"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			title: "Pressure Chamber"
+			x: 6.0d
+			y: 0.0d
+			description: ["This is for basic 3x3 chamber, but you can make them larger, you can also use windows instead of casings in some places."]
+			dependencies: ["063D84F84A586C39"]
+			id: "70B7CC58B1AA4103"
 			tasks: [
 				{
 					id: "1C3A9F50A1EEE24D"
 					type: "item"
 					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 23L
 				}
 				{
 					id: "0EA59E57F88228DA"
@@ -170,13 +253,23 @@
 					item: "pneumaticcraft:pressure_chamber_valve"
 				}
 			]
-			dependencies: ["063D84F84A586C39"]
-			id: "70B7CC58B1AA4103"
-			y: 0.0d
-			x: 6.0d
-			title: "Pressure Chamber"
+			rewards: [{
+				id: "5DCCF20DE8860F7E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["1E13DA24936B93EC"]
+			id: "34D436DF5499C5EB"
 			tasks: [{
 				id: "1675CF6A17383D6F"
 				type: "item"
@@ -188,20 +281,16 @@
 					}
 				}
 			}]
-			dependencies: ["1E13DA24936B93EC"]
-			id: "34D436DF5499C5EB"
-			y: -2.0d
-			x: -2.0d
 		}
 		{
-			size: 1.5d
-			id: "74C891945639D07D"
+			title: "Pneumatic Craft"
 			icon: "pneumaticcraft:fluid_mixer"
 			x: 8.25d
 			y: 0.0d
 			shape: "rsquare"
-			title: "Pneumatic Craft"
 			dependencies: ["70B7CC58B1AA4103"]
+			size: 1.5d
+			id: "74C891945639D07D"
 			tasks: [{
 				id: "1C788EBBF1ADF917"
 				type: "checkmark"
@@ -209,115 +298,127 @@
 			}]
 		}
 		{
+			title: "Pipe Addons"
+			x: 2.0d
+			y: -7.0d
+			dependencies: ["170E3091830B14BE"]
+			id: "1BE11C1118269F1F"
 			tasks: [{
 				id: "51B55F5E02AACDEB"
 				type: "checkmark"
 				title: "Okay"
 			}]
-			dependencies: ["170E3091830B14BE"]
-			id: "1BE11C1118269F1F"
-			y: -7.0d
-			x: 2.0d
-			title: "Pipe Addons"
 		}
 		{
+			x: 4.0d
+			y: -7.0d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "67961BBBA77AE060"
 			tasks: [{
 				id: "192A6E4F0C82E0CE"
 				type: "item"
 				item: "pneumaticcraft:safety_tube_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "67961BBBA77AE060"
-			y: -7.0d
-			x: 4.0d
 		}
 		{
+			x: 2.0d
+			y: -8.5d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "595585EDCD79534E"
 			tasks: [{
 				id: "3615967EF2A9CBE6"
 				type: "item"
 				item: "pneumaticcraft:vacuum_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "595585EDCD79534E"
-			y: -8.5d
-			x: 2.0d
 		}
 		{
+			x: 4.0d
+			y: -8.5d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "12C71CFA5D34F4FC"
 			tasks: [{
 				id: "6A07E674E5D5D360"
 				type: "item"
 				item: "pneumaticcraft:charging_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "12C71CFA5D34F4FC"
-			y: -8.5d
-			x: 4.0d
 		}
 		{
+			x: 4.0d
+			y: -10.0d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "3112CE1D1B126B68"
 			tasks: [{
 				id: "7014B4769AC19E44"
 				type: "item"
 				item: "pneumaticcraft:pressure_gauge_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "3112CE1D1B126B68"
-			y: -10.0d
-			x: 4.0d
 		}
 		{
+			x: 4.0d
+			y: -11.5d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "7D96EDA48E2DA7A1"
 			tasks: [{
 				id: "0697C489FF488AEA"
 				type: "item"
 				item: "pneumaticcraft:redstone_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "7D96EDA48E2DA7A1"
-			y: -11.5d
-			x: 4.0d
 		}
 		{
+			x: 2.0d
+			y: -10.0d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "746938CBD9F0CD9A"
 			tasks: [{
 				id: "6E24193CB53AEDA7"
 				type: "item"
 				item: "pneumaticcraft:flow_detector_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "746938CBD9F0CD9A"
-			y: -10.0d
-			x: 2.0d
 		}
 		{
+			x: 2.0d
+			y: -11.5d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "2A1CFB20C22E765E"
 			tasks: [{
 				id: "477FD03D09696859"
 				type: "item"
 				item: "pneumaticcraft:air_grate_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "2A1CFB20C22E765E"
-			y: -11.5d
-			x: 2.0d
 		}
 		{
+			x: 4.0d
+			y: -5.5d
+			dependencies: ["1BE11C1118269F1F"]
+			id: "307F07F0DE96B18F"
 			tasks: [{
 				id: "78B252A829559911"
 				type: "item"
 				item: "pneumaticcraft:regulator_tube_module"
 			}]
-			dependencies: ["1BE11C1118269F1F"]
-			id: "307F07F0DE96B18F"
-			y: -5.5d
-			x: 4.0d
 		}
 		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["170E3091830B14BE"]
+			id: "0437DA4B2C6812CE"
 			tasks: [{
 				id: "0C22112570754BBF"
 				type: "item"
 				item: "pneumaticcraft:vacuum_pump"
 			}]
-			dependencies: ["170E3091830B14BE"]
-			id: "0437DA4B2C6812CE"
-			y: -3.5d
-			x: 0.0d
+			rewards: [{
+				id: "07AD8D0083224C0E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 	]
+	quest_links: [ ]
 }

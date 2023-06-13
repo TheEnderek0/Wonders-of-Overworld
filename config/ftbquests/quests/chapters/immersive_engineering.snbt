@@ -1,43 +1,46 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "426B3CA4D81D54E1"
 	id: "15F144E87EF90EB8"
-	filename: "immersive_engineering"
-	default_quest_shape: ""
-	icon: "immersiveengineering:crusher"
-	title: "Immersive Engineering"
+	group: "426B3CA4D81D54E1"
 	order_index: 0
+	filename: "immersive_engineering"
+	title: "Immersive Engineering"
+	icon: "immersiveengineering:crusher"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "immersiveengineering:crusher"
+			x: -1.5d
+			y: 0.0d
+			shape: "gear"
+			description: ["Introduction to electricity and heavy machinery. Everything you need to know is in the manual, so these quests also won't have descriptions, only if needed."]
+			dependencies: ["6DA55408E953DFFC"]
+			id: "046B1CD49177CFA1"
 			tasks: [{
 				id: "232089DFC08ADE54"
 				type: "checkmark"
 				title: "Start"
 			}]
-			description: ["Introduction to electricity and heavy machinery. Everything you need to know is in the manual, so these quests also won't have descriptions, only if needed."]
-			icon: "immersiveengineering:crusher"
-			x: -1.5d
-			id: "046B1CD49177CFA1"
-			y: 0.0d
-			shape: "gear"
-			dependencies: ["6DA55408E953DFFC"]
 		}
 		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["046B1CD49177CFA1"]
+			id: "3CB1EB018327FFD7"
 			tasks: [{
 				id: "014DE5201C9E50D0"
 				type: "item"
 				item: "immersiveengineering:cokebrick"
 				count: 27L
 			}]
-			icon: "immersiveengineering:coke_oven"
-			id: "3CB1EB018327FFD7"
-			x: 0.5d
-			y: 0.0d
-			title: "Coke Oven"
-			dependencies: ["046B1CD49177CFA1"]
 		}
 		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["046B1CD49177CFA1"]
+			id: "78C6A956F2FFC621"
 			tasks: [
 				{
 					id: "149693ADB0D18959"
@@ -56,56 +59,67 @@
 					item: "immersiveengineering:manual"
 				}
 			]
-			dependencies: ["046B1CD49177CFA1"]
-			id: "78C6A956F2FFC621"
-			y: -1.5d
-			x: -1.5d
 		}
 		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["3CB1EB018327FFD7"]
+			id: "17ED76A5F0570C79"
 			tasks: [{
 				id: "262446AC7E463160"
 				type: "item"
 				item: "immersiveengineering:coal_coke"
 			}]
-			dependencies: ["3CB1EB018327FFD7"]
-			id: "17ED76A5F0570C79"
-			y: -1.5d
-			x: 2.5d
 		}
 		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["3CB1EB018327FFD7"]
+			id: "7F2285A7E25F058D"
 			tasks: [{
 				id: "56D7D5A85579F855"
 				type: "item"
 				item: "immersiveengineering:creosote_bucket"
 			}]
-			dependencies: ["3CB1EB018327FFD7"]
-			id: "7F2285A7E25F058D"
-			y: 0.0d
-			x: 4.5d
 		}
 		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["7F2285A7E25F058D"]
+			id: "5B1B3D086E183433"
 			tasks: [{
 				id: "005CA5F370FE4420"
 				type: "item"
 				item: "immersiveengineering:treated_wood_horizontal"
 			}]
-			dependencies: ["7F2285A7E25F058D"]
-			id: "5B1B3D086E183433"
-			y: 0.0d
-			x: 6.5d
 		}
 		{
+			x: 8.5d
+			y: 0.0d
+			dependencies: ["5B1B3D086E183433"]
+			id: "14C13C90A4E0FB7C"
 			tasks: [{
 				id: "005FAECC9A0392B8"
 				type: "item"
 				item: "immersiveengineering:workbench"
 			}]
-			dependencies: ["5B1B3D086E183433"]
-			id: "14C13C90A4E0FB7C"
-			y: 0.0d
-			x: 8.5d
+			rewards: [{
+				id: "2D6AD504C673FBA0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["14C13C90A4E0FB7C"]
+			id: "083D9F8E2D7C7920"
 			tasks: [
 				{
 					id: "294425287F095013"
@@ -130,63 +144,86 @@
 					}
 				}
 			]
-			dependencies: ["14C13C90A4E0FB7C"]
-			id: "083D9F8E2D7C7920"
-			y: -1.5d
-			x: 6.5d
 		}
 		{
+			x: 8.5d
+			y: -1.5d
+			dependencies: ["4B211C4C38485DBB"]
+			id: "651579A52295AF6B"
 			tasks: [{
 				id: "123B1FF6E7F7A5EC"
 				type: "item"
 				item: "pneumaticcraft:capacitor"
 			}]
-			dependencies: ["4B211C4C38485DBB"]
-			id: "651579A52295AF6B"
-			y: -1.5d
-			x: 8.5d
 		}
 		{
-			tasks: [{
-				id: "68776E02559FE8C9"
-				type: "item"
-				item: "immersiveengineering:component_electronic"
-			}]
+			x: 10.5d
+			y: 0.0d
 			dependencies: [
 				"14C13C90A4E0FB7C"
 				"651579A52295AF6B"
 			]
 			id: "5F291D6BA14A087F"
-			y: 0.0d
-			x: 10.5d
+			tasks: [{
+				id: "68776E02559FE8C9"
+				type: "item"
+				item: "immersiveengineering:component_electronic"
+			}]
+			rewards: [{
+				id: "4A09A75D0B12E076"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "64F63B68D22DD784"
-				type: "item"
-				item: "immersiveengineering:component_electronic_adv"
-			}]
+			x: 12.5d
+			y: 0.0d
 			dependencies: [
 				"5F291D6BA14A087F"
 				"3A379910B485185A"
 				"01E144A1C2A13D61"
 			]
 			id: "58A64634A87C04A5"
-			y: 0.0d
-			x: 12.5d
+			tasks: [{
+				id: "64F63B68D22DD784"
+				type: "item"
+				item: "immersiveengineering:component_electronic_adv"
+			}]
+			rewards: [{
+				id: "0814434329C2B0AD"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: 14.5d
+			y: -1.5d
+			dependencies: ["6A06E4E3F1992DE4"]
+			id: "3A379910B485185A"
 			tasks: [{
 				id: "29CADF2DDE42EA6C"
 				type: "item"
 				item: "pneumaticcraft:transistor"
 			}]
-			dependencies: ["6A06E4E3F1992DE4"]
-			id: "3A379910B485185A"
-			y: -1.5d
-			x: 14.5d
 		}
 		{
+			title: "Engineering Blocks"
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["7C8DC1648DD19270"]
+			id: "6D45E306E208FBB4"
 			tasks: [
 				{
 					id: "745FC447EC8FA903"
@@ -204,13 +241,24 @@
 					item: "immersiveengineering:light_engineering"
 				}
 			]
-			dependencies: ["7C8DC1648DD19270"]
-			id: "6D45E306E208FBB4"
-			y: 3.0d
-			x: 0.5d
-			title: "Engineering Blocks"
+			rewards: [{
+				id: "7AB1A305F8C69E99"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			title: "Mechanical Components"
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["046B1CD49177CFA1"]
+			id: "7C8DC1648DD19270"
 			tasks: [
 				{
 					id: "347FC71B65052CE4"
@@ -223,13 +271,14 @@
 					item: "immersiveengineering:component_iron"
 				}
 			]
-			dependencies: ["046B1CD49177CFA1"]
-			id: "7C8DC1648DD19270"
-			y: 1.5d
-			x: -1.5d
-			title: "Mechanical Components"
 		}
 		{
+			title: "Refinery"
+			icon: "immersiveengineering:refinery"
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "7691D36833777E26"
 			tasks: [
 				{
 					id: "31C71BD020EF787C"
@@ -267,25 +316,25 @@
 					count: 5L
 				}
 			]
-			icon: "immersiveengineering:refinery"
-			id: "7691D36833777E26"
-			x: 2.5d
-			y: 3.0d
-			title: "Refinery"
-			dependencies: ["6D45E306E208FBB4"]
 		}
 		{
+			x: 4.5d
+			y: 4.5d
+			dependencies: ["7691D36833777E26"]
+			id: "4FEA607E207588A3"
 			tasks: [{
 				id: "6DC8C8F92F7EDCA5"
 				type: "item"
 				item: "immersiveengineering:acetaldehyde_bucket"
 			}]
-			dependencies: ["7691D36833777E26"]
-			id: "4FEA607E207588A3"
-			y: 4.5d
-			x: 4.5d
 		}
 		{
+			title: "Bottling Machine"
+			icon: "immersiveengineering:bottling_machine"
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "654F705B45A5D151"
 			tasks: [
 				{
 					id: "467250485DCAB625"
@@ -322,14 +371,12 @@
 					item: "immersiveengineering:fluid_pump"
 				}
 			]
-			icon: "immersiveengineering:bottling_machine"
-			id: "654F705B45A5D151"
-			x: 0.5d
-			y: 1.5d
-			title: "Bottling Machine"
-			dependencies: ["6D45E306E208FBB4"]
 		}
 		{
+			x: 8.5d
+			y: 3.0d
+			dependencies: ["14C13C90A4E0FB7C"]
+			id: "2ECF54880FFE3921"
 			tasks: [
 				{
 					id: "742515585E32DEE8"
@@ -352,40 +399,53 @@
 					item: "immersiveengineering:mold_wire"
 				}
 			]
-			dependencies: ["14C13C90A4E0FB7C"]
-			id: "2ECF54880FFE3921"
-			y: 3.0d
-			x: 8.5d
 		}
 		{
-			tasks: [{
-				id: "56E564FF764E74AC"
-				type: "item"
-				item: "immersiveengineering:phenolic_resin_bucket"
-			}]
+			x: 4.5d
+			y: 3.0d
 			dependencies: [
 				"4FEA607E207588A3"
 				"7F2285A7E25F058D"
 			]
 			id: "4B2A45322448DCB8"
-			y: 3.0d
-			x: 4.5d
+			tasks: [{
+				id: "56E564FF764E74AC"
+				type: "item"
+				item: "immersiveengineering:phenolic_resin_bucket"
+			}]
+			rewards: [{
+				id: "0A73491CED791BCB"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "220C90A33A784859"
-				type: "item"
-				item: "immersiveengineering:plate_duroplast"
-			}]
+			x: 10.5d
+			y: 1.5d
 			dependencies: [
 				"4B2A45322448DCB8"
 				"654F705B45A5D151"
 			]
 			id: "01E144A1C2A13D61"
-			y: 1.5d
-			x: 10.5d
+			tasks: [{
+				id: "220C90A33A784859"
+				type: "item"
+				item: "immersiveengineering:plate_duroplast"
+			}]
 		}
 		{
+			title: "Diesel Generator"
+			icon: "immersiveengineering:diesel_generator"
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "55AB907B9E7ADE9B"
 			tasks: [
 				{
 					id: "7826AB22295E6ED0"
@@ -423,25 +483,37 @@
 					count: 5L
 				}
 			]
-			icon: "immersiveengineering:diesel_generator"
-			id: "55AB907B9E7ADE9B"
-			x: -1.5d
-			y: 3.0d
-			title: "Diesel Generator"
-			dependencies: ["6D45E306E208FBB4"]
+			rewards: [{
+				id: "58AC8F4FBD31BC0A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "6DAFDE458DB06840"
 			tasks: [{
 				id: "126AB158E16F1833"
 				type: "item"
 				item: "immersiveengineering:sample_drill"
 			}]
-			dependencies: ["6D45E306E208FBB4"]
-			id: "6DAFDE458DB06840"
-			y: 4.5d
-			x: -1.5d
 		}
 		{
+			title: "Excavator"
+			icon: "immersiveengineering:excavator"
+			x: -1.5d
+			y: 6.0d
+			description: ["It's recommended you make this machine, you will need a lot of materials further down the line, and this machine is capable of mining these for you."]
+			dependencies: ["6DAFDE458DB06840"]
+			id: "03CF2B9D96C16B0D"
 			tasks: [
 				{
 					id: "6D4EEB64FE7E7926"
@@ -479,15 +551,25 @@
 					count: 4L
 				}
 			]
-			description: ["It's recommended you make this machine, you will need a lot of materials further down the line, and this machine is capable of mining these for you."]
-			icon: "immersiveengineering:excavator"
-			id: "03CF2B9D96C16B0D"
-			x: -1.5d
-			y: 6.0d
-			title: "Excavator"
-			dependencies: ["6DAFDE458DB06840"]
+			rewards: [{
+				id: "1C91C59502701A72"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			title: "Bucket Wheel"
+			icon: "immersiveengineering:bucket_wheel"
+			x: -3.5d
+			y: 6.0d
+			dependencies: ["6DAFDE458DB06840"]
+			id: "598519F6BA259491"
 			tasks: [
 				{
 					id: "22F5324D23ECFB61"
@@ -502,14 +584,14 @@
 					count: 20L
 				}
 			]
-			icon: "immersiveengineering:bucket_wheel"
-			id: "598519F6BA259491"
-			x: -3.5d
-			y: 6.0d
-			title: "Bucket Wheel"
-			dependencies: ["6DAFDE458DB06840"]
 		}
 		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: 0.5d
+			y: 6.0d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "5BEFD9AA14ECF24A"
 			tasks: [
 				{
 					id: "5BC1990EF2E67F11"
@@ -564,14 +646,25 @@
 					count: 27L
 				}
 			]
-			icon: "immersiveengineering:arc_furnace"
-			id: "5BEFD9AA14ECF24A"
-			x: 0.5d
-			y: 6.0d
-			title: "Arc Furnace"
-			dependencies: ["6D45E306E208FBB4"]
+			rewards: [{
+				id: "3B169024A37E76F5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: 8.5d
+			y: 4.5d
+			dependencies: ["2ECF54880FFE3921"]
+			id: "3A063228C841517B"
 			tasks: [
 				{
 					id: "61627295BA9D6536"
@@ -601,14 +694,25 @@
 					count: 2L
 				}
 			]
-			icon: "immersiveengineering:metal_press"
-			id: "3A063228C841517B"
-			x: 8.5d
-			y: 4.5d
-			title: "Metal Press"
-			dependencies: ["2ECF54880FFE3921"]
+			rewards: [{
+				id: "0575D947C8E4959D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			title: "Crusher"
+			icon: "immersiveengineering:crusher"
+			x: 2.5d
+			y: 4.5d
+			dependencies: ["6D45E306E208FBB4"]
+			id: "2E7B1541DF1CBEBA"
 			tasks: [
 				{
 					id: "467609EFEE5F1735"
@@ -640,14 +744,13 @@
 					count: 9L
 				}
 			]
-			icon: "immersiveengineering:crusher"
-			id: "2E7B1541DF1CBEBA"
-			x: 2.5d
-			y: 4.5d
-			title: "Crusher"
-			dependencies: ["6D45E306E208FBB4"]
 		}
 		{
+			title: "Crushed Arsenic / Tungsten"
+			x: 2.5d
+			y: 6.0d
+			dependencies: ["2E7B1541DF1CBEBA"]
+			id: "6BED13FEF225A26F"
 			tasks: [
 				{
 					id: "4500687A20784C2E"
@@ -660,13 +763,16 @@
 					item: "kubejs:crushed_arsenic"
 				}
 			]
-			dependencies: ["2E7B1541DF1CBEBA"]
-			id: "6BED13FEF225A26F"
-			y: 6.0d
-			x: 2.5d
-			title: "Crushed Arsenic / Tungsten"
 		}
 		{
+			title: "Arsenic / Tungsten Ingot"
+			x: 0.5d
+			y: 8.0d
+			dependencies: [
+				"5BEFD9AA14ECF24A"
+				"6BED13FEF225A26F"
+			]
+			id: "3097C105E71DF07A"
 			tasks: [
 				{
 					id: "5720A2FF8F54B299"
@@ -679,16 +785,25 @@
 					item: "kubejs:tungsten_ingot"
 				}
 			]
-			dependencies: [
-				"5BEFD9AA14ECF24A"
-				"6BED13FEF225A26F"
-			]
-			id: "3097C105E71DF07A"
-			y: 8.0d
-			x: 0.5d
-			title: "Arsenic / Tungsten Ingot"
+			rewards: [{
+				id: "7E3CD0A17A733AE6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			title: "LV wires"
+			x: 4.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["046B1CD49177CFA1"]
+			id: "75ECEE0F870FB79F"
 			tasks: [
 				{
 					id: "2B46C74DBA0899CA"
@@ -706,14 +821,12 @@
 					item: "immersiveengineering:connector_lv_relay"
 				}
 			]
-			id: "75ECEE0F870FB79F"
-			x: 4.5d
-			y: -3.0d
-			title: "LV wires"
-			dependencies: ["046B1CD49177CFA1"]
-			hide_dependency_lines: true
 		}
 		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["75ECEE0F870FB79F"]
+			id: "2BE52F35B4D6D060"
 			tasks: [
 				{
 					id: "7DAF73C4BCE595B3"
@@ -731,12 +844,12 @@
 					item: "immersiveengineering:connector_mv"
 				}
 			]
-			dependencies: ["75ECEE0F870FB79F"]
-			id: "2BE52F35B4D6D060"
-			y: -3.0d
-			x: 6.5d
 		}
 		{
+			x: 8.5d
+			y: -3.0d
+			dependencies: ["2BE52F35B4D6D060"]
+			id: "60DEBDD4A9AFF79F"
 			tasks: [
 				{
 					id: "228E78D1942D9CD0"
@@ -754,34 +867,36 @@
 					item: "immersiveengineering:connector_hv_relay"
 				}
 			]
-			dependencies: ["2BE52F35B4D6D060"]
-			id: "60DEBDD4A9AFF79F"
-			y: -3.0d
-			x: 8.5d
 		}
 		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["75ECEE0F870FB79F"]
+			id: "1DF618996BA1816A"
 			tasks: [{
 				id: "1E9A0D1AE33F6296"
 				type: "item"
 				item: "immersiveengineering:wirecoil_copper_ins"
 			}]
-			dependencies: ["75ECEE0F870FB79F"]
-			id: "1DF618996BA1816A"
-			y: -4.5d
-			x: 4.5d
 		}
 		{
+			x: 6.5d
+			y: -4.5d
+			dependencies: ["2BE52F35B4D6D060"]
+			id: "30F37DF933BE5953"
 			tasks: [{
 				id: "77A01C07CD76DAD6"
 				type: "item"
 				item: "immersiveengineering:wirecoil_electrum_ins"
 			}]
-			dependencies: ["2BE52F35B4D6D060"]
-			id: "30F37DF933BE5953"
-			y: -4.5d
-			x: 6.5d
 		}
 		{
+			title: "Automated Engineer's Workbench"
+			icon: "immersiveengineering:auto_workbench"
+			x: 10.5d
+			y: 3.0d
+			dependencies: ["14C13C90A4E0FB7C"]
+			id: "19FFBC447A965A87"
 			tasks: [
 				{
 					id: "0D0C2AF86DA98D00"
@@ -819,184 +934,115 @@
 					count: 4L
 				}
 			]
-			icon: "immersiveengineering:auto_workbench"
-			id: "19FFBC447A965A87"
-			x: 10.5d
-			y: 3.0d
-			title: "Automated Engineer's Workbench"
-			dependencies: ["14C13C90A4E0FB7C"]
+			rewards: [{
+				id: "62E6EA7C79158454"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["046B1CD49177CFA1"]
+			id: "1062916F1A2403C3"
 			tasks: [{
 				id: "72C636C71E389DBF"
 				type: "item"
 				item: "immersiveengineering:conveyor_basic"
 			}]
-			dependencies: ["046B1CD49177CFA1"]
-			id: "1062916F1A2403C3"
-			y: 1.5d
-			x: -3.5d
+			rewards: [{
+				id: "4447FC3EB05A9918"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["1062916F1A2403C3"]
+			id: "5BDB41178E7990FB"
 			tasks: [{
 				id: "431AE63E9252598A"
 				type: "item"
 				item: "immersiveengineering:conveyor_redstone"
 			}]
-			dependencies: ["1062916F1A2403C3"]
-			id: "5BDB41178E7990FB"
-			y: 0.0d
-			x: -3.5d
 		}
 		{
-			tasks: [{
-				id: "4D19AEC1F85FF4BF"
-				type: "item"
-				item: {
-					id: "immersiveengineering:conveyor_basic"
-					Count: 1b
-					tag: {
-						defaultCover: "immersiveengineering:steel_scaffolding_standard"
-					}
-				}
-			}]
-			dependencies: ["1062916F1A2403C3"]
-			id: "1088B8F9246976FC"
-			y: 4.5d
-			x: -3.5d
-		}
-		{
-			tasks: [{
-				id: "4D7007B557974417"
-				type: "item"
-				item: {
-					id: "immersiveengineering:conveyor_dropper"
-					Count: 1b
-					tag: {
-						defaultCover: "immersiveengineering:steel_scaffolding_standard"
-					}
-				}
-			}]
-			dependencies: ["2D321F5018544066"]
-			id: "0A57D5B47B4ADA45"
+			x: -5.0d
 			y: 1.5d
-			x: -6.5d
-		}
-		{
+			dependencies: ["1062916F1A2403C3"]
+			id: "2D321F5018544066"
 			tasks: [{
 				id: "50F59306668E558B"
 				type: "item"
 				item: "immersiveengineering:conveyor_dropper"
 			}]
-			dependencies: ["1062916F1A2403C3"]
-			id: "2D321F5018544066"
-			y: 1.5d
-			x: -5.0d
 		}
 		{
+			x: -5.0d
+			y: 0.0d
+			dependencies: ["1062916F1A2403C3"]
+			id: "3CF4FEE09A49E0B5"
 			tasks: [{
 				id: "17CA295D024C18D2"
 				type: "item"
 				item: "immersiveengineering:conveyor_vertical"
 			}]
-			dependencies: ["1062916F1A2403C3"]
-			id: "3CF4FEE09A49E0B5"
-			y: 0.0d
+		}
+		{
 			x: -5.0d
-		}
-		{
-			tasks: [{
-				id: "51F9A873114E36B7"
-				type: "item"
-				item: {
-					id: "immersiveengineering:conveyor_vertical"
-					Count: 1b
-					tag: {
-						defaultCover: "immersiveengineering:steel_scaffolding_standard"
-					}
-				}
-			}]
-			dependencies: ["3CF4FEE09A49E0B5"]
-			id: "16871EBACD68426E"
-			y: 0.0d
-			x: -6.5d
-		}
-		{
+			y: 3.0d
+			dependencies: ["1062916F1A2403C3"]
+			id: "3953201A6809AE12"
 			tasks: [{
 				id: "5380BC05BEE5AAC1"
 				type: "item"
 				item: "immersiveengineering:conveyor_splitter"
 			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
 			dependencies: ["1062916F1A2403C3"]
-			id: "3953201A6809AE12"
-			y: 3.0d
-			x: -5.0d
-		}
-		{
-			tasks: [{
-				id: "7338E36F7338CCCB"
-				type: "item"
-				item: {
-					id: "immersiveengineering:conveyor_splitter"
-					Count: 1b
-					tag: {
-						defaultCover: "immersiveengineering:steel_scaffolding_standard"
-					}
-				}
-			}]
-			dependencies: ["3953201A6809AE12"]
-			id: "70B830063EB5A3B5"
-			y: 3.0d
-			x: -6.5d
-		}
-		{
-			tasks: [{
-				id: "3A170A56ADBD7192"
-				type: "item"
-				item: {
-					id: "immersiveengineering:conveyor_extract"
-					Count: 1b
-					tag: {
-						defaultCover: "immersiveengineering:steel_scaffolding_standard"
-					}
-				}
-			}]
-			dependencies: ["38D87F9720EA815D"]
-			id: "3A6D4C747AE5AF21"
-			y: 4.5d
-			x: -6.5d
-		}
-		{
+			id: "38D87F9720EA815D"
 			tasks: [{
 				id: "4DC304C9EE7ED3D2"
 				type: "item"
 				item: "immersiveengineering:conveyor_extract"
 			}]
-			dependencies: ["1062916F1A2403C3"]
-			id: "38D87F9720EA815D"
-			y: 4.5d
-			x: -5.0d
 		}
 		{
+			x: 12.5d
+			y: -1.5d
+			dependencies: ["5F291D6BA14A087F"]
+			id: "745D44181DDBE594"
 			tasks: [{
 				id: "5479E8E7B8F745FE"
 				type: "item"
 				item: "immersiveengineering:cloche"
 			}]
-			dependencies: ["5F291D6BA14A087F"]
-			id: "745D44181DDBE594"
-			y: -1.5d
-			x: 12.5d
 		}
 		{
-			size: 1.5d
-			id: "31E057CA4B9F2097"
+			title: "Industrial Foregoing - Advanced 2/3"
 			icon: "industrialforegoing:machine_frame_advanced"
 			x: 16.5d
 			y: 0.0d
 			shape: "rsquare"
-			title: "Industrial Foregoing - Advanced 2/3"
 			dependencies: ["58A64634A87C04A5"]
+			size: 1.5d
+			id: "31E057CA4B9F2097"
 			tasks: [{
 				id: "57C9F6C9E8F7EE60"
 				type: "checkmark"
@@ -1004,17 +1050,17 @@
 			}]
 		}
 		{
-			size: 1.5d
-			id: "44EA2B7F43F81B3C"
+			title: "Refined Storage 3/3"
 			icon: "refinedstorage:creative_controller"
 			x: 12.5d
 			y: 8.0d
 			shape: "rsquare"
-			title: "Refined Storage 3/3"
 			dependencies: [
 				"3097C105E71DF07A"
 				"58A64634A87C04A5"
 			]
+			size: 1.5d
+			id: "44EA2B7F43F81B3C"
 			tasks: [{
 				id: "48F1E6DACC15FF7D"
 				type: "checkmark"
@@ -1022,9 +1068,7 @@
 			}]
 		}
 		{
-			size: 1.5d
-			description: ["This chapter contains lots of useful gadgets, such as building gadgets, mining lasers, etc."]
-			id: "74DDBADBB93CD4B6"
+			title: "Gadgets"
 			icon: {
 				id: "buildinggadgets:gadget_destruction"
 				Count: 1b
@@ -1037,8 +1081,10 @@
 			x: 10.5d
 			y: -2.0d
 			shape: "rsquare"
-			title: "Gadgets"
+			description: ["This chapter contains lots of useful gadgets, such as building gadgets, mining lasers, etc."]
 			dependencies: ["5F291D6BA14A087F"]
+			size: 1.5d
+			id: "74DDBADBB93CD4B6"
 			tasks: [{
 				id: "51CD7BE06B8C27A2"
 				type: "checkmark"
@@ -1046,4 +1092,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

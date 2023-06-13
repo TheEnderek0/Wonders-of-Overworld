@@ -1,307 +1,365 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "03C48C217EE49A06"
 	id: "0C1B0CEF887731D5"
-	filename: "draconic_evolution"
-	default_quest_shape: ""
-	icon: "draconicevolution:reactor_stabilizer"
-	title: "Draconic Evolution"
+	group: "03C48C217EE49A06"
 	order_index: 1
+	filename: "draconic_evolution"
+	title: "Draconic Evolution"
+	icon: "draconicevolution:reactor_stabilizer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			tasks: [{
-				id: "6E9A5AA82B4BA970"
-				type: "checkmark"
-				title: "Start"
-			}]
 			icon: "draconicevolution:reactor_stabilizer"
 			x: -2.0d
-			id: "1DA382F1BEBB3B9E"
 			y: 0.5d
 			shape: "gear"
 			dependencies: [
 				"138C645DAF259839"
 				"747AC57C3DAEA696"
 			]
+			id: "1DA382F1BEBB3B9E"
+			tasks: [{
+				id: "6E9A5AA82B4BA970"
+				type: "checkmark"
+				title: "Start"
+			}]
 		}
 		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["1DA382F1BEBB3B9E"]
+			id: "5E57E858CF386B8D"
 			tasks: [{
 				id: "4D7E68B58C7F7CAE"
 				type: "item"
 				item: "kubejs:dc_energy_unit"
 			}]
-			dependencies: ["1DA382F1BEBB3B9E"]
-			id: "5E57E858CF386B8D"
-			y: 1.5d
-			x: 0.0d
 		}
 		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["1DA382F1BEBB3B9E"]
+			id: "2227BACB1B82CC50"
 			tasks: [{
 				id: "6255C4980201CF6E"
 				type: "item"
 				item: "kubejs:dc_frame"
 			}]
-			dependencies: ["1DA382F1BEBB3B9E"]
-			id: "2227BACB1B82CC50"
-			y: -0.5d
-			x: 0.0d
 		}
 		{
-			tasks: [{
-				id: "2504E2BB73A00919"
-				type: "item"
-				item: "draconicevolution:draconium_core"
-			}]
+			x: 2.0d
+			y: 0.5d
 			dependencies: [
 				"5E57E858CF386B8D"
 				"2227BACB1B82CC50"
 			]
 			id: "6D1E0EA516B2AEA4"
-			y: 0.5d
-			x: 2.0d
+			tasks: [{
+				id: "2504E2BB73A00919"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+			rewards: [{
+				id: "71BAB849605ABABC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["6D1E0EA516B2AEA4"]
+			id: "37B60D51C7BC7761"
 			tasks: [{
 				id: "03A38CB22EECA2D7"
 				type: "item"
 				item: "draconicevolution:basic_crafting_injector"
 			}]
-			dependencies: ["6D1E0EA516B2AEA4"]
-			id: "37B60D51C7BC7761"
-			y: 0.5d
-			x: 4.0d
 		}
 		{
+			x: 2.0d
+			y: 7.5d
+			dependencies: ["6D1E0EA516B2AEA4"]
+			id: "282B279FBBEA9F99"
 			tasks: [{
 				id: "74BCECE5D2779B64"
 				type: "item"
 				item: "draconicevolution:wyvern_energy_core"
 			}]
-			dependencies: ["6D1E0EA516B2AEA4"]
-			id: "282B279FBBEA9F99"
-			y: 7.5d
-			x: 2.0d
 		}
 		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["2227BACB1B82CC50"]
+			id: "439E28FB54641841"
 			tasks: [{
 				id: "25A63DC16C0F9EB2"
 				type: "item"
 				item: "kubejs:wv_frame"
 			}]
-			dependencies: ["2227BACB1B82CC50"]
-			id: "439E28FB54641841"
-			y: -0.5d
-			x: 6.0d
 		}
 		{
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["37B60D51C7BC7761"]
+			id: "0C64742578E59833"
 			tasks: [{
 				id: "1E48CBE7E7384362"
 				type: "item"
 				item: "kubejs:wv_energy_unit"
 			}]
-			dependencies: ["37B60D51C7BC7761"]
-			id: "0C64742578E59833"
-			y: 1.5d
-			x: 6.0d
 		}
 		{
-			tasks: [{
-				id: "6037D828C4757C27"
-				type: "item"
-				item: "draconicevolution:wyvern_core"
-			}]
+			x: 8.0d
+			y: 0.5d
 			dependencies: [
 				"439E28FB54641841"
 				"0C64742578E59833"
 			]
 			id: "234C1EC8EEAD94DA"
-			y: 0.5d
-			x: 8.0d
+			tasks: [{
+				id: "6037D828C4757C27"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+			rewards: [{
+				id: "721448B29672762A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 10.0d
+			y: 0.5d
+			dependencies: ["234C1EC8EEAD94DA"]
+			id: "0A5D1F3D2531B76C"
 			tasks: [{
 				id: "3C191062D725E2B7"
 				type: "item"
 				item: "draconicevolution:wyvern_crafting_injector"
 			}]
-			dependencies: ["234C1EC8EEAD94DA"]
-			id: "0A5D1F3D2531B76C"
-			y: 0.5d
-			x: 10.0d
 		}
 		{
+			x: 12.5d
+			y: -0.5d
+			dependencies: ["439E28FB54641841"]
+			id: "0F017A0FEACF0A0C"
 			tasks: [{
 				id: "6D9F9639A0D343E3"
 				type: "item"
 				item: "kubejs:aw_frame"
 			}]
-			dependencies: ["439E28FB54641841"]
-			id: "0F017A0FEACF0A0C"
-			y: -0.5d
-			x: 12.5d
 		}
 		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["0A5D1F3D2531B76C"]
+			id: "4EE5F4F3A589870B"
 			tasks: [{
 				id: "2B488571F9B79219"
 				type: "item"
 				item: "kubejs:aw_energy_unit"
 			}]
-			dependencies: ["0A5D1F3D2531B76C"]
-			id: "4EE5F4F3A589870B"
-			y: 1.5d
-			x: 12.5d
 		}
 		{
-			tasks: [{
-				id: "645FE7007E354D70"
-				type: "item"
-				item: "draconicevolution:awakened_core"
-			}]
+			x: 15.0d
+			y: 0.5d
 			dependencies: [
 				"4EE5F4F3A589870B"
 				"0F017A0FEACF0A0C"
 				"72C13A5286CD6B81"
 			]
 			id: "461CD862E06A110B"
-			y: 0.5d
-			x: 15.0d
+			tasks: [{
+				id: "645FE7007E354D70"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+			rewards: [{
+				id: "232D22D6C8653109"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 19.0d
+			y: -0.5d
+			dependencies: ["0F017A0FEACF0A0C"]
+			id: "665F635CA57060F5"
 			tasks: [{
 				id: "3C7E2222E0FA97EA"
 				type: "item"
 				item: "kubejs:ch_frame"
 			}]
-			dependencies: ["0F017A0FEACF0A0C"]
-			id: "665F635CA57060F5"
-			y: -0.5d
-			x: 19.0d
 		}
 		{
+			x: 17.0d
+			y: 0.5d
+			dependencies: ["461CD862E06A110B"]
+			id: "3816B9D238F6675F"
 			tasks: [{
 				id: "7D1A01C123DCA0D3"
 				type: "item"
 				item: "draconicevolution:awakened_crafting_injector"
 			}]
-			dependencies: ["461CD862E06A110B"]
-			id: "3816B9D238F6675F"
-			y: 0.5d
-			x: 17.0d
 		}
 		{
+			x: 19.0d
+			y: 1.5d
+			dependencies: ["3816B9D238F6675F"]
+			id: "68E04ADB9CBEBE55"
 			tasks: [{
 				id: "7761B6E9C98A08BD"
 				type: "item"
 				item: "kubejs:ch_energy_unit"
 			}]
-			dependencies: ["3816B9D238F6675F"]
-			id: "68E04ADB9CBEBE55"
-			y: 1.5d
-			x: 19.0d
 		}
 		{
-			tasks: [{
-				id: "67E86FE4AAD930AF"
-				type: "item"
-				item: "draconicevolution:chaotic_core"
-			}]
+			x: 15.5d
+			y: 5.5d
 			dependencies: [
 				"68E04ADB9CBEBE55"
 				"665F635CA57060F5"
 			]
 			id: "0D4B25408F69C32B"
-			y: 0.5d
-			x: 21.0d
+			tasks: [{
+				id: "67E86FE4AAD930AF"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+			rewards: [{
+				id: "64271E6224941780"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "541318E724C0947F"
-				type: "item"
-				item: "draconicevolution:awakened_draconium_block"
-			}]
+			x: 12.5d
+			y: 4.0d
 			dependencies: [
 				"0A5D1F3D2531B76C"
 				"14980AAFC6F4BAE5"
 			]
 			id: "72C13A5286CD6B81"
-			y: 4.0d
-			x: 12.5d
+			tasks: [{
+				id: "541318E724C0947F"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_block"
+			}]
 		}
 		{
+			x: 10.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["1DA382F1BEBB3B9E"]
+			id: "14980AAFC6F4BAE5"
 			tasks: [{
 				id: "5A032E2E779BB0E5"
 				type: "item"
 				item: "draconicevolution:dragon_heart"
 			}]
-			dependencies: ["1DA382F1BEBB3B9E"]
-			id: "14980AAFC6F4BAE5"
-			hide_dependency_lines: true
-			y: 4.0d
-			x: 10.0d
 		}
 		{
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["234C1EC8EEAD94DA"]
+			id: "2905C22277DAB384"
 			tasks: [{
 				id: "1E9ADAE7E8554D40"
 				type: "item"
 				item: "draconicevolution:celestial_manipulator"
 			}]
-			dependencies: ["234C1EC8EEAD94DA"]
-			id: "2905C22277DAB384"
-			y: 3.0d
-			x: 6.0d
 		}
 		{
-			tasks: [{
-				id: "20D742DEDC3502E1"
-				type: "item"
-				item: "draconicevolution:draconic_energy_core"
-			}]
+			x: 8.0d
+			y: 7.5d
 			dependencies: [
 				"234C1EC8EEAD94DA"
 				"282B279FBBEA9F99"
 			]
 			id: "7B4EAC734A641377"
-			y: 7.5d
-			x: 8.0d
+			tasks: [{
+				id: "20D742DEDC3502E1"
+				type: "item"
+				item: "draconicevolution:draconic_energy_core"
+			}]
 		}
 		{
-			tasks: [{
-				id: "34D1374443D4D0D9"
-				type: "item"
-				item: "draconicevolution:chaotic_energy_core"
-			}]
+			x: 14.0d
+			y: 7.5d
 			dependencies: [
 				"7B4EAC734A641377"
 				"461CD862E06A110B"
 			]
 			id: "501DDF09111FC2FC"
-			y: 7.5d
-			x: 14.0d
+			tasks: [{
+				id: "34D1374443D4D0D9"
+				type: "item"
+				item: "draconicevolution:chaotic_energy_core"
+			}]
 		}
 		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["6D1E0EA516B2AEA4"]
+			id: "2FDD6059BBF89DA9"
 			tasks: [{
 				id: "789C0E649BC5ED40"
 				type: "item"
 				item: "draconicevolution:energy_transfuser"
 			}]
-			dependencies: ["6D1E0EA516B2AEA4"]
-			id: "2FDD6059BBF89DA9"
-			y: 2.0d
-			x: 4.0d
 		}
 		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "726F67C55D1E4AD2"
 			tasks: [{
 				id: "78B68FE9F5E7DC6A"
 				type: "item"
 				item: "draconicevolution:grinder"
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "726F67C55D1E4AD2"
-			y: 6.0d
-			x: 0.0d
+			rewards: [{
+				id: "034CCFFEC0BA578F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 3.0d
+			y: 9.0d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "338AFB49985EF36A"
 			tasks: [{
 				id: "4A8DC049FD762A3F"
 				type: "item"
@@ -332,12 +390,15 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "338AFB49985EF36A"
-			y: 9.0d
-			x: 3.0d
 		}
 		{
+			x: 8.0d
+			y: 9.0d
+			dependencies: [
+				"338AFB49985EF36A"
+				"7B4EAC734A641377"
+			]
+			id: "0CFCC1ED5B467FE1"
 			tasks: [{
 				id: "0A267C4396C87548"
 				type: "item"
@@ -368,15 +429,12 @@
 					}
 				}
 			}]
-			dependencies: [
-				"338AFB49985EF36A"
-				"7B4EAC734A641377"
-			]
-			id: "0CFCC1ED5B467FE1"
-			y: 9.0d
-			x: 8.0d
 		}
 		{
+			x: 4.0d
+			y: 10.5d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "1668CBA18ACFB472"
 			tasks: [{
 				id: "408525A02DB5A7B9"
 				type: "item"
@@ -407,12 +465,12 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "1668CBA18ACFB472"
-			y: 10.5d
-			x: 4.0d
 		}
 		{
+			x: 5.0d
+			y: 12.0d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "573B3672C4A4C158"
 			tasks: [{
 				id: "1CB3F15B8B0E36F3"
 				type: "item"
@@ -438,12 +496,15 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "573B3672C4A4C158"
-			y: 12.0d
-			x: 5.0d
 		}
 		{
+			x: 8.0d
+			y: 10.5d
+			dependencies: [
+				"7B4EAC734A641377"
+				"1668CBA18ACFB472"
+			]
+			id: "1DEA6AA8E59C523D"
 			tasks: [{
 				id: "6F62C5EEC93C9FC9"
 				type: "item"
@@ -474,15 +535,16 @@
 					}
 				}
 			}]
-			dependencies: [
-				"7B4EAC734A641377"
-				"1668CBA18ACFB472"
-			]
-			id: "1DEA6AA8E59C523D"
-			y: 10.5d
-			x: 8.0d
 		}
 		{
+			x: 12.0d
+			y: 10.5d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"1DEA6AA8E59C523D"
+				"0D4B25408F69C32B"
+			]
+			id: "08C257285C29B25C"
 			tasks: [{
 				id: "53BA72A5CE67410E"
 				type: "item"
@@ -513,15 +575,15 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"1DEA6AA8E59C523D"
-			]
-			id: "08C257285C29B25C"
-			y: 10.5d
-			x: 12.0d
 		}
 		{
+			x: 8.0d
+			y: 13.5d
+			dependencies: [
+				"7B4EAC734A641377"
+				"1EB61748FE474F28"
+			]
+			id: "5CAC7DF4C55340C8"
 			tasks: [{
 				id: "566540EA1014A960"
 				type: "item"
@@ -552,15 +614,12 @@
 					}
 				}
 			}]
-			dependencies: [
-				"7B4EAC734A641377"
-				"1EB61748FE474F28"
-			]
-			id: "5CAC7DF4C55340C8"
-			y: 13.5d
-			x: 8.0d
 		}
 		{
+			x: 6.0d
+			y: 13.5d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "1EB61748FE474F28"
 			tasks: [{
 				id: "45B69A1D3E479631"
 				type: "item"
@@ -591,12 +650,12 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "1EB61748FE474F28"
-			y: 13.5d
-			x: 6.0d
 		}
 		{
+			x: 7.0d
+			y: 15.0d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "6120046B8407B67E"
 			tasks: [{
 				id: "3E9524D34E98EC35"
 				type: "item"
@@ -622,12 +681,15 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "6120046B8407B67E"
-			y: 15.0d
-			x: 7.0d
 		}
 		{
+			x: 8.0d
+			y: 15.0d
+			dependencies: [
+				"7B4EAC734A641377"
+				"6120046B8407B67E"
+			]
+			id: "24FF8B97B6033D1B"
 			tasks: [{
 				id: "16C4B7663625499B"
 				type: "item"
@@ -653,15 +715,16 @@
 					}
 				}
 			}]
-			dependencies: [
-				"7B4EAC734A641377"
-				"6120046B8407B67E"
-			]
-			id: "24FF8B97B6033D1B"
-			y: 15.0d
-			x: 8.0d
 		}
 		{
+			x: 9.0d
+			y: 15.0d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"24FF8B97B6033D1B"
+				"0D4B25408F69C32B"
+			]
+			id: "421E498ED3711DF7"
 			tasks: [{
 				id: "04CD4E96255F7631"
 				type: "item"
@@ -687,15 +750,15 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"24FF8B97B6033D1B"
-			]
-			id: "421E498ED3711DF7"
-			y: 15.0d
-			x: 9.0d
 		}
 		{
+			x: 8.0d
+			y: 12.0d
+			dependencies: [
+				"7B4EAC734A641377"
+				"573B3672C4A4C158"
+			]
+			id: "3AD194442B05DDF6"
 			tasks: [{
 				id: "6C230EE9DC66DA24"
 				type: "item"
@@ -721,15 +784,16 @@
 					}
 				}
 			}]
-			dependencies: [
-				"7B4EAC734A641377"
-				"573B3672C4A4C158"
-			]
-			id: "3AD194442B05DDF6"
-			y: 12.0d
-			x: 8.0d
 		}
 		{
+			x: 11.0d
+			y: 12.0d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"3AD194442B05DDF6"
+				"0D4B25408F69C32B"
+			]
+			id: "4D05E89807C97AD9"
 			tasks: [{
 				id: "72D40B69119F8B00"
 				type: "item"
@@ -755,15 +819,16 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"3AD194442B05DDF6"
-			]
-			id: "4D05E89807C97AD9"
-			y: 12.0d
-			x: 11.0d
 		}
 		{
+			x: 10.0d
+			y: 13.5d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"5CAC7DF4C55340C8"
+				"0D4B25408F69C32B"
+			]
+			id: "62AA5A4EF8383253"
 			tasks: [{
 				id: "5BB9C9694E7D3609"
 				type: "item"
@@ -794,15 +859,17 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"5CAC7DF4C55340C8"
-			]
-			id: "62AA5A4EF8383253"
-			y: 13.5d
-			x: 10.0d
 		}
 		{
+			x: 14.0d
+			y: 11.5d
+			dependencies: [
+				"4D05E89807C97AD9"
+				"65F3A70EE909B2AA"
+				"08C257285C29B25C"
+				"62AA5A4EF8383253"
+			]
+			id: "7792A05D95E0BC23"
 			tasks: [{
 				id: "00399FF99E18029D"
 				type: "item"
@@ -833,17 +900,27 @@
 					}
 				}
 			}]
-			dependencies: [
-				"4D05E89807C97AD9"
-				"65F3A70EE909B2AA"
-				"08C257285C29B25C"
-				"62AA5A4EF8383253"
-			]
-			id: "7792A05D95E0BC23"
-			y: 11.5d
-			x: 14.0d
+			rewards: [{
+				id: "524F2403184358DC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 13.0d
+			y: 9.0d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"0CFCC1ED5B467FE1"
+				"0D4B25408F69C32B"
+			]
+			id: "65F3A70EE909B2AA"
 			tasks: [{
 				id: "1C1A9D63AE5B53F0"
 				type: "item"
@@ -874,15 +951,12 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"0CFCC1ED5B467FE1"
-			]
-			id: "65F3A70EE909B2AA"
-			y: 9.0d
-			x: 13.0d
 		}
 		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["282B279FBBEA9F99"]
+			id: "0800F7D22BBECEB0"
 			tasks: [{
 				id: "2CE0078A4F1EBF1C"
 				type: "item"
@@ -924,12 +998,15 @@
 					}
 				}
 			}]
-			dependencies: ["282B279FBBEA9F99"]
-			id: "0800F7D22BBECEB0"
-			y: 6.0d
-			x: 4.0d
 		}
 		{
+			x: 9.0d
+			y: 6.0d
+			dependencies: [
+				"7B4EAC734A641377"
+				"0800F7D22BBECEB0"
+			]
+			id: "6A89B0A288BAD168"
 			tasks: [{
 				id: "362380D38321F12F"
 				type: "item"
@@ -971,15 +1048,16 @@
 					}
 				}
 			}]
-			dependencies: [
-				"7B4EAC734A641377"
-				"0800F7D22BBECEB0"
-			]
-			id: "6A89B0A288BAD168"
-			y: 6.0d
-			x: 10.0d
 		}
 		{
+			x: 12.5d
+			y: 6.0d
+			dependencies: [
+				"501DDF09111FC2FC"
+				"6A89B0A288BAD168"
+				"0D4B25408F69C32B"
+			]
+			id: "65AB9F9E97E55B95"
 			tasks: [{
 				id: "45B13D6694CB8536"
 				type: "item"
@@ -1021,15 +1099,12 @@
 					}
 				}
 			}]
-			dependencies: [
-				"501DDF09111FC2FC"
-				"6A89B0A288BAD168"
-			]
-			id: "65AB9F9E97E55B95"
-			y: 6.0d
-			x: 17.0d
 		}
 		{
+			x: 10.0d
+			y: 2.5d
+			dependencies: ["234C1EC8EEAD94DA"]
+			id: "288C8EC11535FEF7"
 			tasks: [
 				{
 					id: "173F39A19E9A9B5F"
@@ -1049,10 +1124,7 @@
 					count: 4L
 				}
 			]
-			dependencies: ["234C1EC8EEAD94DA"]
-			id: "288C8EC11535FEF7"
-			y: 2.5d
-			x: 10.0d
 		}
 	]
+	quest_links: [ ]
 }

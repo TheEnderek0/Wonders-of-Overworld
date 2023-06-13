@@ -1,301 +1,361 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "1A933187E17A6D42"
 	id: "5FC1063CA9394CAA"
-	filename: "refined_storage"
-	default_quest_shape: ""
-	icon: "refinedstorage:creative_controller"
-	title: "Refined Storage"
+	group: "1A933187E17A6D42"
 	order_index: 0
+	filename: "refined_storage"
+	title: "Refined Storage"
+	icon: "refinedstorage:creative_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			tasks: [{
-				id: "1C209A600BC613CB"
-				type: "checkmark"
-				title: "Start"
-			}]
+			icon: "refinedstorage:creative_controller"
+			x: -2.5d
+			y: 3.0d
+			shape: "gear"
 			description: [
 				"This mod is crucial for progression, recipes will only become harder and harder, autocrafting is your best friend in this situation."
 				"You can find all of the documentation here: https://refinedmods.com/refined-storage/"
 			]
-			icon: "refinedstorage:creative_controller"
-			x: -2.5d
-			id: "30BBC4302A0A7853"
-			y: 3.0d
-			shape: "gear"
 			dependencies: [
 				"65B44036D79D2FCE"
 				"44EA2B7F43F81B3C"
 				"2E1A7D7838AA183F"
 			]
+			id: "30BBC4302A0A7853"
+			tasks: [{
+				id: "1C209A600BC613CB"
+				type: "checkmark"
+				title: "Start"
+			}]
 		}
 		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["30BBC4302A0A7853"]
+			id: "3C4267F206EBC1AB"
 			tasks: [{
 				id: "0B28EAD87C4C1586"
 				type: "item"
 				item: "refinedstorage:machine_casing"
 			}]
-			dependencies: ["30BBC4302A0A7853"]
-			id: "3C4267F206EBC1AB"
-			y: 5.0d
-			x: -0.5d
 		}
 		{
-			tasks: [{
-				id: "38E5BE3C8E9D6036"
-				type: "item"
-				item: "refinedstorage:controller"
-			}]
+			x: 4.5d
+			y: 5.0d
+			description: ["The heart of a network."]
 			dependencies: [
 				"3C4267F206EBC1AB"
 				"0F3E8BFFB27B6986"
 			]
 			id: "68DB925EB601BDB2"
-			y: 5.0d
-			x: 4.5d
+			tasks: [{
+				id: "38E5BE3C8E9D6036"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [{
+				id: "74007AB6670E87F5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["30BBC4302A0A7853"]
+			id: "1A26F36086A03B6B"
 			tasks: [{
 				id: "5C5CE3DF77592BDB"
 				type: "item"
 				item: "refinedstorage:processor_binding"
 			}]
-			dependencies: ["30BBC4302A0A7853"]
-			id: "1A26F36086A03B6B"
-			y: 1.0d
-			x: -0.5d
 		}
 		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["1A26F36086A03B6B"]
+			id: "2B948098EFE6B035"
 			tasks: [{
 				id: "200F81528DA76FE9"
 				type: "item"
 				item: "refinedstorage:basic_processor"
 			}]
-			dependencies: ["1A26F36086A03B6B"]
-			id: "2B948098EFE6B035"
-			y: 1.0d
-			x: 2.0d
 		}
 		{
+			x: 4.5d
+			y: 1.0d
+			dependencies: ["2B948098EFE6B035"]
+			id: "0AE2A248F060CC5F"
 			tasks: [{
 				id: "77B89E011F603179"
 				type: "item"
 				item: "refinedstorage:improved_processor"
 			}]
-			dependencies: ["2B948098EFE6B035"]
-			id: "0AE2A248F060CC5F"
-			y: 1.0d
-			x: 4.5d
 		}
 		{
+			x: 7.0d
+			y: 1.0d
+			dependencies: ["0AE2A248F060CC5F"]
+			id: "0F3E8BFFB27B6986"
 			tasks: [{
 				id: "3E93EB5BC9ACE645"
 				type: "item"
 				item: "refinedstorage:advanced_processor"
 			}]
-			dependencies: ["0AE2A248F060CC5F"]
-			id: "0F3E8BFFB27B6986"
-			y: 1.0d
-			x: 7.0d
 		}
 		{
+			x: 9.5d
+			y: 1.0d
+			dependencies: ["0F3E8BFFB27B6986"]
+			id: "66C9DB24EB06F912"
 			tasks: [{
 				id: "26BC76EBF623E18A"
 				type: "item"
 				item: "extrastorage:neural_processor"
 			}]
-			dependencies: ["0F3E8BFFB27B6986"]
-			id: "66C9DB24EB06F912"
-			y: 1.0d
-			x: 9.5d
 		}
 		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["30BBC4302A0A7853"]
+			id: "547C727ABB33F8AE"
 			tasks: [{
 				id: "10B3F6D39EFB0B38"
 				type: "item"
 				item: "refinedstorage:1k_storage_part"
 			}]
-			dependencies: ["30BBC4302A0A7853"]
-			id: "547C727ABB33F8AE"
-			y: 3.0d
-			x: -0.5d
 		}
 		{
-			tasks: [{
-				id: "5CC7D6152FB160FF"
-				type: "item"
-				item: "refinedstorage:4k_storage_part"
-			}]
+			x: 2.0d
+			y: 3.0d
 			dependencies: [
 				"547C727ABB33F8AE"
 				"2B948098EFE6B035"
 			]
 			id: "1F9F0F79CD08F0CA"
-			y: 3.0d
-			x: 2.0d
+			tasks: [{
+				id: "5CC7D6152FB160FF"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+			}]
 		}
 		{
-			tasks: [{
-				id: "3DB3967BECABA74E"
-				type: "item"
-				item: "refinedstorage:16k_storage_part"
-			}]
+			x: 4.5d
+			y: 3.0d
 			dependencies: [
 				"0AE2A248F060CC5F"
 				"1F9F0F79CD08F0CA"
 			]
 			id: "7CD5D00F67B7409D"
-			y: 3.0d
-			x: 4.5d
+			tasks: [{
+				id: "3DB3967BECABA74E"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+			}]
+			rewards: [{
+				id: "3D7FA8BE61E423B3"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "63BB4FBB6AEEE1CC"
-				type: "item"
-				item: "refinedstorage:64k_storage_part"
-			}]
+			x: 7.0d
+			y: 3.0d
 			dependencies: [
 				"7CD5D00F67B7409D"
 				"0F3E8BFFB27B6986"
 			]
 			id: "1729240A6019A854"
-			y: 3.0d
-			x: 7.0d
+			tasks: [{
+				id: "63BB4FBB6AEEE1CC"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
 		}
 		{
+			x: 7.0d
+			y: 4.0d
+			dependencies: ["68DB925EB601BDB2"]
+			id: "4F4AC4022B399E62"
 			tasks: [{
 				id: "3CBF719119225598"
 				type: "item"
 				item: "refinedstorage:disk_drive"
 			}]
-			dependencies: ["68DB925EB601BDB2"]
-			id: "4F4AC4022B399E62"
-			y: 6.5d
-			x: 1.5d
 		}
 		{
+			x: 8.5d
+			y: 5.0d
+			dependencies: ["68DB925EB601BDB2"]
+			id: "49C1BA5C375D6EFA"
 			tasks: [{
 				id: "651591B9ED546DD2"
 				type: "item"
 				item: "refinedstorage:cable"
 			}]
-			dependencies: ["68DB925EB601BDB2"]
-			id: "49C1BA5C375D6EFA"
-			y: 5.0d
-			x: 8.5d
+			rewards: [{
+				id: "6420FDEEC7921F1F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 11.0d
+			y: 3.5d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "58999275B59DB508"
 			tasks: [{
 				id: "1C3ACEED960D4E04"
 				type: "item"
 				item: "refinedstorage:external_storage"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "58999275B59DB508"
-			y: 3.5d
-			x: 11.0d
 		}
 		{
+			x: 11.0d
+			y: 4.5d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "7D5518129D962D80"
 			tasks: [{
 				id: "624DE940AFAE6FCC"
 				type: "item"
 				item: "refinedstorage:importer"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "7D5518129D962D80"
-			y: 4.5d
-			x: 11.0d
 		}
 		{
+			x: 11.0d
+			y: 5.5d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "2F24D62291B3D47B"
 			tasks: [{
 				id: "6F8C4C8D4E6007E3"
 				type: "item"
 				item: "refinedstorage:exporter"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "2F24D62291B3D47B"
-			y: 5.5d
-			x: 11.0d
 		}
 		{
+			x: 10.0d
+			y: 7.0d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "58E6199D0F4C6F2F"
 			tasks: [{
 				id: "765C46AA90236FBE"
 				type: "item"
 				item: "refinedstorage:interface"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "58E6199D0F4C6F2F"
-			y: 7.0d
-			x: 10.0d
 		}
 		{
+			x: 8.5d
+			y: 7.0d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "684ED25EAFF6A630"
 			tasks: [{
 				id: "17D42B0F956E35B4"
 				type: "item"
 				item: "refinedstorage:fluid_interface"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "684ED25EAFF6A630"
-			y: 7.0d
-			x: 8.5d
 		}
 		{
+			x: 4.5d
+			y: 6.5d
+			dependencies: ["68DB925EB601BDB2"]
+			id: "1FBA097A3482BC32"
 			tasks: [{
 				id: "5FB611D8848ED390"
 				type: "item"
 				item: "refinedstorage:crafter"
 			}]
-			dependencies: ["68DB925EB601BDB2"]
-			id: "1FBA097A3482BC32"
-			y: 6.5d
-			x: 4.5d
+			rewards: [{
+				id: "534152B668EC2FA2"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 3.0d
+			y: 9.5d
+			dependencies: ["0513EF0EBE2B0697"]
+			id: "54C9CA6988B2111B"
 			tasks: [{
 				id: "42B6BD0F8D117248"
 				type: "item"
 				item: "refinedstorage:pattern_grid"
 			}]
-			dependencies: ["0513EF0EBE2B0697"]
-			id: "54C9CA6988B2111B"
-			y: 9.5d
-			x: 3.0d
 		}
 		{
+			x: 1.5d
+			y: 6.5d
+			dependencies: ["68DB925EB601BDB2"]
+			id: "64D933740E10AD1E"
 			tasks: [{
 				id: "259D784129DE6EA9"
 				type: "item"
 				item: "refinedstorage:grid"
 			}]
-			dependencies: ["4F4AC4022B399E62"]
-			id: "64D933740E10AD1E"
-			y: 8.0d
-			x: 1.5d
 		}
 		{
+			x: -0.5d
+			y: 6.5d
+			dependencies: ["64D933740E10AD1E"]
+			id: "037FC33239964DCA"
 			tasks: [{
 				id: "4C074DDAD64A5284"
 				type: "item"
 				item: "refinedstorage:crafting_grid"
 			}]
-			dependencies: ["64D933740E10AD1E"]
-			id: "037FC33239964DCA"
-			y: 8.0d
-			x: -0.5d
+			rewards: [{
+				id: "24BDC6DBA908AF23"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: 1.5d
+			y: 8.0d
+			dependencies: ["64D933740E10AD1E"]
+			id: "7E51A195F5CF14C4"
 			tasks: [{
 				id: "2EADC1287154DFED"
 				type: "item"
 				item: "refinedstorage:fluid_grid"
 			}]
-			dependencies: ["64D933740E10AD1E"]
-			id: "7E51A195F5CF14C4"
-			y: 9.5d
-			x: -0.5d
 		}
 		{
+			title: "Wireless Network"
+			x: -2.5d
+			y: 5.0d
+			dependencies: ["3C4267F206EBC1AB"]
+			id: "006CF52DF353EDB6"
 			tasks: [
 				{
 					id: "6FC5844C7C54DCA2"
@@ -308,179 +368,208 @@
 					item: "refinedstorage:network_receiver"
 				}
 			]
-			dependencies: ["3C4267F206EBC1AB"]
-			id: "006CF52DF353EDB6"
-			y: 5.0d
-			x: -2.5d
-			title: "Wireless Network"
 		}
 		{
+			x: 4.5d
+			y: 8.0d
+			dependencies: ["1FBA097A3482BC32"]
+			id: "421851B454A509F1"
 			tasks: [{
 				id: "243E449898D6BCCC"
 				type: "item"
 				item: "refinedstorage:crafter_manager"
 			}]
-			dependencies: ["1FBA097A3482BC32"]
-			id: "421851B454A509F1"
-			y: 8.0d
-			x: 4.5d
 		}
 		{
+			x: 3.0d
+			y: 6.5d
+			dependencies: ["1FBA097A3482BC32"]
+			id: "3E9D1F03A6D8E208"
 			tasks: [{
 				id: "2452BE86744F1883"
 				type: "item"
 				item: "refinedstorage:crafting_monitor"
 			}]
-			dependencies: ["1FBA097A3482BC32"]
-			id: "3E9D1F03A6D8E208"
-			y: 6.5d
-			x: 3.0d
 		}
 		{
+			x: 3.0d
+			y: 8.0d
+			dependencies: ["1FBA097A3482BC32"]
+			id: "0513EF0EBE2B0697"
 			tasks: [{
 				id: "746975F24EBF1BEB"
 				type: "item"
 				item: "refinedstorage:pattern"
 			}]
-			dependencies: ["1FBA097A3482BC32"]
-			id: "0513EF0EBE2B0697"
-			y: 8.0d
-			x: 3.0d
 		}
 		{
+			x: 11.0d
+			y: 6.5d
+			dependencies: ["49C1BA5C375D6EFA"]
+			id: "09A611B2378E400F"
 			tasks: [{
 				id: "103DC5599ACA76F1"
 				type: "item"
 				item: "refinedstorage:wireless_transmitter"
 			}]
-			dependencies: ["49C1BA5C375D6EFA"]
-			id: "09A611B2378E400F"
-			y: 6.5d
-			x: 11.0d
 		}
 		{
+			x: 12.5d
+			y: 6.5d
+			dependencies: ["09A611B2378E400F"]
+			id: "5F0DB0F82B637460"
 			tasks: [{
 				id: "2567727BEDBC2B6A"
 				type: "item"
 				item: "refinedstorageaddons:wireless_crafting_grid"
 			}]
-			dependencies: ["09A611B2378E400F"]
-			id: "5F0DB0F82B637460"
-			y: 6.5d
-			x: 12.5d
 		}
 		{
+			x: 11.0d
+			y: 8.0d
+			dependencies: ["09A611B2378E400F"]
+			id: "674B6D0DC3C9E914"
 			tasks: [{
 				id: "63F7D1206ED54581"
 				type: "item"
 				item: "refinedstorage:range_upgrade"
 			}]
-			dependencies: ["09A611B2378E400F"]
-			id: "674B6D0DC3C9E914"
-			y: 8.0d
-			x: 11.0d
 		}
 		{
+			x: 12.5d
+			y: 8.0d
+			description: ["Adds infinite range for your wireless grids."]
+			dependencies: ["674B6D0DC3C9E914"]
+			id: "6D8F3803F75C8CCB"
 			tasks: [{
 				id: "2714CAFB4632B6E8"
 				type: "item"
 				item: "rsinfinitybooster:infinity_card"
 			}]
-			description: ["Adds infinite range for your wireless grids."]
-			dependencies: ["674B6D0DC3C9E914"]
-			id: "6D8F3803F75C8CCB"
-			y: 8.0d
-			x: 12.5d
+			rewards: [{
+				id: "4F2062AFAF0A6E6E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: 14.0d
+			y: 8.0d
+			description: ["Adds infinite range for your wireless grids, and also across dimensions."]
+			dependencies: ["6D8F3803F75C8CCB"]
+			id: "7844DFBEC682D898"
 			tasks: [{
 				id: "14152EBC4D1D40B7"
 				type: "item"
 				item: "rsinfinitybooster:dimension_card"
 			}]
-			description: ["Adds infinite range for your wireless grids, and also across dimensions."]
-			dependencies: ["6D8F3803F75C8CCB"]
-			id: "7844DFBEC682D898"
-			y: 8.0d
-			x: 14.0d
+			rewards: [{
+				id: "26CFFC35247FC566"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 12.5d
+			y: 4.5d
+			dependencies: ["7D5518129D962D80"]
+			id: "65CAC36868815A47"
 			tasks: [{
 				id: "2B03CDDD968833B6"
 				type: "item"
 				item: "extrastorage:advanced_importer"
 			}]
-			dependencies: ["7D5518129D962D80"]
-			id: "65CAC36868815A47"
-			y: 4.5d
-			x: 12.5d
 		}
 		{
+			x: 12.5d
+			y: 5.5d
+			dependencies: ["2F24D62291B3D47B"]
+			id: "7717FC025703D32B"
 			tasks: [{
 				id: "631C542BB0620F63"
 				type: "item"
 				item: "extrastorage:advanced_exporter"
 			}]
-			dependencies: ["2F24D62291B3D47B"]
-			id: "7717FC025703D32B"
-			y: 5.5d
-			x: 12.5d
 		}
 		{
+			x: 6.0d
+			y: 6.5d
+			dependencies: ["1FBA097A3482BC32"]
+			id: "10BD6D724F7E07BC"
 			tasks: [{
 				id: "00E82F63B1607372"
 				type: "item"
 				item: "extrastorage:iron_crafter"
 			}]
-			dependencies: ["1FBA097A3482BC32"]
-			id: "10BD6D724F7E07BC"
-			y: 6.5d
-			x: 6.0d
 		}
 		{
+			x: 6.0d
+			y: 8.0d
+			dependencies: ["10BD6D724F7E07BC"]
+			id: "0E32B080D6C78377"
 			tasks: [{
 				id: "3EE49FCD04E7E601"
 				type: "item"
 				item: "extrastorage:gold_crafter"
 			}]
-			dependencies: ["10BD6D724F7E07BC"]
-			id: "0E32B080D6C78377"
-			y: 8.0d
-			x: 6.0d
 		}
 		{
+			x: 6.0d
+			y: 9.5d
+			dependencies: ["0E32B080D6C78377"]
+			id: "2EB5FE249EBDF3D8"
 			tasks: [{
 				id: "046E11D7CF4D1EB7"
 				type: "item"
 				item: "extrastorage:diamond_crafter"
 			}]
-			dependencies: ["0E32B080D6C78377"]
-			id: "2EB5FE249EBDF3D8"
-			y: 9.5d
-			x: 6.0d
 		}
 		{
+			x: 6.0d
+			y: 11.0d
+			dependencies: ["2EB5FE249EBDF3D8"]
+			id: "44DDC0FA34C19157"
 			tasks: [{
 				id: "1089BD8FDACB40E8"
 				type: "item"
 				item: "extrastorage:netherite_crafter"
 			}]
-			dependencies: ["2EB5FE249EBDF3D8"]
-			id: "44DDC0FA34C19157"
-			y: 11.0d
-			x: 6.0d
 		}
 		{
+			x: 9.5d
+			y: 3.0d
+			description: ["You can go way higher than that!"]
+			dependencies: ["1729240A6019A854"]
+			id: "75A217D1D42E98A9"
 			tasks: [{
 				id: "3B2B80097EBEE306"
 				type: "item"
 				item: "extrastorage:storagepart_256k"
 			}]
-			description: ["You can go way higher than that!"]
-			dependencies: ["1729240A6019A854"]
-			id: "75A217D1D42E98A9"
-			y: 3.0d
-			x: 9.5d
+			rewards: [{
+				id: "2C15F8B18C968238"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 	]
+	quest_links: [ ]
 }

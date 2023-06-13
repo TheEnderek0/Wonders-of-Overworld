@@ -4,9 +4,6 @@
 	title: "Rare"
 	loot_size: 1
 	rewards: [
-		{ item: "botania:mana_diamond", count: 2 }
-		{ item: "botania:mana_pearl", count: 3 }
-		{ item: "botania:manasteel_ingot", count: 8 }
 		{ item: "botania:black_lotus" }
 		{ item: "tombstone:tablet_of_home" }
 		{ item: "tombstone:tablet_of_recall" }

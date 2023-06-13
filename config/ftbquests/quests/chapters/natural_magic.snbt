@@ -1,27 +1,31 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "05AF8D3D4322BDCB"
 	id: "07185687A2926AF1"
-	filename: "natural_magic"
-	default_quest_shape: ""
-	icon: "botania:lexicon"
-	title: "Natural Magic"
+	group: "05AF8D3D4322BDCB"
 	order_index: 0
+	filename: "natural_magic"
+	title: "Natural Magic"
+	icon: "botania:lexicon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "botania:orange_double_flower"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			id: "29D1CC11B7AE4BB4"
 			tasks: [{
 				id: "1D7F8CFFD0D0920D"
 				type: "checkmark"
 				title: "Start"
 			}]
-			id: "29D1CC11B7AE4BB4"
-			shape: "gear"
-			y: 0.0d
-			x: 0.0d
-			icon: "botania:orange_double_flower"
 		}
 		{
+			title: "Mystical Flowers"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["29D1CC11B7AE4BB4"]
+			id: "702EAB7896710D1D"
 			tasks: [{
 				id: "652B083EDC7165D6"
 				type: "item"
@@ -34,24 +38,24 @@
 					}
 				}
 			}]
-			dependencies: ["29D1CC11B7AE4BB4"]
-			id: "702EAB7896710D1D"
-			y: 0.0d
-			x: 2.0d
-			title: "Mystical Flowers"
 		}
 		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["702EAB7896710D1D"]
+			id: "3AE20034C1F541EA"
 			tasks: [{
 				id: "67946858F86C0485"
 				type: "item"
 				item: "botania:flower_bag"
 			}]
-			dependencies: ["702EAB7896710D1D"]
-			id: "3AE20034C1F541EA"
-			y: 1.0d
-			x: 3.0d
 		}
 		{
+			title: "Tall Mystical Flowers"
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["702EAB7896710D1D"]
+			id: "134C2BA78FE22395"
 			tasks: [{
 				id: "76BB90B6AC1D7F76"
 				type: "item"
@@ -64,24 +68,24 @@
 					}
 				}
 			}]
-			dependencies: ["702EAB7896710D1D"]
-			id: "134C2BA78FE22395"
-			y: 1.5d
-			x: 2.0d
-			title: "Tall Mystical Flowers"
 		}
 		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["29D1CC11B7AE4BB4"]
+			id: "4C02387412237A3E"
 			tasks: [{
 				id: "29029B16010203D7"
 				type: "item"
 				item: "botania:lexicon"
 			}]
-			dependencies: ["29D1CC11B7AE4BB4"]
-			id: "4C02387412237A3E"
-			y: 1.5d
-			x: -1.5d
 		}
 		{
+			title: "Elven Data"
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["4C02387412237A3E"]
+			id: "48AAB2A4A7985109"
 			tasks: [{
 				id: "3C7D91CD3677071D"
 				type: "item"
@@ -93,46 +97,46 @@
 					}
 				}
 			}]
-			dependencies: ["4C02387412237A3E"]
-			id: "48AAB2A4A7985109"
-			y: 3.0d
-			x: -1.5d
-			title: "Elven Data"
 		}
 		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["702EAB7896710D1D"]
+			id: "2A5BB6B5B05F45DC"
 			tasks: [{
 				id: "5116CDCD94EFBF05"
 				type: "item"
 				item: "botania:apothecary_default"
 			}]
-			dependencies: ["702EAB7896710D1D"]
-			id: "2A5BB6B5B05F45DC"
-			y: -1.5d
-			x: 3.5d
 		}
 		{
+			x: 5.5d
+			y: -1.5d
+			dependencies: ["2A5BB6B5B05F45DC"]
+			id: "617C75465EF54F08"
 			tasks: [{
 				id: "658477FDE5CCE0D6"
 				type: "item"
 				item: "botania:pure_daisy"
 			}]
-			dependencies: ["2A5BB6B5B05F45DC"]
-			id: "617C75465EF54F08"
-			y: -1.5d
-			x: 5.5d
 		}
 		{
+			x: 8.0d
+			y: -1.0d
+			dependencies: ["617C75465EF54F08"]
+			id: "0E293967223FF0FE"
 			tasks: [{
 				id: "56B5F3E998775304"
 				type: "item"
 				item: "botania:livingrock"
 			}]
-			dependencies: ["617C75465EF54F08"]
-			id: "0E293967223FF0FE"
-			y: -1.0d
-			x: 8.0d
 		}
 		{
+			title: "Livingwood"
+			x: 8.0d
+			y: -2.5d
+			dependencies: ["617C75465EF54F08"]
+			id: "6C69B049339E721C"
 			tasks: [{
 				id: "59E2DBFFC736A0F3"
 				type: "item"
@@ -145,68 +149,68 @@
 					}
 				}
 			}]
-			dependencies: ["617C75465EF54F08"]
-			id: "6C69B049339E721C"
-			y: -2.5d
-			x: 8.0d
-			title: "Livingwood"
 		}
 		{
+			x: 9.0d
+			y: -3.5d
+			dependencies: ["6C69B049339E721C"]
+			id: "7AB8A7EDE53712D0"
 			tasks: [{
 				id: "285F9B6E59251D6A"
 				type: "item"
 				item: "botania:mana_spreader"
 			}]
-			dependencies: ["6C69B049339E721C"]
-			id: "7AB8A7EDE53712D0"
-			y: -3.5d
-			x: 9.0d
 		}
 		{
+			x: 8.0d
+			y: 1.0d
+			dependencies: ["0E293967223FF0FE"]
+			id: "112A2408720536CB"
 			tasks: [{
 				id: "5B74441431E1A602"
 				type: "item"
 				item: "botania:mana_pool"
 			}]
-			dependencies: ["0E293967223FF0FE"]
-			id: "112A2408720536CB"
-			y: 1.0d
-			x: 8.0d
 		}
 		{
+			x: 9.0d
+			y: -5.0d
+			dependencies: ["7AB8A7EDE53712D0"]
+			id: "27C3D85D76D0AC56"
 			tasks: [{
 				id: "0FCE6BB1D76956B7"
 				type: "item"
 				item: "botania:redstone_spreader"
 			}]
-			dependencies: ["7AB8A7EDE53712D0"]
-			id: "27C3D85D76D0AC56"
-			y: -5.0d
-			x: 9.0d
 		}
 		{
+			x: 10.5d
+			y: -5.0d
+			dependencies: ["27C3D85D76D0AC56"]
+			id: "3FB5EFF54AECFAB8"
 			tasks: [{
 				id: "2BA0A0F42B479454"
 				type: "item"
 				item: "botania:elven_spreader"
 			}]
-			dependencies: ["27C3D85D76D0AC56"]
-			id: "3FB5EFF54AECFAB8"
-			y: -5.0d
-			x: 10.5d
 		}
 		{
+			x: 10.5d
+			y: -3.5d
+			dependencies: ["3FB5EFF54AECFAB8"]
+			id: "1B5321F42B9E7919"
 			tasks: [{
 				id: "07D10AA6BE492C73"
 				type: "item"
 				item: "botania:gaia_spreader"
 			}]
-			dependencies: ["3FB5EFF54AECFAB8"]
-			id: "1B5321F42B9E7919"
-			y: -3.5d
-			x: 10.5d
 		}
 		{
+			title: "Generational Flora"
+			x: 5.5d
+			y: -3.0d
+			dependencies: ["617C75465EF54F08"]
+			id: "1855987D91B6EEB7"
 			tasks: [{
 				id: "61822FEC5AF46364"
 				type: "item"
@@ -219,33 +223,15 @@
 					}
 				}
 			}]
-			dependencies: ["617C75465EF54F08"]
-			id: "1855987D91B6EEB7"
-			y: -3.0d
-			x: 5.5d
-			title: "Generational Flora"
 		}
 		{
-			size: 2.0d
+			title: "All the Mana!"
 			x: 5.0d
-			id: "70B0D20F1A68D31B"
 			y: -5.0d
 			shape: "square"
-			title: "All the Mana!"
-			rewards: [
-				{
-					id: "408DAE65E1937436"
-					type: "item"
-					item: "botania:super_cloud_pendant"
-				}
-				{
-					id: "608D9302FB8C9D9C"
-					type: "item"
-					item: "botania:terrasteel_ingot"
-					count: 16
-				}
-			]
 			dependencies: ["1855987D91B6EEB7"]
+			size: 2.0d
+			id: "70B0D20F1A68D31B"
 			tasks: [
 				{
 					id: "3624ED25909B01DE"
@@ -318,34 +304,28 @@
 					item: "botania:bellethorn"
 				}
 			]
-		}
-		{
-			size: 2.0d
-			x: 5.0d
-			id: "6C0A022BDFADCCB8"
-			y: 2.0d
-			shape: "square"
-			title: "No the Mana!"
 			rewards: [
 				{
-					id: "5350FBC332EACE03"
+					id: "408DAE65E1937436"
 					type: "item"
-					item: "botania:auto_crafting_halo"
+					item: "botania:super_cloud_pendant"
 				}
 				{
-					id: "0B9A27B437AAA78A"
+					id: "608D9302FB8C9D9C"
 					type: "item"
-					item: "botania:dragonstone"
-					count: 16
-				}
-				{
-					id: "6CF334A4DAAC8A6F"
-					type: "item"
-					item: "botania:elementium_ingot"
+					item: "botania:terrasteel_ingot"
 					count: 16
 				}
 			]
+		}
+		{
+			title: "No the Mana!"
+			x: 5.0d
+			y: 2.0d
+			shape: "square"
 			dependencies: ["7EBD1024286479A4"]
+			size: 2.0d
+			id: "6C0A022BDFADCCB8"
 			tasks: [
 				{
 					id: "6C67ACB920B4B5D1"
@@ -478,8 +458,32 @@
 					item: "botania:labellia"
 				}
 			]
+			rewards: [
+				{
+					id: "5350FBC332EACE03"
+					type: "item"
+					item: "botania:auto_crafting_halo"
+				}
+				{
+					id: "0B9A27B437AAA78A"
+					type: "item"
+					item: "botania:dragonstone"
+					count: 16
+				}
+				{
+					id: "6CF334A4DAAC8A6F"
+					type: "item"
+					item: "botania:elementium_ingot"
+					count: 16
+				}
+			]
 		}
 		{
+			title: "Functional Flora"
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["617C75465EF54F08"]
+			id: "7EBD1024286479A4"
 			tasks: [{
 				id: "3CD21001C8718ACC"
 				type: "item"
@@ -492,45 +496,26 @@
 					}
 				}
 			}]
-			dependencies: ["617C75465EF54F08"]
-			id: "7EBD1024286479A4"
-			y: 0.0d
-			x: 5.5d
-			title: "Functional Flora"
 		}
 		{
+			x: 11.0d
+			y: -1.0d
+			dependencies: ["16216C8F10928A28"]
+			id: "11FC0C6E256A811A"
 			tasks: [{
 				id: "4035C4F8F39CD85B"
 				type: "item"
 				item: "botania:runic_altar"
 			}]
-			dependencies: ["16216C8F10928A28"]
-			id: "11FC0C6E256A811A"
-			y: -1.0d
-			x: 11.0d
 		}
 		{
-			size: 2.0d
+			title: "Inscriber"
 			x: 13.0d
-			id: "7054BFA913F827BD"
 			y: -3.0d
 			shape: "square"
-			title: "Inscriber"
-			rewards: [
-				{
-					id: "463BBB72035378E8"
-					type: "item"
-					item: "botania:livingrock"
-					count: 64
-				}
-				{
-					id: "2EE03FC5863951F3"
-					type: "item"
-					item: "botania:light_relay"
-					count: 8
-				}
-			]
 			dependencies: ["11FC0C6E256A811A"]
+			size: 2.0d
+			id: "7054BFA913F827BD"
 			tasks: [
 				{
 					id: "1A7FDFFA06E33B65"
@@ -613,8 +598,26 @@
 					item: "botania:rune_pride"
 				}
 			]
+			rewards: [
+				{
+					id: "463BBB72035378E8"
+					type: "item"
+					item: "botania:livingrock"
+					count: 64
+				}
+				{
+					id: "2EE03FC5863951F3"
+					type: "item"
+					item: "botania:light_relay"
+					count: 8
+				}
+			]
 		}
 		{
+			x: 12.5d
+			y: 0.0d
+			dependencies: ["11FC0C6E256A811A"]
+			id: "01EC05D8665C3C57"
 			tasks: [
 				{
 					id: "3088DD7BAF049C97"
@@ -627,12 +630,13 @@
 					item: "botania:terrasteel_ingot"
 				}
 			]
-			dependencies: ["11FC0C6E256A811A"]
-			id: "01EC05D8665C3C57"
-			y: 0.0d
-			x: 12.5d
 		}
 		{
+			title: "Maniac"
+			x: 10.5d
+			y: 0.5d
+			dependencies: ["112A2408720536CB"]
+			id: "16216C8F10928A28"
 			tasks: [
 				{
 					id: "7F12F0B64879DCAE"
@@ -655,57 +659,60 @@
 					item: "botania:mana_powder"
 				}
 			]
-			dependencies: ["112A2408720536CB"]
-			id: "16216C8F10928A28"
-			y: 0.5d
-			x: 10.5d
-			title: "Maniac"
 		}
 		{
-			tasks: [{
-				type: "kill"
-				value: 1L
-				id: "54425F7176948404"
-				entity: "botania:doppleganger"
-				icon: "botania:gaia_head"
-				title: "Gaia Guardian"
-			}]
+			icon: "botania:life_essence"
+			x: 13.5d
+			y: 3.5d
 			dependencies: ["31F80CCC25FC4A86"]
 			id: "7B32AD5531B20C5E"
-			y: 3.5d
-			x: 13.5d
-			icon: "botania:life_essence"
+			tasks: [{
+				id: "54425F7176948404"
+				type: "kill"
+				title: "Gaia Guardian"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
 		}
 		{
-			size: 2.0d
 			x: 11.0d
-			id: "01E6EF79D5A67BBD"
 			y: 5.0d
 			shape: "square"
 			dependencies: ["7B32AD5531B20C5E"]
+			size: 2.0d
+			id: "01E6EF79D5A67BBD"
 			tasks: [{
+				id: "4B09D1D9B5D874EA"
 				type: "advancement"
+				title: "Mythologia's End"
+				icon: "botania:gaia_head"
 				advancement: "botania:challenge/gaia_guardian_no_armor"
 				criterion: ""
-				id: "4B09D1D9B5D874EA"
-				icon: "botania:gaia_head"
-				title: "Mythologia's End"
 			}]
 		}
 		{
+			title: "Alfheim"
+			x: 14.5d
+			y: 0.0d
+			dependencies: ["01EC05D8665C3C57"]
+			id: "73428729DC1B5768"
 			tasks: [{
 				id: "70DAFB968CCA81B4"
 				type: "advancement"
 				advancement: "botania:main/elf_portal_open"
 				criterion: ""
 			}]
-			dependencies: ["01EC05D8665C3C57"]
-			id: "73428729DC1B5768"
-			y: 0.0d
-			x: 14.5d
-			title: "Alfheim"
 		}
 		{
+			title: "Lunatic"
+			x: 12.0d
+			y: 2.0d
+			dependencies: [
+				"16216C8F10928A28"
+				"73428729DC1B5768"
+			]
+			id: "31F80CCC25FC4A86"
 			tasks: [
 				{
 					id: "3891E58E6A9E5B83"
@@ -723,14 +730,7 @@
 					item: "botania:dragonstone"
 				}
 			]
-			dependencies: [
-				"16216C8F10928A28"
-				"73428729DC1B5768"
-			]
-			id: "31F80CCC25FC4A86"
-			y: 2.0d
-			x: 12.0d
-			title: "Lunatic"
 		}
 	]
+	quest_links: [ ]
 }

@@ -1,29 +1,28 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: "5F61B00653CA7C57"
 	id: "4FF215A5F9F93640"
-	filename: "the_beggining"
-	default_quest_shape: ""
-	icon: "minecraft:flowering_azalea_leaves"
-	title: "The Beggining"
+	group: "5F61B00653CA7C57"
 	order_index: 0
+	filename: "the_beggining"
+	title: "The Beggining"
+	icon: "minecraft:flowering_azalea_leaves"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "bhc:blue_heart"
+			x: -0.5d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Hey there!"
+				"Thank you for playing my modpack! These quests will guide you through it, you're not obligated to do them of course, but it's best if you stick to them."
+			]
+			id: "3E1DE478873C849F"
 			tasks: [{
 				id: "1FCA001C9A9A9697"
 				type: "checkmark"
 				title: "Start"
 			}]
-			description: [
-				"Hey there!"
-				"Thank you for playing my modpack! These quests will guide you through it, you're not obligated to do them of course, but it's best if you stick to them."
-			]
-			icon: "bhc:blue_heart"
-			x: -0.5d
-			id: "3E1DE478873C849F"
-			y: 0.0d
-			shape: "gear"
 			rewards: [{
 				id: "18CE36B1B8F850A3"
 				type: "item"
@@ -65,14 +64,14 @@
 			}]
 		}
 		{
-			size: 1.5d
-			description: ["Surviving here in this wild world will require more care than in standard Minecraft. In this chapter you will learn about keeping hydrated and different types of food available."]
-			id: "2F98C5743D038842"
 			icon: "farmersdelight:tomato"
 			x: 1.5d
 			y: -2.25d
 			shape: "rsquare"
+			description: ["Surviving here in this wild world will require more care than in standard Minecraft. In this chapter you will learn about keeping hydrated and different types of food available."]
 			dependencies: ["3E1DE478873C849F"]
+			size: 1.5d
+			id: "2F98C5743D038842"
 			tasks: [{
 				id: "2854D3ACEC29D67F"
 				type: "checkmark"
@@ -80,6 +79,13 @@
 			}]
 		}
 		{
+			title: "Wood"
+			x: 1.5d
+			y: 0.0d
+			description: ["Gathering wood is definitelly crucial for further progression"]
+			dependencies: ["3E1DE478873C849F"]
+			dependency_requirement: "one_completed"
+			id: "189E1C89EC0FEF56"
 			tasks: [{
 				id: "1B00CD6E0C7DD501"
 				type: "item"
@@ -92,84 +98,107 @@
 					}
 				}
 			}]
-			description: ["Gathering wood is definitelly crucial for further progression"]
-			id: "189E1C89EC0FEF56"
-			x: 1.5d
-			y: 0.0d
-			title: "Wood"
-			dependencies: ["3E1DE478873C849F"]
-			dependency_requirement: "one_completed"
+			rewards: [{
+				id: "720C716BAC51B189"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			title: "Storage"
+			x: 3.5d
+			y: -2.0d
+			dependencies: ["189E1C89EC0FEF56"]
+			id: "22F80BABCC127CC3"
 			tasks: [{
 				id: "5F7E20D1811D3C22"
 				type: "item"
 				item: "minecraft:chest"
 			}]
-			dependencies: ["189E1C89EC0FEF56"]
-			id: "22F80BABCC127CC3"
-			y: -2.0d
-			x: 3.5d
-			title: "Storage"
+			rewards: [{
+				id: "2FE2FBE87FCD7763"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			title: "\"Iron\" Chests"
+			x: 3.5d
+			y: -4.0d
+			description: ["These chests can store much more items."]
+			dependencies: ["22F80BABCC127CC3"]
+			dependency_requirement: "one_completed"
+			id: "7FDF4D6669674564"
 			tasks: [{
 				id: "5E60DF825500BE57"
 				type: "item"
 				item: "ironchest:iron_chest"
 			}]
-			description: ["These chests can store much more items."]
-			id: "7FDF4D6669674564"
-			x: 3.5d
-			y: -4.0d
-			title: "\"Iron\" Chests"
-			dependencies: ["22F80BABCC127CC3"]
-			dependency_requirement: "one_completed"
+			rewards: [{
+				id: "02EF07F76C8B5855"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [
-				{
-					id: "7415A20B0A912DB6"
-					type: "item"
-					item: "storagedrawers:oak_full_drawers_1"
-				}
-				{
-					id: "299A61FD65F0D2B6"
-					type: "item"
-					item: "storagedrawers:spruce_full_drawers_1"
-				}
-				{
-					id: "548CF31C6BDDE68B"
-					type: "item"
-					item: "storagedrawers:birch_full_drawers_1"
-				}
-				{
-					id: "39AFB7CD6E75BBE7"
-					type: "item"
-					item: "storagedrawers:jungle_full_drawers_1"
-				}
-				{
-					id: "2C71E9A66499340E"
-					type: "item"
-					item: "storagedrawers:acacia_full_drawers_1"
-				}
-				{
-					id: "53F33EEFCA34D114"
-					type: "item"
-					item: "storagedrawers:dark_oak_full_drawers_1"
-				}
-			]
+			title: "Drawers"
+			x: 5.5d
+			y: -4.0d
 			description: [
 				"Drawers are quite different comparted to standard chests, they store only one (or up to four depending on the type of the drawer) type of item."
 				"But, they can store very large quantities of it."
 			]
-			id: "5BC16DC1FFF1C6CA"
-			x: 5.5d
-			y: -4.0d
-			title: "Drawers"
 			dependencies: ["22F80BABCC127CC3"]
+			id: "5BC16DC1FFF1C6CA"
+			tasks: [{
+				id: "7415A20B0A912DB6"
+				type: "item"
+				title: "Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3E2F3DED03EA3C20"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			title: "Upgrades"
+			x: 5.5d
+			y: -6.0d
+			description: ["These upgrades can extend the storing capabilities of your drawers. Shift right click to install them."]
+			dependencies: ["5BC16DC1FFF1C6CA"]
+			id: "3860A161DE1E9BBD"
 			tasks: [
 				{
 					id: "1459D9F4EC26265F"
@@ -197,43 +226,67 @@
 					item: "storagedrawers:emerald_storage_upgrade"
 				}
 			]
-			description: ["These upgrades can extend the storing capabilities of your drawers. Shift right click to install them."]
-			id: "3860A161DE1E9BBD"
-			x: 5.5d
-			y: -6.0d
-			title: "Upgrades"
-			dependencies: ["5BC16DC1FFF1C6CA"]
+			rewards: [{
+				id: "26B5A9C88292235E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 7.5d
+			y: -6.0d
+			description: ["Clicking this key on drawers makes them locked, which means that you won't be able to change the item type."]
+			dependencies: ["5BC16DC1FFF1C6CA"]
+			id: "339D6A5FCFAC31E6"
 			tasks: [{
 				id: "716690EF0A4A084F"
 				type: "item"
 				item: "storagedrawers:drawer_key"
 			}]
-			description: ["Clicking this key on drawers makes them locked, which means that you won't be able to change the item type."]
-			dependencies: ["5BC16DC1FFF1C6CA"]
-			id: "339D6A5FCFAC31E6"
-			y: -6.0d
-			x: 7.5d
+			rewards: [{
+				id: "6180384514E3D1B8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 3.5d
+			y: -6.0d
+			description: ["This upgrade will void any excess items inserted into this drawer."]
+			dependencies: ["5BC16DC1FFF1C6CA"]
+			id: "4994931F281D6418"
 			tasks: [{
 				id: "5789F81FB4C7741C"
 				type: "item"
 				item: "storagedrawers:void_upgrade"
 			}]
-			description: ["This upgrade will void any excess items inserted into this drawer."]
-			dependencies: ["5BC16DC1FFF1C6CA"]
-			id: "4994931F281D6418"
-			y: -6.0d
-			x: 3.5d
+			rewards: [{
+				id: "22D988F99BCAA2A3"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "650D915F22D2D28A"
-				type: "item"
-				item: "storagedrawers:controller"
-			}]
+			x: 7.5d
+			y: -4.0d
 			description: [
 				"By placing drawers next to this block (and next to other drawers) they will connect into a network."
 				"This block will act like a chest that contains everything that the drawers contain."
@@ -242,13 +295,25 @@
 			]
 			dependencies: ["5BC16DC1FFF1C6CA"]
 			id: "7BB9C9D563E23DDA"
-			y: -4.0d
-			x: 7.5d
+			tasks: [{
+				id: "650D915F22D2D28A"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+			rewards: [{
+				id: "0EE9186EFEA17591"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["Unlocks Tinkers' Construct which is needed for progression from Stone Age to Basic Stage"]
-			id: "0D9AABECFDD35557"
+			title: "Tinkers' Construct"
 			icon: {
 				id: "tconstruct:smeltery_controller"
 				Count: 1b
@@ -259,15 +324,33 @@
 			x: 3.75d
 			y: 1.5d
 			shape: "rsquare"
-			title: "Tinkers' Construct"
+			description: ["Unlocks Tinkers' Construct which is needed for progression from Stone Age to Basic Stage"]
 			dependencies: ["1A5FE12586E87C41"]
+			size: 1.5d
+			id: "0D9AABECFDD35557"
 			tasks: [{
 				id: "74E0626373A3B370"
 				type: "item"
 				item: "tconstruct:seared_brick"
 			}]
+			rewards: [{
+				id: "2B5E1196430008F2"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 5.5d
+			y: -2.0d
+			description: ["A fancy crafting table that can access inventories next to it, making the JEI + button very useful for crafting."]
+			dependencies: ["1A5FE12586E87C41"]
+			id: "06FD211BBE8A060B"
 			tasks: [{
 				id: "2AACE220625B7592"
 				type: "item"
@@ -280,13 +363,24 @@
 					}
 				}
 			}]
-			description: ["A fancy crafting table that can access inventories next to it, making the JEI + button very useful for crafting."]
-			dependencies: ["1A5FE12586E87C41"]
-			id: "06FD211BBE8A060B"
-			y: -2.0d
-			x: 5.5d
+			rewards: [{
+				id: "68B647976EBA1939"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			title: "Basic blocks"
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["189E1C89EC0FEF56"]
+			id: "1A5FE12586E87C41"
 			tasks: [
 				{
 					id: "7D60C3D1DAA3640A"
@@ -299,39 +393,71 @@
 					item: "minecraft:furnace"
 				}
 			]
-			dependencies: ["189E1C89EC0FEF56"]
-			id: "1A5FE12586E87C41"
-			y: 0.0d
-			x: 5.5d
-			title: "Basic blocks"
+			rewards: [{
+				id: "1F498539AF428405"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 5.5d
+			y: 2.0d
+			description: ["Iron furnace can speed up your smelting by a lot, you can craft further upgrades too!"]
+			dependencies: ["1A5FE12586E87C41"]
+			dependency_requirement: "one_completed"
+			id: "4547CC70D3617CEE"
 			tasks: [{
 				id: "7AA6BF1777227120"
 				type: "item"
 				item: "ironfurnaces:iron_furnace"
 			}]
-			description: ["Iron furnace can speed up your smelting by a lot, you can craft further upgrades too!"]
-			id: "4547CC70D3617CEE"
-			x: 5.5d
-			y: 2.0d
-			dependencies: ["1A5FE12586E87C41"]
-			dependency_requirement: "one_completed"
+			rewards: [{
+				id: "254164681287D697"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			title: "Water Strainer"
+			x: 7.5d
+			y: -2.0d
+			description: ["This item when placed in water (it's upper part needs to be submerged), will collect various resources. See the usage in JEI"]
+			dependencies: ["1A5FE12586E87C41"]
+			id: "75992347FC068CA7"
 			tasks: [{
 				id: "44B13A5BDECC2A2B"
 				type: "item"
 				item: "waterstrainer:strainer_base"
 			}]
-			description: ["This item when placed in water (it's upper part needs to be submerged), will collect various resources. See the usage in JEI"]
-			id: "75992347FC068CA7"
-			x: 7.5d
-			y: -2.0d
-			title: "Water Strainer"
-			dependencies: ["1A5FE12586E87C41"]
+			rewards: [{
+				id: "2DDCF52E065F1E03"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 9.5d
+			y: -2.0d
+			dependencies: ["75992347FC068CA7"]
+			id: "78F2901A0E19AF0A"
 			tasks: [{
 				id: "2B9B9AA219D94718"
 				type: "item"
@@ -343,12 +469,23 @@
 					}
 				}
 			}]
-			dependencies: ["75992347FC068CA7"]
-			id: "78F2901A0E19AF0A"
-			y: -2.0d
-			x: 9.5d
+			rewards: [{
+				id: "39B3784A28E23292"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 11.5d
+			y: -2.0d
+			dependencies: ["78F2901A0E19AF0A"]
+			id: "7376E9A70649610E"
 			tasks: [{
 				id: "2636F1F93D284A79"
 				type: "item"
@@ -360,12 +497,23 @@
 					}
 				}
 			}]
-			dependencies: ["78F2901A0E19AF0A"]
-			id: "7376E9A70649610E"
-			y: -2.0d
-			x: 11.5d
+			rewards: [{
+				id: "21117F8EEFA0AE69"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 13.5d
+			y: -2.0d
+			dependencies: ["7376E9A70649610E"]
+			id: "322B95E7319A90E4"
 			tasks: [{
 				id: "5E78BCBE29BFA848"
 				type: "item"
@@ -377,12 +525,23 @@
 					}
 				}
 			}]
-			dependencies: ["7376E9A70649610E"]
-			id: "322B95E7319A90E4"
-			y: -2.0d
-			x: 13.5d
+			rewards: [{
+				id: "2DCC90359E27381E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 9.5d
+			y: -3.5d
+			dependencies: ["75992347FC068CA7"]
+			id: "303FEC3337038E5B"
 			tasks: [{
 				id: "45E6AB54CC27DD98"
 				type: "item"
@@ -394,12 +553,23 @@
 					}
 				}
 			}]
-			dependencies: ["75992347FC068CA7"]
-			id: "303FEC3337038E5B"
-			y: -3.5d
-			x: 9.5d
+			rewards: [{
+				id: "7ABDB74DD48E20B5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 11.5d
+			y: -3.5d
+			dependencies: ["303FEC3337038E5B"]
+			id: "046FD9324A02657B"
 			tasks: [{
 				id: "4E1C622464666A8D"
 				type: "item"
@@ -411,12 +581,23 @@
 					}
 				}
 			}]
-			dependencies: ["303FEC3337038E5B"]
-			id: "046FD9324A02657B"
-			y: -3.5d
-			x: 11.5d
+			rewards: [{
+				id: "20CFD866B86B6524"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 13.5d
+			y: -3.5d
+			dependencies: ["046FD9324A02657B"]
+			id: "559EB6A362576549"
 			tasks: [{
 				id: "387FD5E02FA10DB9"
 				type: "item"
@@ -428,27 +609,51 @@
 					}
 				}
 			}]
-			dependencies: ["046FD9324A02657B"]
-			id: "559EB6A362576549"
-			y: -3.5d
-			x: 13.5d
+			rewards: [{
+				id: "628E90E0A47A77E4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
-			tasks: [{
-				id: "08545B9066C5779D"
-				type: "item"
-				item: "dankstorage:dank_1"
-			}]
+			x: 7.5d
+			y: 2.0d
 			description: [
 				"This item will help you organise your inventory when lots of dirt, cobblestone and such materials occupy a ton of space."
 				"You can place a specific block in one slot, then enable pickup in the GUI (top right corner). From then it will pick up every block that is there, not occupying the precious space in your inventory."
 			]
 			dependencies: ["1A5FE12586E87C41"]
 			id: "44CDFD5F702E70CE"
-			y: 2.0d
-			x: 7.5d
+			tasks: [{
+				id: "08545B9066C5779D"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+			rewards: [{
+				id: "0813C811E80A0FA8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			title: "Trash Cans"
+			x: 7.5d
+			y: 0.0d
+			description: ["Trash cans are here to save you if you are in danger of excess power, fluid or items!"]
+			dependencies: ["1A5FE12586E87C41"]
+			id: "6C82AE1716B7410C"
 			tasks: [
 				{
 					id: "46737337AC84AE29"
@@ -466,147 +671,213 @@
 					item: "trashcans:energy_trash_can"
 				}
 			]
-			description: ["Trash cans are here to save you if you are in danger of excess power, fluid or items!"]
-			id: "6C82AE1716B7410C"
-			x: 7.5d
-			y: 0.0d
-			title: "Trash Cans"
-			dependencies: ["1A5FE12586E87C41"]
+			rewards: [{
+				id: "09FE7ACB0E8E9261"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: -0.5d
+			y: 1.5d
+			description: ["This modpack includes a mod that adds advanced HUD's. Press Ctrl + O in game to tweak them for your needs."]
+			dependencies: ["3E1DE478873C849F"]
+			id: "2317E0E5B07F1080"
 			tasks: [{
 				id: "1D6572DC12D25F1B"
 				type: "checkmark"
 				title: "Advanced HUD's"
 			}]
-			description: ["This modpack includes a mod that adds advanced HUD's. Press Ctrl + O in game to tweak them for your needs."]
-			dependencies: ["3E1DE478873C849F"]
-			id: "2317E0E5B07F1080"
-			y: 1.5d
-			x: -0.5d
 		}
 		{
+			x: -0.5d
+			y: 4.0d
+			description: ["Drops from hostile mobs."]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "65AA3D707AC87025"
 			tasks: [{
 				id: "460E034286295C9C"
 				type: "item"
 				item: "bhc:red_heart"
 			}]
-			description: ["Drops from hostile mobs."]
-			id: "65AA3D707AC87025"
-			x: -0.5d
-			y: 4.0d
-			dependencies: ["3E1DE478873C849F"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "56FD77B64C3C3302"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "common"
+					}
+				}
+			}]
 		}
 		{
+			x: 1.5d
+			y: 4.0d
+			description: ["Drops from bosses, for example Wither."]
+			dependencies: ["65AA3D707AC87025"]
+			id: "5B8A8075094FF4E6"
 			tasks: [{
 				id: "7ADCF3896E2B3CCE"
 				type: "item"
 				item: "bhc:yellow_heart"
 			}]
-			description: ["Drops from bosses, for example Wither."]
-			dependencies: ["65AA3D707AC87025"]
-			id: "5B8A8075094FF4E6"
-			y: 4.0d
-			x: 1.5d
+			rewards: [{
+				id: "0E77D6A4F77B3DAC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: 3.5d
+			y: 4.0d
+			description: ["Drops from the Ender Dragon, also craftable."]
+			dependencies: ["5B8A8075094FF4E6"]
+			id: "3B62B3CF438F9B22"
 			tasks: [{
 				id: "69BD60C5687A1920"
 				type: "item"
 				item: "bhc:green_heart"
 			}]
-			description: ["Drops from the Ender Dragon, also craftable."]
-			dependencies: ["5B8A8075094FF4E6"]
-			id: "3B62B3CF438F9B22"
-			y: 4.0d
-			x: 3.5d
+			rewards: [{
+				id: "3039703942A6C392"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
 		}
 		{
+			x: 5.5d
+			y: 4.0d
+			description: ["Drops from Evokers, also craftable."]
+			dependencies: ["3B62B3CF438F9B22"]
+			id: "35DC5E8D40C9F055"
 			tasks: [{
 				id: "25A25B967A5A353B"
 				type: "item"
 				item: "bhc:blue_heart"
 			}]
-			description: ["Drops from Evokers, also craftable."]
-			dependencies: ["3B62B3CF438F9B22"]
-			id: "35DC5E8D40C9F055"
-			y: 4.0d
-			x: 5.5d
+			rewards: [{
+				id: "0CBACF44640397D0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
+			x: -2.5d
+			y: 6.0d
+			description: ["You need this to actually wear the canisters."]
+			dependencies: ["65AA3D707AC87025"]
+			id: "1027F65E0345C6FF"
 			tasks: [{
 				id: "6755CC6F7C34F862"
 				type: "item"
 				item: "bhc:heart_amulet"
 			}]
-			description: ["By using this items you can have more hearts than just 10!"]
-			dependencies: ["65AA3D707AC87025"]
-			id: "1027F65E0345C6FF"
-			y: 6.0d
-			x: -2.5d
 		}
 		{
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["65AA3D707AC87025"]
+			id: "648F570390909A22"
 			tasks: [{
 				id: "2E5E15243341184B"
 				type: "item"
 				item: "bhc:red_heart_canister"
 			}]
-			dependencies: ["65AA3D707AC87025"]
-			id: "648F570390909A22"
-			y: 6.0d
-			x: -0.5d
 		}
 		{
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["5B8A8075094FF4E6"]
+			id: "0E24435BD03D1D86"
 			tasks: [{
 				id: "2350292D682F9E32"
 				type: "item"
 				item: "bhc:yellow_heart_canister"
 			}]
-			dependencies: ["5B8A8075094FF4E6"]
-			id: "0E24435BD03D1D86"
-			y: 6.0d
-			x: 1.5d
 		}
 		{
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["3B62B3CF438F9B22"]
+			id: "613CE35CD2A3F323"
 			tasks: [{
 				id: "6F2692591227075E"
 				type: "item"
 				item: "bhc:green_heart_canister"
 			}]
-			dependencies: ["3B62B3CF438F9B22"]
-			id: "613CE35CD2A3F323"
-			y: 6.0d
-			x: 3.5d
 		}
 		{
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["35DC5E8D40C9F055"]
+			id: "2D16EB4C0F062B97"
 			tasks: [{
 				id: "4CD49BC1CE0BA81E"
 				type: "item"
 				item: "bhc:blue_heart_canister"
 			}]
-			dependencies: ["35DC5E8D40C9F055"]
-			id: "2D16EB4C0F062B97"
-			y: 6.0d
-			x: 5.5d
 		}
 		{
+			x: 7.5d
+			y: 4.0d
+			description: [
+				"Simple, yet powerful clicking machine."
+				"It can interact with world by right clicking or left clicking, acting as a player."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "34B8A46D19E28EF3"
 			tasks: [{
 				id: "0177E42633AAEDB5"
 				type: "item"
 				item: "clickmachine:auto_clicker"
 			}]
-			description: [
-				"Simple, yet powerful clicking machine."
-				"It can interact with world by right clicking or left clicking, acting as a player."
-			]
-			id: "34B8A46D19E28EF3"
-			x: 7.5d
-			y: 4.0d
-			dependencies: ["3E1DE478873C849F"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "55CE0FAD6BA6DF22"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
 		}
 		{
+			x: 9.5d
+			y: 4.0d
+			description: ["A very useful tool that can tell you the cost of recipes."]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "04C1ECE684821D48"
 			tasks: [{
 				id: "103CFABBDE57997D"
 				type: "item"
@@ -616,40 +887,62 @@
 					tag: {
 						jecalculation: {
 							craft: {
-								overlayPositionX: 0
-								inventory: 0b
-								amount: ""
 								mode: "input"
+								overlayPositionX: 0
+								amount: ""
 								overlayDepth: 0
 								overlayOpen: 0b
 								recents: [ ]
+								inventory: 0b
 								overlayPositionY: 0
 							}
 						}
 					}
 				}
 			}]
-			description: ["A very useful tool that can tell you the cost of recipes."]
-			id: "04C1ECE684821D48"
-			x: 9.5d
-			y: 4.0d
-			dependencies: ["3E1DE478873C849F"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "26CC0178D0B4C300"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 7.5d
+			y: 6.0d
+			description: ["A book that can store all books!"]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "1E70D9A92805DEBD"
 			tasks: [{
 				id: "08645EAB0B2D07AF"
 				type: "item"
 				item: "akashictome:tome"
 			}]
-			description: ["A book that can store all books!"]
-			id: "1E70D9A92805DEBD"
-			x: 7.5d
-			y: 6.0d
-			dependencies: ["3E1DE478873C849F"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "6BE48F34253AB531"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 		{
+			x: 9.5d
+			y: 6.0d
+			description: ["Ender Storage is a very useful mod when it comes to transporting stuff between dimensions. Simply place two chests in the same or not in the same dimension, and use dyes to color code them (3 white bars on the top). If you're playing on a server I recommend clicking on the \"nose\" of the chest or the valve the tank with a diamond. That way no one except you can connect to these by using the same color code."]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "0732D642F96313C6"
 			tasks: [
 				{
 					id: "2DBF607AE05F77BC"
@@ -667,12 +960,18 @@
 					item: "enderstorage:ender_pouch"
 				}
 			]
-			description: ["Ender Storage is a very useful mod when it comes to transporting stuff between dimensions. Simply place two chests in the same or not in the same dimension, and use dyes to color code them (3 white bars on the top). If you're playing on a server I recommend clicking on the \"nose\" of the chest or the valve the tank with a diamond. That way no one except you can connect to these by using the same color code."]
-			id: "0732D642F96313C6"
-			x: 9.5d
-			y: 6.0d
-			dependencies: ["3E1DE478873C849F"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "3F47CD90557932E9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "uncommon"
+					}
+				}
+			}]
 		}
 	]
+	quest_links: [ ]
 }
