@@ -353,6 +353,7 @@
 			}]
 		}
 		{
+			title: "Alloy Kiln"
 			icon: "immersiveengineering:alloy_smelter"
 			x: 0.5d
 			y: 3.0d
@@ -362,20 +363,12 @@
 			]
 			dependencies: ["64252E262E6FA771"]
 			id: "5EA1E384F7B2B4D2"
-			tasks: [
-				{
-					id: "25B1D93CE7918094"
-					type: "item"
-					title: "Alloy Kiln"
-					item: "immersiveengineering:alloy_smelter"
-				}
-				{
-					id: "22C4D61B28BAE8D1"
-					type: "item"
-					item: "immersiveengineering:alloybrick"
-					count: 8L
-				}
-			]
+			tasks: [{
+				id: "22C4D61B28BAE8D1"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
 		}
 	]
 	quest_links: [ ]
