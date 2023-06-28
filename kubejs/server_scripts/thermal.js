@@ -101,4 +101,22 @@ onEvent('recipes', event => {
     event.replaceInput({output: ['thermal:energy_cell_frame', 'thermal:fluid_cell_frame']}, "#forge:gears", 'industrialforegoing:machine_frame_simple')
     
     event.remove({mod: "thermal", input: "minecraft:fire_charge", type: "minecraft:crafting_shapeless"})
+
+    event.custom({
+      "type": "thermal:press",
+      "ingredients": [
+        {
+          "item": "minecraft:diamond",
+          "count": 4
+        },
+        {
+          "item": "thermal:press_gear_die"
+        }
+      ],
+      "result": [
+        {
+          "item": "thermal:diamond_gear"
+        }
+      ]
+    })
 })

@@ -26,7 +26,7 @@ onEvent('recipes', event => {
 	Remove(['immersiveengineering:component_iron', 'immersiveengineering:component_steel'])
 
 	event.recipes.immersiveengineeringMetalPress('kubejs:insulator', 'thermal:cured_rubber', 'immersiveengineering:mold_plate')
-
+	event.recipes.immersiveengineeringMetalPress('thermal:diamond_gear', '4x minecraft:diamond', 'immersiveengineering:mold_gear')
 	event.recipes.immersiveengineeringCrusher('kubejs:crushed_arsenic', 	'kubejs:arsenic_ingot')
 	event.recipes.immersiveengineeringCrusher('kubejs:crushed_tungsten', 	'kubejs:tungsten_ingot')
 
