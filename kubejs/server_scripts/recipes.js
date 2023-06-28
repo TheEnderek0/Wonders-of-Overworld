@@ -52,6 +52,8 @@ onEvent('recipes', event => {
 	event.recipes.createSplashing(["thermal:rubber"], "industrialforegoing:dryrubber")
 	event.remove({id: "create:splashing/sand"})
 
+	event.recipes.createMilling(Item.of('create:cinder_flour').withChance(0.2), 'minecraft:netherrack')
+
 	event.recipes.createMechanicalCrafting('compressedcreativity:compressed_iron_casing', [
 		"ABA",
 		"BCB",
