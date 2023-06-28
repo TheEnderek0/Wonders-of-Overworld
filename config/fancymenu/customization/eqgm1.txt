@@ -9,12 +9,7 @@ customization-meta {
 }
 
 customization {
-  action = setscale
-  scale = 3
-}
-
-customization {
-  keepaspectratio = true
+  keepaspectratio = false
   action = backgroundoptions
 }
 
