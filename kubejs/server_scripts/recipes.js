@@ -42,6 +42,8 @@ onEvent('recipes', event => {
 	event.remove({output: 'create:steam_engine'})
 	event.remove({output: 'compressedcreativity:compressed_iron_casing'})
 	event.remove({output: 'create:mechanical_drill'})
+	event.remove({id: 'immersiveengineering:alloysmelter/brass'})
+	event.remove({id: 'tconstruct:smeltery/alloys/molten_brass'})
 
 	event.replaceInput({output:"create:empty_blaze_burner"}, "minecraft:netherrack", "kubejs:casing_frame")
 	event.replaceInput({mod: "create"}, "minecraft:dried_kelp", "thermal:cured_rubber")
