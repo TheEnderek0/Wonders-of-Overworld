@@ -458,8 +458,9 @@
 		}
 		{
 			x: 10.0d
-			y: -1.0d
+			y: 0.0d
 			shape: "square"
+			description: ["These wheels will allow you to make more resources from your ores. Simply crush your raw ore, then wash it using an encased fan and water."]
 			dependencies: [
 				"601FB224A851B1F8"
 				"545D35281F68A601"
@@ -483,7 +484,7 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 15.5d
 			y: 1.5d
 			dependencies: ["601FB224A851B1F8"]
 			id: "39F09BB02B75A7C8"
@@ -541,7 +542,7 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 15.5d
 			y: -5.5d
 			dependencies: [
 				"39F09BB02B75A7C8"
@@ -568,8 +569,8 @@
 		{
 			title: "Simple Storage Network"
 			icon: "storagenetwork:request"
-			x: 12.75d
-			y: -3.75d
+			x: 13.5d
+			y: -2.25d
 			shape: "rsquare"
 			description: ["Unlocking this is not necessary, but will come in handy in further progression. It's like a stripped down version of Applied Energistics / Refined Storage."]
 			dependencies: [
@@ -585,7 +586,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 17.0d
 			y: -5.5d
 			dependencies: ["1A089FFC7A46B68B"]
 			id: "54E6DDC71A15C9D3"
@@ -602,7 +603,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 17.0d
 			y: -4.0d
 			dependencies: ["1A089FFC7A46B68B"]
 			id: "6C1A9EF46455626A"
@@ -659,7 +660,7 @@
 		{
 			title: "Basic Pressure"
 			icon: "compressedcreativity:rotational_compressor"
-			x: 11.25d
+			x: 13.5d
 			y: -0.75d
 			shape: "rsquare"
 			description: ["This chapter will lead you to PneumaticCraft, which will show you the power of air pressure."]
@@ -674,7 +675,7 @@
 		}
 		{
 			x: 11.0d
-			y: -7.0d
+			y: -6.5d
 			dependencies: ["283848DD12544BBB"]
 			id: "1FBCF72AB84C183E"
 			tasks: [{
@@ -759,8 +760,8 @@
 		{
 			title: "Immersive Engineering"
 			icon: "immersiveengineering:crusher"
-			x: 12.0d
-			y: -2.25d
+			x: 13.5d
+			y: -4.5d
 			shape: "rsquare"
 			description: ["Immersive Engineering will bring you into the world of energy, and heavy machinery."]
 			dependencies: [
@@ -776,8 +777,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 0.5d
+			x: 11.5d
+			y: -1.0d
 			description: ["Using this you can automate your mining experience, and be more efficient. I recommend making a mining contraption using this as the game gets very resource heavy, fast."]
 			dependencies: ["545D35281F68A601"]
 			id: "0A397DAC443B99B0"
@@ -832,6 +833,36 @@
 				type: "item"
 				item: "quark:pipe"
 			}]
+		}
+		{
+			title: "Processing Minerals"
+			x: 11.5d
+			y: 0.0d
+			description: ["Sometimes you can find lots of ores like this in the caves. Crushing wheels allow you to process those and get materials like iron, gold, copper and zinc from them!"]
+			dependencies: ["2FE85E6F5039110F"]
+			id: "3FF5FC5AB74B55E2"
+			tasks: [
+				{
+					id: "2DEF885B183AF4C0"
+					type: "item"
+					item: "create:crimsite"
+				}
+				{
+					id: "7915BD9BD09CE426"
+					type: "item"
+					item: "create:veridium"
+				}
+				{
+					id: "0231A3A250CC251F"
+					type: "item"
+					item: "create:ochrum"
+				}
+				{
+					id: "004A63B7DFB47E76"
+					type: "item"
+					item: "create:asurine"
+				}
+			]
 		}
 	]
 	quest_links: [ ]
