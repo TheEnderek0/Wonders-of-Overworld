@@ -60,7 +60,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.0d
 			y: -2.0d
 			description: ["Rain collector will collect purified water directly from the rain."]
 			dependencies: ["62DE6F6C8D315F67"]
@@ -83,7 +83,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.0d
 			y: -3.5d
 			description: [
 				"Water purifier does as the name suggests - purifies water."
@@ -111,7 +111,7 @@
 		{
 			title: "Purified Water - Explanation"
 			icon: "toughasnails:purified_water_bottle"
-			x: -1.0d
+			x: -2.0d
 			y: -2.0d
 			description: [
 				"Standard water when drinked can give you poison effect for a short while."
@@ -434,11 +434,6 @@
 					type: "item"
 					item: "farmersrespite:purulent_tea"
 				}
-				{
-					id: "3FEF020672FEE2DE"
-					type: "item"
-					item: "farmersrespite:coffee"
-				}
 			]
 		}
 		{
@@ -501,6 +496,7 @@
 		{
 			x: -6.0d
 			y: -2.0d
+			description: ["This drink won't add much hydration, but it gives you effects such as speed."]
 			dependencies: ["143F736F94411494"]
 			id: "3BEBDAB0DC769718"
 			tasks: [{
