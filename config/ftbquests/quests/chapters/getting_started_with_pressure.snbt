@@ -313,6 +313,11 @@
 			x: 0.0d
 			y: -5.5d
 			shape: "square"
+			description: [
+				"This addon is very important if you don't want to blow up your machinery with high pressure."
+				"Placing it on a pipe ensures that the pressure won't be higher than the pipe's maximum, by releasing it."
+				"By doing so it protects your machinery from exploding."
+			]
 			dependencies: ["1BE11C1118269F1F"]
 			size: 1.25d
 			id: "67961BBBA77AE060"
