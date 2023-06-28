@@ -15,4 +15,13 @@ onEvent('item.tags', event => {
     event.add('kubejs:modifier_table', 'tconstruct:modifier_worktable')
     event.add('kubejs:tinkers_anvil', 'tconstruct:tinkers_anvil')
     event.add('kubejs:smeltery_controller', 'tconstruct:smeltery_controller')
+    event.add('kubejs:drinkable', [
+        'minecraft:glass_bottle',
+        'toughasnails:purified_water_bottle',
+        'toughasnails:dirty_water_canteen',
+        'toughasnails:water_canteen',
+        'toughasnails:purified_water_canteen'
+    ])
+
+    event.add('forge:rods', ['immersiveengineering:stick_steel', 'immersiveengineering:stick_iron'])
 })

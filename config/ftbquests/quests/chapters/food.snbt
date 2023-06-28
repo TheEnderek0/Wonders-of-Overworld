@@ -35,19 +35,18 @@
 			dependencies: ["227E706384FC441D"]
 			dependency_requirement: "one_completed"
 			id: "143F736F94411494"
-			tasks: [
-				{
-					id: "399EFCDA10628520"
-					type: "item"
-					item: "toughasnails:empty_canteen"
-					match_nbt: false
+			tasks: [{
+				id: "389B5B25E122E475"
+				type: "item"
+				title: "Any #kubejs:drinkable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:drinkable"
+					}
 				}
-				{
-					id: "1589A36A4FC78C04"
-					type: "item"
-					item: "minecraft:glass_bottle"
-				}
-			]
+			}]
 			rewards: [{
 				id: "4222A337E0811CF7"
 				type: "item"
