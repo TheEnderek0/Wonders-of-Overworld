@@ -90,7 +90,7 @@ onEvent('recipes', event => {
 		"BCB",
 		" D "
 	], {
-		A: '#forge:plates/obsidian',
+		A: 'minecraft:sticky_piston',
 		B: '#forge:gears/invar',
 		C: 'create:brass_casing',
 		D: 'create:shaft'
