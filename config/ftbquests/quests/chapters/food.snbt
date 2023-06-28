@@ -36,7 +36,7 @@
 			dependency_requirement: "one_completed"
 			id: "143F736F94411494"
 			tasks: [{
-				id: "389B5B25E122E475"
+				id: "573C23BFF2C59ACE"
 				type: "item"
 				title: "Any #kubejs:drinkable"
 				item: {
@@ -394,6 +394,119 @@
 						type: "uncommon"
 					}
 				}
+			}]
+		}
+		{
+			title: "Tea"
+			x: -6.0d
+			y: -3.5d
+			description: ["Tea can give you more hydration than canteens or water bottles, but also is harder to make."]
+			dependencies: ["143F736F94411494"]
+			id: "3016EB95E7C713FB"
+			tasks: [
+				{
+					id: "7F661AD95403F4CC"
+					type: "item"
+					item: "farmersrespite:green_tea"
+				}
+				{
+					id: "4F02E27A1874570E"
+					type: "item"
+					item: "farmersrespite:yellow_tea"
+				}
+				{
+					id: "2C18357C9F1605BB"
+					type: "item"
+					item: "farmersrespite:black_tea"
+				}
+				{
+					id: "283CB2244E1AF62F"
+					type: "item"
+					item: "farmersrespite:rose_hip_tea"
+				}
+				{
+					id: "66BFBC9532AB0AD2"
+					type: "item"
+					item: "farmersrespite:dandelion_tea"
+				}
+				{
+					id: "71F4168F3AC187EA"
+					type: "item"
+					item: "farmersrespite:purulent_tea"
+				}
+				{
+					id: "3FEF020672FEE2DE"
+					type: "item"
+					item: "farmersrespite:coffee"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			description: ["The holy grail of all drinks, this tea will give you the most hydration of all drinks."]
+			dependencies: ["143F736F94411494"]
+			id: "5893697C402C9082"
+			tasks: [{
+				id: "2E5C8A730954F03A"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Juice"
+			x: -2.0d
+			y: -3.5d
+			description: ["Juice is also a good source of hydration."]
+			dependencies: ["143F736F94411494"]
+			id: "20D720936767C59D"
+			tasks: [
+				{
+					id: "475FA52A9A9C51F4"
+					type: "item"
+					item: "toughasnails:apple_juice"
+				}
+				{
+					id: "48616132FCB8F4B0"
+					type: "item"
+					item: "toughasnails:cactus_juice"
+				}
+				{
+					id: "01FB1FC89E5B9AF3"
+					type: "item"
+					item: "toughasnails:chorus_fruit_juice"
+				}
+				{
+					id: "1D49C33133FD2B8A"
+					type: "item"
+					item: "toughasnails:glow_berry_juice"
+				}
+				{
+					id: "6E13539A3CACE86D"
+					type: "item"
+					item: "toughasnails:melon_juice"
+				}
+				{
+					id: "6327C831A234B3FD"
+					type: "item"
+					item: "toughasnails:pumpkin_juice"
+				}
+				{
+					id: "25FB232754C013E5"
+					type: "item"
+					item: "toughasnails:sweet_berry_juice"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			dependencies: ["143F736F94411494"]
+			id: "3BEBDAB0DC769718"
+			tasks: [{
+				id: "42B7F1432DA10058"
+				type: "item"
+				item: "farmersrespite:coffee"
 			}]
 		}
 	]

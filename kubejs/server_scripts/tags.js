@@ -24,4 +24,19 @@ onEvent('item.tags', event => {
     ])
 
     event.add('forge:rods', ['immersiveengineering:stick_steel', 'immersiveengineering:stick_iron'])
+
+    let AddDrink = (id, thirst, hydration) => {
+        event.add('toughasnails:drinks', id)
+        event.add('toughasnails:thirst/' + thirst + '_thirst_drinks', id)
+        event.add('toughasnails:hydration/' + hydration + '_hydration_drinks', id)
+    }
+
+    AddDrink('farmersrespite:green_tea', 7, 30)
+    AddDrink('farmersrespite:yellow_tea', 7, 30)
+    AddDrink('farmersrespite:black_tea', 7, 30)
+    AddDrink('farmersrespite:rose_hip_tea', 7, 30)
+    AddDrink('farmersrespite:dandelion_tea', 7, 30)
+    AddDrink('farmersrespite:purulent_tea', 7, 30)
+    AddDrink('farmersrespite:coffee', 8, 10)
+    AddDrink('create:builders_tea', 10, 70)
 })
