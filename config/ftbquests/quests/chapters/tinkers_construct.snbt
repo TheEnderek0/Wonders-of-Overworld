@@ -352,6 +352,31 @@
 				}
 			}]
 		}
+		{
+			icon: "immersiveengineering:alloy_smelter"
+			x: 0.5d
+			y: 3.0d
+			description: [
+				"Sometimes making alloys in the smelter is not convinient if you have other metals in it. A kiln is here to save you, just place the two ingots to make an alloy with and power it with a burnable fuel like coal or wood."
+				"Place the blocks in 2x2x2 squre, then click them with the Engineer's Hammer from Immersive Engineering."
+			]
+			dependencies: ["64252E262E6FA771"]
+			id: "5EA1E384F7B2B4D2"
+			tasks: [
+				{
+					id: "25B1D93CE7918094"
+					type: "item"
+					title: "Alloy Kiln"
+					item: "immersiveengineering:alloy_smelter"
+				}
+				{
+					id: "22C4D61B28BAE8D1"
+					type: "item"
+					item: "immersiveengineering:alloybrick"
+					count: 8L
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }
