@@ -27,3 +27,6 @@ net.minecraft.client.gui.screens.PauseScreen {
 net.minecraft.client.gui.screens.LevelLoadingScreen {
 }
 
+net.minecraft.client.gui.screens.ReceivingLevelScreen {
+}
+
