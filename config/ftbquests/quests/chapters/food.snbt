@@ -115,7 +115,7 @@
 			y: -2.0d
 			description: [
 				"Standard water when drinked can give you poison effect for a short while."
-				"So it's best if you craft purified water. You can view the recipes for it in JEI or see the quests after this one."
+				"So it's best if you craft purified water. How to do so, you will learn in next quests."
 			]
 			dependencies: ["143F736F94411494"]
 			id: "62DE6F6C8D315F67"
