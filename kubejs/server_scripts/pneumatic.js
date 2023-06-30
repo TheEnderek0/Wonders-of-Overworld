@@ -165,12 +165,12 @@ onEvent('recipes', event => {
 		Item.of('kubejs:unfin_cap').withChance(70.0),
 		Item.of('#forge:plates/electrum').withChance(10.0),
         Item.of('#forge:slimeballs').withChance(10.0),
-        Item.of('kubejs:insulator').withChance(10.0)
+        Item.of('pneumaticcraft:plastic').withChance(10.0)
 	], '#forge:rods/iron', [
         event.recipes.createCutting(transition3, [transition3]), 
 		event.recipes.createDeploying(transition3, [transition3, '#forge:plates/electrum']),
         event.recipes.createDeploying(transition3, [transition3, '#forge:slimeballs']),
-        event.recipes.createDeploying(transition3, [transition3, 'kubejs:insulator']),
+        event.recipes.createDeploying(transition3, [transition3, 'pneumaticcraft:plastic']),
         event.recipes.createPressing(transition3, [transition3])
 	]).transitionalItem(transition3).loops(2)
 
