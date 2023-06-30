@@ -105,7 +105,10 @@
 		{
 			x: 4.0d
 			y: -2.0d
-			description: ["These behave like normal fans from Create, but are more flexible, and also they can be upgraded with meshes."]
+			description: [
+				"This block will behave like an encased fan from create, but it uses pressurized air to blow."
+				"It can also process stuff faster, up to 2x."
+			]
 			dependencies: ["063D84F84A586C39"]
 			id: "17B53E7B6EE2D07A"
 			tasks: [{
@@ -128,6 +131,10 @@
 		{
 			x: 4.0d
 			y: -4.0d
+			description: [
+				"This version of the blower can process stuff up to 4x faster than encased fans."
+				"You can also install meshes on it (more about them in the next quests)."
+			]
 			dependencies: ["17B53E7B6EE2D07A"]
 			id: "095F4D2B1AE5AB88"
 			tasks: [{
@@ -174,8 +181,9 @@
 		}
 		{
 			x: 6.0d
-			y: -2.0d
-			dependencies: ["17B53E7B6EE2D07A"]
+			y: -4.0d
+			description: ["Meshes can be used instead of placing blocks/liquids near fans, so they take up much less space."]
+			dependencies: ["095F4D2B1AE5AB88"]
 			id: "07863473609B8FBF"
 			tasks: [{
 				id: "1F618DE32A0C2596"
@@ -424,6 +432,77 @@
 						type: "uncommon"
 					}
 				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			description: [
+				"This mesh will act like fire placed in front of the blower. Keep in mind that for it to work, heat needs to be supplied to the blower."
+				"For this mesh the heat supplied must have the temperature above 100C."
+			]
+			dependencies: ["07863473609B8FBF"]
+			id: "26455F4B57753BBF"
+			tasks: [{
+				id: "4102E3326DD6FAE8"
+				type: "item"
+				item: "compressedcreativity:mesh_woven"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.5d
+			description: ["This pipe can supply heat to the blowers. You can use multiple ways to heat them, but I recommend using a vortex tube. Connect the blower to the hot side, and connect some heatsinks to the cold one."]
+			hide_dependency_lines: true
+			dependencies: ["1E13DA24936B93EC"]
+			id: "4523AE1A8909F9C5"
+			tasks: [{
+				id: "4FDE5AD865108910"
+				type: "item"
+				item: "pneumaticcraft:heat_pipe"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			description: [
+				"This mesh can be used for bulk blasting."
+				"For temperatures [ 50C - 100C ] it acts as a smoker."
+				"For temperatures above 100C it acts like a lava block placed in front of the blower."
+			]
+			dependencies: ["07863473609B8FBF"]
+			id: "40440F70511B8163"
+			tasks: [{
+				id: "6F27B1B6D873A0BA"
+				type: "item"
+				item: "compressedcreativity:mesh_dense"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.5d
+			description: [
+				"Used for bulk washing."
+				"Warning! The mesh will dry out if the heat supplied is too high, and it will freeze if it's too low."
+			]
+			dependencies: ["26455F4B57753BBF"]
+			id: "316D1D1172A9BD17"
+			tasks: [{
+				id: "0347DDA2184C9ACD"
+				type: "item"
+				item: "compressedcreativity:mesh_splashing"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -5.5d
+			description: ["Used for bulk haunting."]
+			dependencies: ["07863473609B8FBF"]
+			id: "38C445547260722D"
+			tasks: [{
+				id: "4E6FA1C7E2AB39C3"
+				type: "item"
+				item: "compressedcreativity:mesh_haunted"
 			}]
 		}
 	]

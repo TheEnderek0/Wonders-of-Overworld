@@ -769,7 +769,7 @@
 		}
 		{
 			x: -1.0d
-			y: 2.5d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["58A831F16DD67595"]
 			id: "69B8D3F626606EFF"
@@ -855,6 +855,18 @@
 				id: "59515CC8F0B61724"
 				type: "checkmark"
 				title: "Acknowledge"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			description: ["Transfers heat between devices/blocks."]
+			dependencies: ["222D98C8FA576781"]
+			id: "3E859C83DD38CCB1"
+			tasks: [{
+				id: "6F0C605773A92013"
+				type: "item"
+				item: "pneumaticcraft:heat_pipe"
 			}]
 		}
 	]
