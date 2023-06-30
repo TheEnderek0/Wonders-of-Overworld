@@ -496,7 +496,10 @@
 		{
 			x: 6.0d
 			y: -5.5d
-			description: ["Used for bulk haunting."]
+			description: [
+				"Used for bulk haunting."
+				"Needs temperatures of above 110C to function."
+			]
 			dependencies: ["07863473609B8FBF"]
 			id: "38C445547260722D"
 			tasks: [{
