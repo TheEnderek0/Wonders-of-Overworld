@@ -77,25 +77,6 @@
 			]
 		}
 		{
-			title: "Ore Processing"
-			x: 3.5d
-			y: 2.0d
-			dependencies: ["60D7E96FE4E6FB5D"]
-			id: "4E857BD30DB0B07D"
-			tasks: [
-				{
-					id: "03BF44D68B24E86E"
-					type: "item"
-					item: "industrialforegoing:washing_factory"
-				}
-				{
-					id: "5448A16C17E1D2F6"
-					type: "item"
-					item: "industrialforegoing:fluid_sieving_machine"
-				}
-			]
-		}
-		{
 			x: 2.0d
 			y: -1.0d
 			dependencies: ["60D7E96FE4E6FB5D"]
@@ -166,6 +147,34 @@
 				type: "checkmark"
 				title: "Thermal Series"
 			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			shape: "square"
+			description: [
+				"These blocks can make your life way easier by mining different veins and collecting different fluids. For example, fluid drill can mine oil from pneumaticcraft. This way you can fully automate ore mining."
+				"Keep in mind though that these machines are pretty slow, so other ways of getting ores may still be your go-to."
+			]
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "47CDC57CA26DD709"
+			tasks: [
+				{
+					id: "2AADA8646B7A8B3B"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+				{
+					id: "7909E34168FA7039"
+					type: "item"
+					item: "industrialforegoing:fluid_laser_base"
+				}
+				{
+					id: "0A2F2DE1B41F1A10"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

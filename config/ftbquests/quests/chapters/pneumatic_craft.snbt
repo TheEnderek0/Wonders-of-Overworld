@@ -57,8 +57,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.0d
+			x: 3.0d
+			y: -4.0d
+			description: ["Can be used to find underground oil veins."]
 			dependencies: ["58A831F16DD67595"]
 			id: "4B51D5B9887235E9"
 			tasks: [{
@@ -68,8 +69,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -2.0d
+			x: 5.0d
+			y: -4.0d
 			dependencies: ["4B51D5B9887235E9"]
 			id: "4AA08FCBF1463418"
 			tasks: [{
@@ -79,7 +80,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 7.0d
 			y: -4.0d
 			dependencies: ["4AA08FCBF1463418"]
 			id: "08C5D350D9FF494E"
@@ -91,9 +92,13 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 3.0d
 			y: -2.0d
-			dependencies: ["4AA08FCBF1463418"]
+			description: [
+				"While there are veins of oil appearing on the surface, getting a gas lift mining an underground vein will yield much more oil."
+				"So it is recommended you do the quests above first, so you can get good supply of oil."
+			]
+			dependencies: ["58A831F16DD67595"]
 			id: "24DE81C4EDD01E41"
 			tasks: [{
 				id: "2CD3948C4210E733"
@@ -114,7 +119,7 @@
 		}
 		{
 			title: "Refinery"
-			x: 7.0d
+			x: 5.0d
 			y: -2.0d
 			dependencies: ["24DE81C4EDD01E41"]
 			id: "73513BCC8DE621BB"
@@ -154,8 +159,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: -4.0d
+			x: 11.5d
+			y: -2.5d
 			hide_dependency_lines: true
 			dependencies: ["58A831F16DD67595"]
 			id: "0BDD54CE7737F63A"
@@ -166,7 +171,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -1.0d
 			y: -4.0d
 			dependencies: ["58A831F16DD67595"]
 			id: "21CD423FEF30B2A7"
@@ -188,8 +193,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: -2.0d
+			x: 12.5d
+			y: -0.5d
 			shape: "square"
 			dependencies: [
 				"7B118A87828E35C2"
@@ -215,7 +220,7 @@
 		}
 		{
 			x: 13.0d
-			y: 1.0d
+			y: 2.5d
 			dependencies: ["7FF6E8FF37504D7E"]
 			id: "5EEDBD9AA2006BA5"
 			tasks: [{
@@ -248,9 +253,9 @@
 		}
 		{
 			x: 15.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["58A831F16DD67595"]
+			y: 2.5d
+			hide_dependency_lines: false
+			dependencies: ["7FF6E8FF37504D7E"]
 			id: "6A06E4E3F1992DE4"
 			tasks: [{
 				id: "19CC2473E87304FA"
@@ -585,8 +590,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: -2.0d
+			x: 13.5d
+			y: -2.5d
 			dependencies: ["7FF6E8FF37504D7E"]
 			id: "4FC6ABCD6AF60529"
 			tasks: [{
@@ -815,10 +820,13 @@
 		{
 			title: "Industrial Foregoing - Simple 2/2"
 			icon: "industrialforegoing:machine_frame_simple"
-			x: 17.0d
-			y: 2.0d
+			x: 15.0d
+			y: -0.5d
 			shape: "rsquare"
-			dependencies: ["6A06E4E3F1992DE4"]
+			dependencies: [
+				"6A06E4E3F1992DE4"
+				"7B118A87828E35C2"
+			]
 			size: 1.5d
 			id: "0ADAC517670D6409"
 			tasks: [{

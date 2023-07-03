@@ -309,6 +309,7 @@
 			title: "Pipe Addons"
 			x: 2.0d
 			y: -7.0d
+			description: ["There are loads of pipe addons for tubes in pneumaticcraft, and they are very useful. It is recommended that you check these out because there's a likely chance you'll need one of them or more soon."]
 			dependencies: ["170E3091830B14BE"]
 			id: "1BE11C1118269F1F"
 			tasks: [{

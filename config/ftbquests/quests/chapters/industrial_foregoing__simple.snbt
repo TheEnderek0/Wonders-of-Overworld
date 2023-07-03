@@ -10,7 +10,7 @@
 	quests: [
 		{
 			icon: "industrialforegoing:machine_frame_simple"
-			x: -2.5d
+			x: -5.5d
 			y: 0.0d
 			shape: "gear"
 			dependencies: [
@@ -25,9 +25,9 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: -1.5d
 			y: 0.0d
-			dependencies: ["55CF88A7A48A25C7"]
+			dependencies: ["330F8C4C889C4400"]
 			id: "68D8DCB52F9CF701"
 			tasks: [{
 				id: "04ACEC3E0770E747"
@@ -49,9 +49,9 @@
 		{
 			title: "Generators"
 			icon: "industrialforegoing:biofuel_generator"
-			x: 1.5d
+			x: 9.5d
 			y: -3.5d
-			dependencies: ["68D8DCB52F9CF701"]
+			dependencies: ["4D4529EA8221D720"]
 			id: "40D46423C936BED6"
 			tasks: [{
 				id: "1FAD04E96CA511ED"
@@ -60,7 +60,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 13.0d
 			y: 2.0d
 			dependencies: ["4D4A496226D1E06F"]
 			id: "4187B664C24F9602"
@@ -71,9 +71,9 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 13.0d
 			y: 0.0d
-			dependencies: ["68D8DCB52F9CF701"]
+			dependencies: ["4D4529EA8221D720"]
 			id: "4D4A496226D1E06F"
 			tasks: [{
 				id: "6DE874B905047A8D"
@@ -82,8 +82,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 4.0d
+			x: 0.5d
+			y: 0.0d
 			dependencies: ["68D8DCB52F9CF701"]
 			id: "3E116B4893CC2BAA"
 			tasks: [{
@@ -93,9 +93,9 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -1.0d
-			dependencies: ["68D8DCB52F9CF701"]
+			x: 11.5d
+			y: -2.0d
+			dependencies: ["4D4529EA8221D720"]
 			id: "794A2319EE94E7B2"
 			tasks: [{
 				id: "2BB46544F6314EF1"
@@ -104,9 +104,9 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 7.5d
 			y: -1.5d
-			dependencies: ["68D8DCB52F9CF701"]
+			dependencies: ["4D4529EA8221D720"]
 			id: "3B19D9CC929C4B20"
 			tasks: [{
 				id: "131583DFBBEBEDA1"
@@ -115,9 +115,9 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 1.5d
-			dependencies: ["68D8DCB52F9CF701"]
+			x: 11.5d
+			y: 2.0d
+			dependencies: ["4D4529EA8221D720"]
 			id: "0D5B0662200E081A"
 			tasks: [{
 				id: "67B235AD83AEFA5E"
@@ -126,9 +126,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
-			dependencies: ["68D8DCB52F9CF701"]
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["4D4529EA8221D720"]
 			id: "34546C54265AA7C9"
 			tasks: [{
 				id: "1B9B528A8716E0A8"
@@ -137,8 +137,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 4.0d
+			x: 2.5d
+			y: 0.0d
 			dependencies: ["3E116B4893CC2BAA"]
 			id: "2C87D1DCAB198695"
 			tasks: [{
@@ -148,8 +148,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 4.0d
+			x: 4.5d
+			y: 0.0d
 			dependencies: ["2C87D1DCAB198695"]
 			id: "2D0CDDABBE3DC7A0"
 			tasks: [{
@@ -159,8 +159,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 4.0d
+			x: 9.5d
+			y: 0.0d
 			dependencies: ["2D0CDDABBE3DC7A0"]
 			id: "4D4529EA8221D720"
 			tasks: [{
@@ -170,8 +170,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 2.0d
+			x: 4.5d
+			y: 1.5d
 			dependencies: ["2D0CDDABBE3DC7A0"]
 			id: "45C21C3A757679D2"
 			tasks: [{
@@ -183,13 +183,10 @@
 		{
 			title: "Industrial Foregoing - Advanced 1/3"
 			icon: "industrialforegoing:machine_frame_advanced"
-			x: 10.5d
+			x: 15.75d
 			y: 0.0d
 			shape: "rsquare"
-			dependencies: [
-				"4D4A496226D1E06F"
-				"4D4529EA8221D720"
-			]
+			dependencies: ["4D4A496226D1E06F"]
 			size: 1.5d
 			id: "68637EC1A97C248D"
 			tasks: [{
@@ -201,16 +198,28 @@
 		{
 			title: "Refined Storage 1/3"
 			icon: "refinedstorage:creative_controller"
-			x: 3.0d
-			y: -2.25d
+			x: 9.5d
+			y: 3.75d
 			shape: "rsquare"
-			dependencies: ["68D8DCB52F9CF701"]
+			dependencies: ["4D4529EA8221D720"]
 			size: 1.5d
 			id: "65B44036D79D2FCE"
 			tasks: [{
 				id: "59B21F7908DC8C7F"
 				type: "checkmark"
 				title: "Acknowledge"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: ["You can craft latex from molten plastic and slimeballs in a mixer."]
+			dependencies: ["55CF88A7A48A25C7"]
+			id: "330F8C4C889C4400"
+			tasks: [{
+				id: "0A792286DF120A83"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
 			}]
 		}
 	]

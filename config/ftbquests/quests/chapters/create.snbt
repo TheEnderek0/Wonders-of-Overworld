@@ -432,8 +432,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: -2.0d
+			x: 6.0d
+			y: -0.5d
 			dependencies: ["26490B8D08B926F7"]
 			id: "352423E4CF0F09EF"
 			tasks: [{
@@ -458,7 +458,7 @@
 		}
 		{
 			x: 10.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "square"
 			description: ["These wheels will allow you to make more resources from your ores. Simply crush your raw ore, then wash it using an encased fan and water."]
 			dependencies: [
@@ -614,8 +614,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: -3.0d
+			x: 8.0d
+			y: -0.5d
 			dependencies: ["352423E4CF0F09EF"]
 			id: "094E9E4E2DDDAC86"
 			tasks: [{
@@ -836,8 +836,8 @@
 		}
 		{
 			title: "Processing Minerals"
-			x: 11.5d
-			y: 0.0d
+			x: 11.0d
+			y: 0.5d
 			description: ["Sometimes you can find lots of ores like this in the caves. Crushing wheels allow you to process those and get materials like iron, gold, copper and zinc from them!"]
 			dependencies: ["2FE85E6F5039110F"]
 			id: "3FF5FC5AB74B55E2"
@@ -863,6 +863,18 @@
 					item: "create:asurine"
 				}
 			]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			description: ["Good to automate and an excellent fuel for superheating blaze burners!"]
+			dependencies: ["4924DE9CC487DFE9"]
+			id: "1B5F728A7EDB51AE"
+			tasks: [{
+				id: "77146B9B0D67B2E0"
+				type: "item"
+				item: "createaddition:bioethanol_bucket"
+			}]
 		}
 	]
 	quest_links: [ ]

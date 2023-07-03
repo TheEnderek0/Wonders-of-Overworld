@@ -823,6 +823,7 @@
 			]
 		}
 		{
+			title: "MV Wires"
 			x: 6.5d
 			y: -3.0d
 			dependencies: ["75ECEE0F870FB79F"]
@@ -846,6 +847,7 @@
 			]
 		}
 		{
+			title: "HV Wires"
 			x: 8.5d
 			y: -3.0d
 			dependencies: ["2BE52F35B4D6D060"]
@@ -1089,6 +1091,18 @@
 				id: "51CD7BE06B8C27A2"
 				type: "checkmark"
 				title: "Acknowledge"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["Can serve as a good way to generate energy (although it won't generate much)."]
+			dependencies: ["046B1CD49177CFA1"]
+			id: "37964FEF53201534"
+			tasks: [{
+				id: "73A697EEBF7B7536"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
 			}]
 		}
 	]

@@ -86,7 +86,10 @@
 		{
 			x: 10.5d
 			y: 2.5d
-			dependencies: ["43233CB3823073A1"]
+			dependencies: [
+				"43233CB3823073A1"
+				"77421CCC7B7F1048"
+			]
 			id: "316F1FC2CF161743"
 			tasks: [
 				{
@@ -242,7 +245,7 @@
 		}
 		{
 			x: 9.0d
-			y: 1.0d
+			y: -1.0d
 			dependencies: ["1ABC8195DCBAB077"]
 			id: "509702EC27E8E8E1"
 			tasks: [{
@@ -375,12 +378,12 @@
 							value: "^bloodmagic:.*rune.*$"
 						}
 					}
-					count: 28L
+					count: 20L
 				}
 				{
 					id: "72DCC6C5798320B4"
 					type: "item"
-					title: "Glowstone or Sea Lantern"
+					title: "Glowstone or Sea Lantern or Shroomlight"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -392,6 +395,10 @@
 								}
 								{
 									id: "minecraft:sea_lantern"
+									Count: 1b
+								}
+								{
+									id: "minecraft:shroomlight"
 									Count: 1b
 								}
 							]
@@ -611,7 +618,7 @@
 							value: "^bloodmagic:.*rune.*$"
 						}
 					}
-					count: 56L
+					count: 28L
 				}
 				{
 					id: "59813E9725FC43BB"
@@ -751,7 +758,7 @@
 							value: "^bloodmagic:.*rune.*$"
 						}
 					}
-					count: 108L
+					count: 52L
 				}
 				{
 					id: "62FEA5330E03B131"
@@ -982,6 +989,17 @@
 				id: "18FB1FED9F810778"
 				type: "item"
 				item: "bloodmagic:demoncrystallizer"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			dependencies: ["2E16061BB53241AE"]
+			id: "77421CCC7B7F1048"
+			tasks: [{
+				id: "78B4E0DCF8C3D528"
+				type: "item"
+				item: "bloodmagic:soulforge"
 			}]
 		}
 	]

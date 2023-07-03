@@ -439,7 +439,11 @@
 		{
 			x: -4.0d
 			y: -4.5d
-			description: ["The holy grail of all drinks, this tea will give you the most hydration of all drinks."]
+			description: [
+				"The holy grail of all drinks, this tea will give you the most hydration of all drinks."
+				"I recommend making a factory of this."
+				"Tip: You can automate getting milk from cow in a jar."
+			]
 			dependencies: ["143F736F94411494"]
 			id: "5893697C402C9082"
 			tasks: [{
