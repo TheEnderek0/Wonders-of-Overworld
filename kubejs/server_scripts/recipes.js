@@ -53,7 +53,37 @@ onEvent('recipes', event => {
 
 	event.recipes.createSplashing(["thermal:rubber"], "industrialforegoing:dryrubber")
 	event.remove({id: "create:splashing/sand"})
+	//Unify dusts
+	let grit = (name) => {
+		event.recipes.createCrushing('immersiveengineering:dust_' + name, '#forge:ingots/' + name)
+	}
+	['copper', 'aluminum', 'lead', 'silver', 'nickel', 'uranium', 'constantan', 'electrum', 'iron', 'gold'].forEach(element => grit(element))
 
+	event.recipes.createCrushing('immersiveengineering:dust_sulfur', '#forge:gems/sulfur')
+	event.recipes.createCrushing('jaopca:dusts.cobalt', '#forge:ingots/cobalt')
+	event.recipes.createCrushing('jaopca:dusts.zinc', '#forge:ingots/zinc')
+	event.recipes.createCrushing('mekanism:dust_coal', 'minecraft:coal')
+	event.recipes.thermal.pulverizer('mekanism:dust_coal', 'minecraft:coal').energy(4000)
+	event.recipes.createCrushing('mekanism:dust_charcoal', 'minecraft:charcoal')
+	event.recipes.thermal.pulverizer('mekanism:dust_charcoal', 'minecraft:charcoal').energy(4000)
+
+	event.recipes.createCrushing('mekanism:dust_quartz', '#forge:gems/quartz')
+	event.replaceOutput({}, 'thermal:quartz_dust', 'mekanism:dust_quartz')
+	
+	event.recipes.createCrushing('mekanism:dust_fluorite', '#forge:gems/fluorite')
+	event.recipes.createCrushing('mekanism:dust_osmium', '#forge:ingots/osmium')
+
+	event.recipes.createCrushing('thermal:apatite_dust', '#forge:gems/apatite')
+	event.recipes.createCrushing('thermal:cinnabar_dust', '#forge:gems/cinnabar')
+	event.recipes.createCrushing('thermal:niter_dust', '#forge:gems/niter')
+	event.recipes.createCrushing('thermal:diamond_dust', '#forge:gems/diamond')
+	event.recipes.createCrushing('thermal:lapis_dust', '#forge:gems/lapis')
+	event.recipes.createCrushing('thermal:emerald_dust', '#forge:gems/emerald')
+	event.recipes.createCrushing('thermal:ender_pearl_dust', '#forge:ender_pearls')
+	event.recipes.createCrushing('thermal:netherite_dust', '#forge:ingots/netherite')
+	event.recipes.createCrushing('thermal:tin_dust', '#forge:ingots/tin')
+
+	//end
 	event.recipes.createMilling(Item.of('create:cinder_flour').withChance(0.2), 'minecraft:netherrack')
 
 	event.recipes.createMechanicalCrafting('compressedcreativity:compressed_iron_casing', [
