@@ -27,6 +27,6 @@ onEvent('jei.hide.items', event => {
 	event.hide('industrialforegoing:pitiful_generator')
 
 	event.hide(['thermal:energy_duct', 'thermal:fluid_duct', 'thermal:fluid_duct_windowed', 'thermal:filter_attachment', 'thermal:servo_attachment', 'thermal:turbo_servo_attachment', 'thermal:energy_limiter_attachment'])
-
+	event.hide('industrialforegoing:fluid_extractor')
 	
 })

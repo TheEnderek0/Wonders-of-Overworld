@@ -27,6 +27,19 @@ onEvent('recipes', event => {
         C: 'create:brass_casing',
         D: '#minecraft:logs'
     })
+    Remove('industrialforegoing:fluid_extractor')
+    event.recipes.createMixing(Fluid.of('industrialforegoing:latex', 2000), [Fluid.of('pneumaticcraft:plastic', 1000), '#forge:slimeballs']).heated()
+    event.remove({type:'industrialforegoing:fluid_extractor'})
+
+    event.replaceInput({output: ['industrialforegoing:sewage_composter', 
+    'industrialforegoing:sludge_refiner', 
+    'industrialforegoing:animal_baby_separator', 
+    'industrialforegoing:sewer', 
+    'industrialforegoing:animal_rancher', 
+    'industrialforegoing:animal_feeder', 
+    'industrialforegoing:water_condensator', 
+    'industrialforegoing:plant_gatherer', 
+    'industrialforegoing:plant_sower', 'industrialforegoing:spores_recreator', 'industrialforegoing:dissolution_chamber', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:dye_mixer', 'industrialforegoing:fluid_collector', 'industrialforegoing:fluid_placer', 'industrialforegoing:block_placer', 'industrialforegoing:block_breaker', 'industrialforegoing:fluid_extractor']}, 'industrialforegoing:plastic', 'pneumaticcraft:plastic')
 
     Remove("industrialforegoing:machine_frame_simple")
     event.custom({
