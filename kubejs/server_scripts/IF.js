@@ -28,7 +28,7 @@ onEvent('recipes', event => {
         D: '#minecraft:logs'
     })
     Remove('industrialforegoing:fluid_extractor')
-    event.recipes.createMixing(Fluid.of('industrialforegoing:latex', 2000), [Fluid.of('pneumaticcraft:plastic', 1000), '#forge:slimeballs']).heated()
+    event.recipes.createMixing(Fluid.of('industrialforegoing:latex', 500), Fluid.of('pneumaticcraft:plastic', 250)).heated()
     event.remove({type:'industrialforegoing:fluid_extractor'})
 
     event.replaceInput({output: ['industrialforegoing:sewage_composter', 

@@ -98,4 +98,19 @@ onEvent('recipes', event => {
 
     Remove('minecraft:bedrock')
 
+    event.replaceInput({output: [
+        'mob_grinding_utils:saw_upgrade_arthropod', 
+        'mob_grinding_utils:saw_upgrade_beheading', 
+        'mob_grinding_utils:saw_upgrade_fire', 
+        'mob_grinding_utils:saw_upgrade_looting', 
+        'mob_grinding_utils:saw_upgrade_sharpness', 
+        'mob_grinding_utils:saw_upgrade_smite']}, '#forge:nuggets/gold', 'mekanism:alloy_infused')
+
+    event.replaceInput({output: 'mob_grinding_utils:mob_swab'}, '#mekanism:colorable/wool', 'mekanism:alloy_infused')
+
+    event.recipes.createCompacting('minecraft:stone', '4x kubejs:processed_rock')
+    event.recipes.createMixing(Fluid.of('minecraft:lava', 100), 'kubejs:processed_rock').heated()
+    event.shapeless('minecraft:gravel', Item.of('kubejs:processed_rock', 4))
+
+    Remove('mob_grinding_utils:jumbo_tank')
 })

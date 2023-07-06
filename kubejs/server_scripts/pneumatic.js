@@ -163,9 +163,8 @@ onEvent('recipes', event => {
     let transition3 = "kubejs:incomplete_capacitor"
     event.recipes.create.sequencedAssembly([
 		Item.of('kubejs:unfin_cap').withChance(70.0),
-		Item.of('#forge:plates/electrum').withChance(10.0),
-        Item.of('#forge:slimeballs').withChance(10.0),
-        Item.of('pneumaticcraft:plastic').withChance(10.0)
+		Item.of('immersiveengineering:plate_electrum').withChance(10.0),
+        Item.of('pneumaticcraft:plastic').withChance(20.0)
 	], '#forge:rods/iron', [
         event.recipes.createCutting(transition3, [transition3]), 
 		event.recipes.createDeploying(transition3, [transition3, '#forge:plates/electrum']),

@@ -39,4 +39,8 @@ onEvent('item.tags', event => {
     AddDrink('farmersrespite:purulent_tea', 7, 30)
     AddDrink('farmersrespite:coffee', 8, 10)
     AddDrink('create:builders_tea', 10, 70)
+
+    event.remove('forge:stone', '#pneumaticcraft:reinforced_stone')
+    event.remove('minecraft:stone_bricks', '#pneumaticcraft:reinforced_stone_bricks')
+
 })

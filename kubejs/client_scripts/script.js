@@ -2,7 +2,7 @@
 
 console.info('Hello, World! (You will see this line every time client resources reload)')
 
-onEvent('jei.hide.items', event => {
+onEvent('rei.hide.items', event => {
 	// Hide items in JEI here
 	// event.hide('minecraft:cobblestone')
 	event.hide('storagenetwork:crafting_remote')
@@ -29,5 +29,6 @@ onEvent('jei.hide.items', event => {
 	event.hide(['thermal:energy_duct', 'thermal:fluid_duct', 'thermal:fluid_duct_windowed', 'thermal:filter_attachment', 'thermal:servo_attachment', 'thermal:turbo_servo_attachment', 'thermal:energy_limiter_attachment'])
 	event.hide('industrialforegoing:fluid_extractor')
 	event.hide('thermal:quartz_dust')
+	event.hide('mob_grinding_utils:jumbo_tank')
 	
 })
