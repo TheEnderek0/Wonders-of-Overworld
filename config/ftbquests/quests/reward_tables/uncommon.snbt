@@ -55,12 +55,12 @@
 		{ item: "mob_grinding_utils:spikes" }
 	]
 	loot_crate: {
-		string_id: "uncommon"
-		color: 3648105
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 3648105
+		string_id: "uncommon"
 	}
 }

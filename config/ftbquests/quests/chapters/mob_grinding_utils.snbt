@@ -1,0 +1,318 @@
+{
+	id: "527955D3252D9693"
+	group: "57BD07362FE64FCF"
+	order_index: 2
+	filename: "mob_grinding_utils"
+	title: "Mob Grinding Utils"
+	icon: "mob_grinding_utils:fan"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "mob_grinding_utils:fan"
+			x: -4.0d
+			y: -0.5d
+			shape: "gear"
+			description: ["Most blocks here need to be powered by a lever."]
+			dependencies: ["157538DC1BACF130"]
+			id: "5A74F58F3E4977A9"
+			tasks: [{
+				id: "1F6B412CF39C553A"
+				type: "checkmark"
+				title: "Start"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "33B75DA50DFD992C"
+			tasks: [{
+				id: "00FACE07FC207DE6"
+				type: "item"
+				item: "mob_grinding_utils:wither_muffler"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			dependencies: ["33B75DA50DFD992C"]
+			id: "64A3186D03CDA0FD"
+			tasks: [{
+				id: "50BB440ECD1653E0"
+				type: "item"
+				item: "mob_grinding_utils:dragon_muffler"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "436A15EB00589C13"
+			tasks: [{
+				id: "76C4A40DDDC6531B"
+				type: "item"
+				item: "mob_grinding_utils:ender_inhibitor_on"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "061C8C747B68FD62"
+			tasks: [{
+				id: "38E91FE025F1CC2D"
+				type: "item"
+				item: "mob_grinding_utils:fan"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "26DC13DFE8932861"
+			tasks: [{
+				id: "3292F10442065E3C"
+				type: "item"
+				item: "mob_grinding_utils:absorption_hopper"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["061C8C747B68FD62"]
+			id: "1058F33BA17B6B1D"
+			tasks: [{
+				id: "615F2EFE1DB75153"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_width"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.5d
+			dependencies: ["061C8C747B68FD62"]
+			id: "59CB55EF295EA442"
+			tasks: [{
+				id: "550FF42FF2734FBB"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_height"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["061C8C747B68FD62"]
+			id: "4DC5390B7E42CE48"
+			tasks: [{
+				id: "5207CFD3EB32D3D2"
+				type: "item"
+				item: "mob_grinding_utils:fan_upgrade_speed"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "076CFAE9545C7C80"
+			tasks: [{
+				id: "47925A5F127E5A43"
+				type: "item"
+				item: "mob_grinding_utils:spikes"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["076CFAE9545C7C80"]
+			id: "7334A7E0AD6B58A6"
+			tasks: [{
+				id: "256246B194B275F4"
+				type: "item"
+				item: "mob_grinding_utils:saw"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			dependencies: ["26DC13DFE8932861"]
+			id: "389067D354B91CDB"
+			tasks: [{
+				id: "71B875BE1B3F4F57"
+				type: "item"
+				item: "mob_grinding_utils:absorption_upgrade"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "31C613429E5F0588"
+			tasks: [{
+				id: "2D830BCF2879376F"
+				type: "item"
+				item: "mob_grinding_utils:tinted_glass"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "57436D812FAC6C24"
+			tasks: [{
+				id: "540138C96DD51D8E"
+				type: "item"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "3DB0A3C396580636"
+			tasks: [{
+				id: "47F5811A2AF0D28F"
+				type: "item"
+				item: "mob_grinding_utils:nutritious_chicken_feed"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			description: ["Just a nice tank."]
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "39AFF8DD707787FB"
+			tasks: [{
+				id: "2E9F6D611C9BF419"
+				type: "item"
+				item: "mob_grinding_utils:tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["39AFF8DD707787FB"]
+			id: "5060CDCE9AA95AEE"
+			tasks: [{
+				id: "4CE1F8DE4D0E322B"
+				type: "item"
+				item: "mob_grinding_utils:tank_sink"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["39AFF8DD707787FB"]
+			id: "25B737DF14755879"
+			tasks: [{
+				id: "6ED3B4DD57D63B28"
+				type: "item"
+				item: "mob_grinding_utils:xp_tap"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["6ACC4C3638C59F74"]
+			id: "7FA44363AB92A10A"
+			tasks: [{
+				id: "503A53250ABEBD9F"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			title: "Mob Masher Upgrades"
+			x: 2.5d
+			y: -0.5d
+			dependencies: [
+				"7334A7E0AD6B58A6"
+				"7FA44363AB92A10A"
+			]
+			id: "20CD8844B6FFEDDB"
+			tasks: [
+				{
+					id: "79935C8D91780882"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_arthropod"
+				}
+				{
+					id: "4CFD405BA1F23CE8"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_beheading"
+				}
+				{
+					id: "525AD4A1982821B7"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_fire"
+				}
+				{
+					id: "2BEEA921646B06B0"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_looting"
+				}
+				{
+					id: "73761D6AC2D5B4E5"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_sharpness"
+				}
+				{
+					id: "22528AF2EA079373"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_smite"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: [
+				"5A74F58F3E4977A9"
+				"7FA44363AB92A10A"
+			]
+			id: "2506E1896A821C68"
+			tasks: [{
+				id: "52EA7D79A6629798"
+				type: "item"
+				item: "mob_grinding_utils:mob_swab"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["5A74F58F3E4977A9"]
+			id: "6462E54F8FB1D474"
+			tasks: [{
+				id: "3BA6671D15141D9F"
+				type: "item"
+				item: "mob_grinding_utils:xpsolidifier"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["6462E54F8FB1D474"]
+			id: "49A223ACC10BEE58"
+			tasks: [{
+				id: "73D07B176652B3DD"
+				type: "item"
+				item: "mob_grinding_utils:solid_xp_baby"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: [
+				"2506E1896A821C68"
+				"49A223ACC10BEE58"
+			]
+			id: "0DA6781FEEF5F274"
+			tasks: [{
+				id: "14CA51F8AA72E671"
+				type: "item"
+				item: "mob_grinding_utils:entity_spawner"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

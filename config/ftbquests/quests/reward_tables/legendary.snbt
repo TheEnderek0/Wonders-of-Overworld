@@ -24,13 +24,13 @@
 		{ item: "draconicevolution:wyvern_core", weight: 6 }
 	]
 	loot_crate: {
-		string_id: "legendary"
-		color: 16761159
-		glow: 1b
 		drops: {
+			boss: 1
 			passive: 0
 			monster: 0
-			boss: 1
 		}
+		color: 16761159
+		glow: 1b
+		string_id: "legendary"
 	}
 }

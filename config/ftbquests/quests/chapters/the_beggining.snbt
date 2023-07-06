@@ -3,7 +3,7 @@
 	group: "5F61B00653CA7C57"
 	order_index: 0
 	filename: "the_beggining"
-	title: "The Beggining"
+	title: "The Beginning"
 	icon: "minecraft:flowering_azalea_leaves"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -656,8 +656,8 @@
 		}
 		{
 			title: "Trash Cans"
-			x: 7.5d
-			y: 0.0d
+			x: 9.5d
+			y: -0.5d
 			description: ["Trash cans are here to save you if you are in danger of excess power, fluid or items!"]
 			dependencies: ["1A5FE12586E87C41"]
 			id: "6C82AE1716B7410C"
@@ -693,7 +693,7 @@
 		{
 			x: -0.5d
 			y: 1.5d
-			description: ["This modpack includes a mod that adds advanced HUD's. Press Ctrl + O in game to tweak them for your needs."]
+			description: ["This modpack includes a mod that adds advanced HUD's. Press \"o\" in game to tweak them for your needs."]
 			dependencies: ["3E1DE478873C849F"]
 			id: "2317E0E5B07F1080"
 			tasks: [{
@@ -879,47 +879,6 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 4.0d
-			description: ["A very useful tool that can tell you the cost of recipes."]
-			hide_dependency_lines: true
-			dependencies: ["3E1DE478873C849F"]
-			id: "04C1ECE684821D48"
-			tasks: [{
-				id: "103CFABBDE57997D"
-				type: "item"
-				item: {
-					id: "jecalculation:item_calculator_craft"
-					Count: 1b
-					tag: {
-						jecalculation: {
-							craft: {
-								mode: "input"
-								overlayPositionX: 0
-								amount: ""
-								overlayDepth: 0
-								overlayOpen: 0b
-								recents: [ ]
-								inventory: 0b
-								overlayPositionY: 0
-							}
-						}
-					}
-				}
-			}]
-			rewards: [{
-				id: "26CC0178D0B4C300"
-				type: "item"
-				item: {
-					id: "ftbquests:lootcrate"
-					Count: 1b
-					tag: {
-						type: "uncommon"
-					}
-				}
-			}]
-		}
-		{
 			x: 7.5d
 			y: 6.0d
 			description: ["A book that can store all books!"]
@@ -945,7 +904,7 @@
 		}
 		{
 			x: 9.5d
-			y: 6.0d
+			y: 4.0d
 			description: [
 				"Ender Storage is a very useful mod when it comes to transporting stuff between dimensions. Simply place two chests/tanks and use dyes to color code them (3 white bars on the top). If you're playing on a server I recommend clicking on the \"nose\" of the chest or the valve the tank with a diamond. That way no one except you can connect to these by using the same color code."
 				""
@@ -981,6 +940,22 @@
 						type: "uncommon"
 					}
 				}
+			}]
+		}
+		{
+			title: "Mob Grinding Utils"
+			icon: "mob_grinding_utils:fan"
+			x: 9.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: ["This mod will allow you to easily make powerful mob grinders."]
+			dependencies: ["1A5FE12586E87C41"]
+			size: 1.5d
+			id: "157538DC1BACF130"
+			tasks: [{
+				id: "2F9FC1EE3AAA1B85"
+				type: "checkmark"
+				title: "Okay"
 			}]
 		}
 	]

@@ -13,7 +13,10 @@
 			x: -3.5d
 			y: 0.0d
 			shape: "gear"
-			dependencies: ["04569BA049921D6F"]
+			dependencies: [
+				"04569BA049921D6F"
+				"19DE751769A75F6D"
+			]
 			id: "5EEB1997213921A2"
 			tasks: [{
 				id: "246637F07146A2A9"

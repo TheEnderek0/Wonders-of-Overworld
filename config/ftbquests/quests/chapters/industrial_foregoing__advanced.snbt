@@ -149,21 +149,13 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 3.5d
+			x: 4.0d
+			y: 3.0d
 			shape: "square"
-			description: [
-				"These blocks can make your life way easier by mining different veins and collecting different fluids. For example, fluid drill can mine oil from pneumaticcraft. This way you can fully automate ore mining."
-				"Keep in mind though that these machines are pretty slow, so other ways of getting ores may still be your go-to."
-			]
+			description: ["You'll need this drill to mine ether gas."]
 			dependencies: ["60D7E96FE4E6FB5D"]
 			id: "47CDC57CA26DD709"
 			tasks: [
-				{
-					id: "2AADA8646B7A8B3B"
-					type: "item"
-					item: "industrialforegoing:ore_laser_base"
-				}
 				{
 					id: "7909E34168FA7039"
 					type: "item"
@@ -175,6 +167,40 @@
 					item: "industrialforegoing:laser_drill"
 				}
 			]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			dependencies: ["60D7E96FE4E6FB5D"]
+			id: "405A72D96000A392"
+			tasks: [{
+				id: "4DBA8DAC53832F10"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			title: "Industrial Foregoing - Supreme 1/2"
+			icon: "industrialforegoing:machine_frame_supreme"
+			x: 6.75d
+			y: 3.75d
+			shape: "rsquare"
+			description: [
+				"You'll need ether gas to make supreme casings. To do so, place the drill just above a wither trapped by the stasis chamber."
+				"{image:kubejs:textures/screenshot/withersetup.png width:200 height:100 align:1 fit:true}"
+			]
+			dependencies: [
+				"04569BA049921D6F"
+				"405A72D96000A392"
+				"47CDC57CA26DD709"
+			]
+			size: 1.5d
+			id: "19DE751769A75F6D"
+			tasks: [{
+				id: "4149FB3CE7B570CA"
+				type: "checkmark"
+				title: "Okay"
+			}]
 		}
 	]
 	quest_links: [ ]

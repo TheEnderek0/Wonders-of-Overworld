@@ -26,12 +26,12 @@
 		{ item: "mekanism:alloy_atomic", count: 8 }
 	]
 	loot_crate: {
-		string_id: "epic"
-		color: 8388863
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 8388863
+		string_id: "epic"
 	}
 }

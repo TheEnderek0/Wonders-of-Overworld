@@ -60,12 +60,12 @@
 		}
 	]
 	loot_crate: {
-		string_id: "rare"
-		color: 38143
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 38143
+		string_id: "rare"
 	}
 }

@@ -60,12 +60,12 @@
 		{ item: "thermal:apatite", count: 32 }
 	]
 	loot_crate: {
-		string_id: "common"
-		color: 9607578
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 9607578
+		string_id: "common"
 	}
 }
