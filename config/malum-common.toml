@@ -93,13 +93,6 @@
 
 	[spirit.affinity]
 
-		[spirit.affinity.heart_of_stone]
-			#Amount of hunger consumed when recovering a point of heart of stone. Do note that this will only matter if the player has the earthen affinity.
-			#Range: 0.0 ~ 1.0
-			heartOfStoneCost = 0.2
-			#Base time in ticks it takes for one point of heart of stone to recover.
-			heartOfStoneRate = 40
-
 		[spirit.affinity.soul_ward]
 			#Multiplier for physical damage taken while soul ward is active.
 			#Range: 0.0 ~ 1.0
