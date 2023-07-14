@@ -2,10 +2,10 @@
 ["Button Position"]
 	#Pixels away from the bottom left of the GUI in the x axis
 	#Range: > 0
-	X = 4
+	X = 2000
 	#Pixels away from the bottom left of the GUI in the y axis
 	#Range: > 0
-	Y = 0
+	Y = 2000
 	NAME = "Dark Mode"
 
 ["Main Menu Button"]
