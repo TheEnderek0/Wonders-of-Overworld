@@ -806,7 +806,7 @@
 			icon: "bloodmagic:selfsacrificerune2"
 			x: 7.5d
 			y: -26.0d
-			description: ["These runes"]
+			description: ["These runes are more powerful and better than the standard variants."]
 			dependencies: [
 				"12F96A15933FFDE2"
 				"778B01E795E862A9"

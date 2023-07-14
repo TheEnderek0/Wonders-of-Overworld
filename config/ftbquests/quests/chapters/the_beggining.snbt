@@ -881,7 +881,11 @@
 		{
 			x: 7.5d
 			y: 6.0d
-			description: ["A book that can store all books!"]
+			description: [
+				"A book that can store all books!"
+				"Simply combine the book you want to add with this tome in a crafting table."
+				"Right click to select a book, left click while holding the book in your hand to disable selection."
+			]
 			hide_dependency_lines: true
 			dependencies: ["3E1DE478873C849F"]
 			id: "1E70D9A92805DEBD"
@@ -956,6 +960,32 @@
 				id: "2F9FC1EE3AAA1B85"
 				type: "checkmark"
 				title: "Okay"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 6.0d
+			description: ["This lamp will place invisible lights around itself, good for lighting big, open areas."]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "3C6611E10BEB6B90"
+			tasks: [{
+				id: "4ADFA2706C9001AD"
+				type: "item"
+				item: "torchmaster:feral_flare_lantern"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 6.0d
+			description: ["This torch will not allow any hostile mobs to spawn in a very big radius around it."]
+			hide_dependency_lines: true
+			dependencies: ["3E1DE478873C849F"]
+			id: "51245088010D5E7E"
+			tasks: [{
+				id: "211502556CD36855"
+				type: "item"
+				item: "torchmaster:megatorch"
 			}]
 		}
 	]

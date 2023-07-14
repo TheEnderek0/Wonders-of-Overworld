@@ -636,9 +636,9 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 0.0d
-			dependencies: ["2529301FC4CF74E0"]
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["6D8A739C217FDEAF"]
 			id: "7B10A904C0D97F90"
 			tasks: [{
 				id: "5B9F477928949223"
@@ -874,6 +874,17 @@
 				id: "77146B9B0D67B2E0"
 				type: "item"
 				item: "createaddition:bioethanol_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["7B10A904C0D97F90"]
+			id: "0FEA5A9A9336D41B"
+			tasks: [{
+				id: "154A76121809F2CC"
+				type: "item"
+				item: "create:large_water_wheel"
 			}]
 		}
 	]

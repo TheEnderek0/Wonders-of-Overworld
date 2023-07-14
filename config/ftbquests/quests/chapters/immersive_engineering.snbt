@@ -801,6 +801,10 @@
 			title: "LV wires"
 			x: 4.5d
 			y: -3.0d
+			description: [
+				"Max transfer per connector: 1024 RF/t"
+				"Max transfer per cable/relay: 4096 RF/t"
+			]
 			hide_dependency_lines: true
 			dependencies: ["046B1CD49177CFA1"]
 			id: "75ECEE0F870FB79F"
@@ -826,6 +830,10 @@
 			title: "MV Wires"
 			x: 6.5d
 			y: -3.0d
+			description: [
+				"Max transfer per connector: 4096 RF/t"
+				"Max transfer per cable/relay: 16384 RF/t"
+			]
 			dependencies: ["75ECEE0F870FB79F"]
 			id: "2BE52F35B4D6D060"
 			tasks: [
@@ -850,6 +858,10 @@
 			title: "HV Wires"
 			x: 8.5d
 			y: -3.0d
+			description: [
+				"Max transfer per connector: 8192 RF/t"
+				"Max transfer per cable/relay: 32768 RF/t"
+			]
 			dependencies: ["2BE52F35B4D6D060"]
 			id: "60DEBDD4A9AFF79F"
 			tasks: [
