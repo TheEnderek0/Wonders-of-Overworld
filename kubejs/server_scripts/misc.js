@@ -113,4 +113,7 @@ onEvent('recipes', event => {
     event.shapeless('minecraft:gravel', Item.of('kubejs:processed_rock', 4))
 
     Remove('mob_grinding_utils:jumbo_tank')
+
+    event.shapeless('quark:limestone', 'create:limestone')
+    event.shapeless('create:limestone', 'quark:limestone')
 })

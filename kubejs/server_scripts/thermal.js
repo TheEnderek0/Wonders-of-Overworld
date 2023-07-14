@@ -119,4 +119,9 @@ onEvent('recipes', event => {
         }
       ]
     })
+
+    event.recipes.thermal.pulverizer('kubejs:crushed_arsenic', 'kubejs:arsenic_ingot').energy(16000)
+    event.recipes.thermal.pulverizer('kubejs:crushed_tungsten', 'kubejs:tungsten_ingot').energy(16000)
+    event.recipes.thermal.bottler('thermal:rubber', ['industrialforegoing:dryrubber', Fluid.of('minecraft:water', 250)]).energy(4000)
+    event.recipes.thermal.press('kubejs:insulator', 'thermal:cured_rubber').energy(2000)
 })

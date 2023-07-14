@@ -32,6 +32,17 @@ onEvent('recipes', event => {
 
 	event.recipes.immersiveengineeringArcFurnace(['kubejs:tungsten_ingot'], 'kubejs:crushed_tungsten')
 	event.recipes.immersiveengineeringArcFurnace(['kubejs:arsenic_ingot'], 'kubejs:crushed_arsenic')
+
+	Remove('immersiveengineering:fluid_pipe')
+	event.shaped('6x immersiveengineering:fluid_pipe', [
+		"AAA",
+		"BBB",
+		"AAA"
+	], {
+		A: '#forge:plates/steel',
+		B: 'create:fluid_pipe'
+	})
+
 	event.custom({
 		type: "immersiveengineering:crusher",
 		secondaries: [{chance: 0.05, output: {item: 'kubejs:crushed_arsenic'}}],
