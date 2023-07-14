@@ -3,7 +3,7 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  renderorder = foreground
+  renderorder = background
   randommode = false
   custom_menu_title = Wonders of Overworld!
   randomonlyfirsttime = false
@@ -269,6 +269,17 @@ customization {
 }
 
 customization {
+  path = config/fancymenu/customization/custom images/background.png
+  orientation = top-left
+  x = 22
+  width = 136
+  action = addtexture
+  actionid = 37271ac8-59ee-46e4-856f-fa40625477e51689363838464
+  y = 5
+  height = 356
+}
+
+customization {
   orientation = top-left
   hidden = true
   x = 186
@@ -283,7 +294,7 @@ customization {
   orientation = top-left
   hidden = false
   x = 2
-  width = 108
+  width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 58dd6725-cbb6-449b-acb7-e4eb627dea751683382392850
   y = 308
@@ -364,7 +375,7 @@ customization {
   capeurl = http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933
   action = custom_layout_element:fancymenu_customization_player_entity
   actionid = dbc75867-09a4-428a-ac09-07115db302751683384273194
-  playername = KubaPL200304
+  playername = Enderek0
   bodyrotationx = 0.0
   bodyrotationy = 0.0
   auto_cape = false
@@ -374,7 +385,7 @@ customization {
   copy_client_player = true
   headrotationy = 0.0
   headrotationx = 0.0
-  skinurl = http://textures.minecraft.net/texture/7f0b81a97a1acc772f571df0fe8b8685b083d8417042b11190d469bf98190bbb
+  skinurl = http://textures.minecraft.net/texture/4c239449038e1520b76ebe36fff12e78a82514dc814c410a7e19e50ed6244d6
   crouching = false
   x = -65
   width = 41
