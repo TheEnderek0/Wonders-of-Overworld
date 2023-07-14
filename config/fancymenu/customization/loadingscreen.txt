@@ -1,0 +1,78 @@
+type = menu
+
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = panorama
+  action = setbackgroundpanorama
+}
+
+customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
+  baseheight = 1369
+  action = autoscale
+  basewidth = 2560
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  original_pos_size_calculation = true
+  x = 199
+  width = 456
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = 65704e47-cbc5-48e2-90d8-49b6de2caa0f1689361030397
+  y = 171
+  height = 114
+}
+
+customization {
+  custom_color_hex = #2a619c
+  orientation = top-left
+  hidden = false
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 92d4bac2-1f63-4ac8-8617-140919bfa8561689361030402
+  y = -1000000
+  height = 0
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  original_pos_size_calculation = true
+  x = 298
+  width = 684
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = 8762b6b0-8216-455c-a506-6f1a5caa183f1689361030403
+  y = 565
+  height = 10
+}
+
+customization {
+  path = config/fancymenu/customization/custom images/mojang.png
+  orientation = bottom-left
+  x = 0
+  width = 118
+  action = addtexture
+  actionid = 2220a2df-21f4-4409-8db0-8b3ffa15c9cc1689361336577
+  y = -100
+  height = 100
+}
+
