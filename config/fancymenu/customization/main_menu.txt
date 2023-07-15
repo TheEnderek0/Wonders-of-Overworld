@@ -269,17 +269,6 @@ customization {
 }
 
 customization {
-  path = config/fancymenu/customization/custom images/background.png
-  orientation = top-left
-  x = 22
-  width = 136
-  action = addtexture
-  actionid = 37271ac8-59ee-46e4-856f-fa40625477e51689363838464
-  y = 5
-  height = 356
-}
-
-customization {
   orientation = top-left
   hidden = true
   x = 186
@@ -345,6 +334,17 @@ customization {
   actionid = df1c1ce5-eb47-4eea-af66-e70be73204a91683382392851
   y = 0
   height = 30
+}
+
+customization {
+  path = config/fancymenu/customization/custom images/background.png
+  orientation = top-left
+  x = 22
+  width = 136
+  action = addtexture
+  actionid = 37271ac8-59ee-46e4-856f-fa40625477e51689363838464
+  y = 0
+  height = 361
 }
 
 customization {
