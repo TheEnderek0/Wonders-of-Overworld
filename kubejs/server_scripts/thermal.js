@@ -62,7 +62,7 @@ onEvent('recipes', event => {
 
     //Port melting recipes for magma crucible
     let Melting = (ingot, fluid) => {
-        event.recipes.thermal.crucible(Fluid.of(fluid, 100), ingot).energy(40000)
+        event.recipes.thermal.crucible(Fluid.of(fluid, 90), ingot).energy(40000)
     }
 
     Melting('#forge:ingots/iron', 'tconstruct:molten_iron')

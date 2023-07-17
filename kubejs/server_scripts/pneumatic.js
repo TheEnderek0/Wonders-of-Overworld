@@ -6,7 +6,6 @@ settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
     event.remove({output: 'pneumaticcraft:cannon_barrel'})
-    event.remove({output:'pneumaticcraft:flux_compressor'})
     event.remove({output:'pneumaticcraft:manual_compressor'})
     event.remove({output:'pneumaticcraft:air_compressor'})
     event.remove({output:'pneumaticcraft:liquid_compressor'})

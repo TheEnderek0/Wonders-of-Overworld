@@ -13,7 +13,6 @@ onEvent('rei.hide.items', event => {
 	event.hide('storagenetwork:exchange')
 	event.hide('storagenetwork:collector')
 
-	event.hide('pneumaticcraft:flux_compressor')
     event.hide('pneumaticcraft:manual_compressor')
     event.hide('pneumaticcraft:air_compressor')
     event.hide('pneumaticcraft:liquid_compressor')
