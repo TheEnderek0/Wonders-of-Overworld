@@ -76,6 +76,8 @@ onEvent('recipes', event => {
         })
     }
 
+    Infusion('pipez:basic_upgrade', 1, 'pneumaticcraft:upgrade_matrix', 'mekanism:redstone', 800)
+
     Infusion('mekanism:basic_control_circuit', 2, 'pneumaticcraft:printed_circuit_board', 'mekanism:redstone', 40)
     event.replaceInput({output: 'mekanism:alloy_infused'}, "#forge:ingots/iron", '#forge:ingots/steel')
 
@@ -203,7 +205,7 @@ onEvent('recipes', event => {
 		Item.of('mekanism:ultimate_control_circuit').withChance(100.0)
 	], 'mekanism:elite_control_circuit', [
         event.recipes.createDeploying(t1, [t1, 'mekanism:alloy_atomic']),
-        event.recipes.createFilling(t1, [t1, Fluid.of('tconstruct:molten_aluminum', 200)]),
+        event.recipes.createFilling(t1, [t1, Fluid.of('tconstruct:molten_aluminum', 180)]),
 		event.recipes.createPressing(t1, [t1]),
         event.recipes.createDeploying(t1, [t1, 'create:electron_tube']),
         event.recipes.createDeploying(t1, [t1, 'mekanism:ingot_refined_obsidian']),

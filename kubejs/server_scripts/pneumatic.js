@@ -241,4 +241,19 @@ onEvent('recipes', event => {
         E: '#forge:gears/compressed_iron',
         F: 'create:shaft'
     })
+
+    event.remove({output: 'pneumaticcraft:flux_compressor'})
+    event.shaped('pneumaticcraft:flux_compressor', [
+        "ABC",
+        "DEF",
+        "AGC"
+    ], {
+        A: 'pneumaticcraft:printed_circuit_board',
+        B: 'immersiveengineering:wirecoil_steel',
+        C: 'pneumaticcraft:ingot_iron_compressed',
+        D: 'createaddition:electric_motor',
+        E: 'industrialforegoing:machine_frame_advanced',
+        F: 'compressedcreativity:rotational_compressor',
+        G: 'minecraft:redstone_block'
+    })
 })

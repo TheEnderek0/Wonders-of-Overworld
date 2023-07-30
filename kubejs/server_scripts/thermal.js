@@ -124,4 +124,25 @@ onEvent('recipes', event => {
     event.recipes.thermal.pulverizer('kubejs:crushed_tungsten', 'kubejs:tungsten_ingot').energy(16000)
     event.recipes.thermal.bottler('thermal:rubber', ['industrialforegoing:dryrubber', Fluid.of('minecraft:water', 250)]).energy(4000)
     event.recipes.thermal.press('kubejs:insulator', 'thermal:cured_rubber').energy(2000)
+
+    event.remove({output: "thermal:coal_coke", input: "minecraft:coal"})
+
+    event.custom({
+        type: "thermal:pyrolyzer",
+        ingredient: {
+          item: "minecraft:coal"
+        },
+        result: [
+          {
+            item: "thermal:coal_coke"
+          },
+          {
+            fluid: "thermal:creosote",
+            amount: 250
+          }
+        ],
+        experience: 0.15
+    })
+
+    event.recipes.thermal.chiller('pneumaticcraft:ingot_iron_compressed', [Fluid.of('kubejs:molten_dense_steel', 90), 'thermal:chiller_ingot_cast'])
 })
