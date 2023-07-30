@@ -161,8 +161,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: -2.5d
+			x: 10.0d
+			y: -2.0d
 			dependencies: ["2343CA5CEFB572C9"]
 			id: "4ED75BD5B43F20BF"
 			tasks: [{
@@ -305,9 +305,10 @@
 			}]
 		}
 		{
-			title: "3x Ore Processing"
+			title: "2x Ore Processing"
 			x: 1.0d
 			y: 5.0d
+			description: ["This machine will enable you to process ores more efficiently than other means. In combination with other needed machines it can produce about 3 ingots from one ore, or 2 ingots from raw mined ores."]
 			dependencies: ["27E3DC253D830C71"]
 			id: "2CC282FBFB6A46AB"
 			tasks: [{
@@ -363,9 +364,13 @@
 			}]
 		}
 		{
-			title: "4x Ore Processing"
+			title: "3x Ore Processing"
 			x: 1.0d
 			y: 6.5d
+			description: [
+				"This machine can produce 4 ingots from an ore, or 8 ingots from 3 raw mined ores."
+				"I recommend using Brass Funnels and create Belts to automate insertion of \"raw\" ores into this machine, since you can limit the funnel to only output 3 (no more, no less) at a time, essentialy making ores not clog the machine."
+			]
 			dependencies: [
 				"30686EE4E8738D14"
 				"2CC282FBFB6A46AB"
@@ -585,7 +590,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 13.0d
 			y: -2.5d
 			dependencies: ["34187E85EE6335C8"]
 			id: "44F34FCCFA34B99D"
@@ -626,7 +631,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 13.0d
 			y: -4.0d
 			dependencies: ["44F34FCCFA34B99D"]
 			id: "7DC863C955AF34F1"
@@ -1218,6 +1223,13 @@
 			x: 14.0d
 			y: 13.0d
 			shape: "square"
+			description: [
+				"WARNING: Building a fission reactor is very difficult."
+				"At this point in game you should have plenty of resources, so I recommend going for sodium based cooling right away, you're gonna need a lot of power, and a lot of nuclear waste."
+				""
+				"For exact documentation on how to build a safe and functioning reactor, visit: "
+				"https://wiki.aidancbrady.com/wiki/Fission_Reactor"
+			]
 			hide_dependency_lines: true
 			dependencies: ["6FF672BCCB3BB282"]
 			size: 1.25d
@@ -1697,9 +1709,10 @@
 			}]
 		}
 		{
-			title: "5x Ore Processing"
+			title: "4x Ore Processing"
 			x: 15.0d
 			y: 8.0d
+			description: ["These machines can produce 10 ingots from 3 raw mined ores, or 5 ingots from normal ores."]
 			dependencies: [
 				"1D54589C97F92491"
 				"3247421AAB9BAB93"
@@ -1731,6 +1744,223 @@
 				id: "43C477D14149DE34"
 				type: "checkmark"
 				title: "Acknowledge"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			description: ["Standard extraction rate: 1600FE/t"]
+			dependencies: [
+				"4EF70FD22DEFED03"
+				"2A95384B3D233F35"
+			]
+			id: "50D5A0AFEA6F1D68"
+			tasks: [{
+				id: "566CC3A5E8FF42B1"
+				type: "item"
+				item: "pipez:energy_pipe"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.5d
+			description: ["Standard extraction rate: 100mB/t"]
+			dependencies: [
+				"41948D859D23428B"
+				"2A95384B3D233F35"
+			]
+			id: "7FFD17FC7FB9AD0E"
+			tasks: [{
+				id: "6CF4B23AA3400B99"
+				type: "item"
+				item: "pipez:fluid_pipe"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			description: ["Standard extraction rate: 200mB/t"]
+			dependencies: [
+				"10D1E14A523DA7BE"
+				"2A95384B3D233F35"
+			]
+			id: "44FA825ED88BE5D0"
+			tasks: [{
+				id: "2F49090BDEC81F29"
+				type: "item"
+				item: "pipez:gas_pipe"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.5d
+			description: ["Extracts 1 item every 1 second by default."]
+			dependencies: [
+				"04EF60AE086E5E74"
+				"2A95384B3D233F35"
+			]
+			id: "3D51D41BC94C9B37"
+			tasks: [{
+				id: "52202FE8F795D979"
+				type: "item"
+				item: "pipez:item_pipe"
+			}]
+		}
+		{
+			title: "Pipez"
+			icon: "pipez:wrench"
+			x: -5.0d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Pipez is a mod which can make your life easier with various pipes, like item pipes, fluid pipes etc."
+				"These pipes are very configurable and are much more \"smarter\" than Mekanism's."
+				"You will need a wrench, shift right click a connection to a block to change it to extracting mode."
+				"You can also insert upgrades in the extract window, these affect this extractor, you don't need to upgrade the pipes themselves."
+				"You also need to know that these pipes don't have an internal inventory, so they won't automatically work with inventories that are \"pushing\" the liquids/items/gasses etc. You still need to set the extract mode. This also means that you cannot \"bypass\" the limit of extraction, unlike the case of Mekanism's pipes."
+				""
+				""
+				"Keep in mind that the speeds have been tweaked to suit the mekanisms equivalents."
+			]
+			dependencies: ["72696A59C6F06BBC"]
+			id: "2A95384B3D233F35"
+			tasks: [
+				{
+					id: "00DF9EDE334D7F85"
+					type: "checkmark"
+					title: "Okay"
+				}
+				{
+					id: "36A0E77D793E2123"
+					type: "item"
+					item: "pipez:wrench"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 0.5d
+			description: ["With this tool you can select a block to set as a destination for a filter."]
+			dependencies: ["2A95384B3D233F35"]
+			id: "3D1842C6D89B655F"
+			tasks: [{
+				id: "78B80DF90B7513F1"
+				type: "item"
+				item: "pipez:filter_destination_tool"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			description: [
+				"Items: extracts 1 item every 0.5 seconds."
+				"Fluid: extracts 250mB/t."
+				"Energy: extracts 3200FE/t."
+				"Gas: extracts 750mb/t."
+				""
+				"With these upgrades pipes can be controlled with redstone."
+			]
+			dependencies: ["2A95384B3D233F35"]
+			id: "37EB2BC353040A79"
+			tasks: [{
+				id: "6870B1E5F06833C2"
+				type: "item"
+				item: "pipez:basic_upgrade"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.5d
+			description: [
+				"Items: extracts 8 items every 0.25 seconds."
+				"Fluid: extracts 1B/t."
+				"Energy: extracts 51.2kRF/t."
+				"Gas: extracts 2B/t."
+				""
+				"This upgrade adds distribution modes such as Round Robin, Nearest First, etc."
+			]
+			dependencies: ["37EB2BC353040A79"]
+			id: "2C5C4CD9353193F6"
+			tasks: [{
+				id: "049D5A1762B7899F"
+				type: "item"
+				item: "pipez:improved_upgrade"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 5.0d
+			description: [
+				"Item: extracts 8 items every 2 ticks."
+				"Fluid: extracts 8B/t."
+				"Energy: extracts 409.6kRF/t."
+				"Gas: extracts 64B/t."
+				""
+				"This upgrade allows for filtering."
+			]
+			dependencies: ["2C5C4CD9353193F6"]
+			id: "5D71ED1A8F3A272D"
+			tasks: [{
+				id: "563A3190A144E0D2"
+				type: "item"
+				item: "pipez:advanced_upgrade"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 6.5d
+			description: [
+				"Item: extracts 8 items every 1 tick."
+				"Fluid: extracts 32B/t."
+				"Energy: extracts 3.27MRF/t."
+				"Gas: extracts 256B/t."
+			]
+			dependencies: ["5D71ED1A8F3A272D"]
+			id: "291674DC9DFE23DF"
+			tasks: [{
+				id: "799584554FAB2DC7"
+				type: "item"
+				item: "pipez:ultimate_upgrade"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 8.0d
+			description: ["This upgrade allows for infinitely fast extracting."]
+			dependencies: ["291674DC9DFE23DF"]
+			id: "53BDE78A48FCE6AC"
+			tasks: [{
+				id: "486993E2D8DFA074"
+				type: "item"
+				item: "pipez:infinity_upgrade"
+			}]
+			rewards: [{
+				id: "6B08F8912CB31B1C"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendary"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.0d
+			description: ["This pipe can transfer items, fluids, energy and gasses at the same time."]
+			dependencies: [
+				"3D51D41BC94C9B37"
+				"7FFD17FC7FB9AD0E"
+				"50D5A0AFEA6F1D68"
+				"44FA825ED88BE5D0"
+			]
+			id: "4C54602A63CA3D7D"
+			tasks: [{
+				id: "16179603881A294A"
+				type: "item"
+				item: "pipez:universal_pipe"
 			}]
 		}
 	]

@@ -1117,6 +1117,32 @@
 				item: "immersiveengineering:thermoelectric_generator"
 			}]
 		}
+		{
+			title: "Redstone Wires"
+			x: 2.5d
+			y: -3.0d
+			description: ["These wires transmit redstone over great distances. They are great for automating Create factories."]
+			hide_dependency_lines: true
+			dependencies: ["046B1CD49177CFA1"]
+			id: "05809667A9565B58"
+			tasks: [
+				{
+					id: "6D91D2F0A68BE417"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+				}
+				{
+					id: "3D2087C6B7F3AE41"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+				}
+				{
+					id: "4533C7AD42AA36CC"
+					type: "item"
+					item: "immersiveengineering:connector_probe"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

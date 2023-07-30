@@ -988,6 +988,18 @@
 				item: "torchmaster:megatorch"
 			}]
 		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["Slightly increases furnace speed, requires a redstone signal."]
+			dependencies: ["1A5FE12586E87C41"]
+			id: "4584E5EEDDBC66DB"
+			tasks: [{
+				id: "3E9C47D73823DFBA"
+				type: "item"
+				item: "supplementaries:bellows"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -58,7 +58,7 @@
 		}
 		{
 			x: 3.0d
-			y: -4.0d
+			y: -5.5d
 			description: ["Can be used to find underground oil veins."]
 			dependencies: ["58A831F16DD67595"]
 			id: "4B51D5B9887235E9"
@@ -70,7 +70,7 @@
 		}
 		{
 			x: 5.0d
-			y: -4.0d
+			y: -5.5d
 			dependencies: ["4B51D5B9887235E9"]
 			id: "4AA08FCBF1463418"
 			tasks: [{
@@ -81,7 +81,7 @@
 		}
 		{
 			x: 7.0d
-			y: -4.0d
+			y: -5.5d
 			dependencies: ["4AA08FCBF1463418"]
 			id: "08C5D350D9FF494E"
 			tasks: [{
@@ -93,7 +93,7 @@
 		}
 		{
 			x: 3.0d
-			y: -2.0d
+			y: -3.5d
 			description: [
 				"While there are veins of oil appearing on the surface, getting a gas lift mining an underground vein will yield much more oil."
 				"So it is recommended you do the quests above first, so you can get good supply of oil."
@@ -120,7 +120,7 @@
 		{
 			title: "Refinery"
 			x: 5.0d
-			y: -2.0d
+			y: -3.5d
 			dependencies: ["24DE81C4EDD01E41"]
 			id: "73513BCC8DE621BB"
 			tasks: [
@@ -137,9 +137,9 @@
 			]
 		}
 		{
-			x: 9.0d
+			x: 7.0d
 			y: -2.0d
-			dependencies: ["73513BCC8DE621BB"]
+			dependencies: ["58A831F16DD67595"]
 			id: "1E05A2A944936758"
 			tasks: [{
 				id: "4A410D6B64907A95"
@@ -150,6 +150,7 @@
 		{
 			x: 9.0d
 			y: -0.5d
+			description: ["You can create molten plastic either from processing crude oil, or making biodiesel, the choice is yours."]
 			dependencies: ["1E05A2A944936758"]
 			id: "7B118A87828E35C2"
 			tasks: [{
@@ -787,6 +788,7 @@
 		{
 			x: 9.0d
 			y: 2.5d
+			description: ["Tip: You can use heat from other compressors to power this one!"]
 			dependencies: ["60B412B9737F66EE"]
 			id: "3D28DD8B308DC030"
 			tasks: [{
@@ -875,6 +877,21 @@
 				id: "6F0C605773A92013"
 				type: "item"
 				item: "pneumaticcraft:heat_pipe"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 9.5d
+			description: ["A good compressor if you have good energy production."]
+			dependencies: [
+				"7703DD2E1CD99076"
+				"60D7E96FE4E6FB5D"
+			]
+			id: "02E79B8F3C18017D"
+			tasks: [{
+				id: "4E14D06A99508D32"
+				type: "item"
+				item: "pneumaticcraft:flux_compressor"
 			}]
 		}
 	]

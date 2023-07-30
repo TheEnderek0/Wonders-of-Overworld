@@ -122,7 +122,7 @@
 		}
 		{
 			x: 4.0d
-			y: 1.5d
+			y: 3.0d
 			dependencies: ["499D0D86070CB8F2"]
 			id: "63AE79AA55211C47"
 			tasks: [{
@@ -169,19 +169,8 @@
 		}
 		{
 			x: 4.0d
-			y: 3.0d
+			y: 6.0d
 			dependencies: ["63AE79AA55211C47"]
-			id: "6303C57278FF2366"
-			tasks: [{
-				id: "0D3C7D686468FF8E"
-				type: "item"
-				item: "thermal:heavy_oil_bucket"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 4.5d
-			dependencies: ["6303C57278FF2366"]
 			id: "2F7D41BDF8BD83B3"
 			tasks: [{
 				id: "3EDD7BA170ADDFBD"

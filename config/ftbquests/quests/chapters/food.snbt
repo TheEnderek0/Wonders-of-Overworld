@@ -509,6 +509,18 @@
 				item: "farmersrespite:coffee"
 			}]
 		}
+		{
+			x: -8.0d
+			y: 0.0d
+			description: ["It seems like a simple block, but you can pull huge amounts of water from it via pipes, it's very useful so keep this in mind!"]
+			dependencies: ["227E706384FC441D"]
+			id: "543ABEA28922573C"
+			tasks: [{
+				id: "48E4D184FAC9637C"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
